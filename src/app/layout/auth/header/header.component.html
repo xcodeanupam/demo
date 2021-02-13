@@ -1,0 +1,73 @@
+<section class="amazonheader" fxLayout="row" fxLayoutAlign="start center">
+    <div class="header" fxLayout="row" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px"
+        fxFlex.xl="1910px">
+        <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100%">
+            <div class="logo" fxFlex="20%">
+                amz Review
+            </div>
+            <div class="" fxFlex="20%">
+          
+                </div>
+            <div class="search" fxFlex="60%" fxLayout="row" fxLayoutAlign="start center">
+                    <div class="menu" fxFlex="20%">
+                            <mat-icon>list</mat-icon> <button class="allcates" mat-button [matMenuTriggerFor]="menu">
+                                   All Category
+                            </button>
+                            <mat-menu #menu="matMenu" class="menu_category">
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Deals</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Alexa Skills</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Amazon Devices</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Amazon Fashion</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Amazon Pantry</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Appliances</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Apps & Games</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Baby</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Beauty</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Books</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Car & Motorbike</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Clothing & Accessories</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Collectibles</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Computers & Accessories</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Electronics</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Furniture</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Garden & Outdoors</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Gift Cards</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Grocery & Gourmet Foods</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Health & Personal Care</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Home & Kitchen</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Industrial & Scientific</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Jewellery</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Kindle Store</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Luggage & Bags</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Luxury Beauty</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Movies & TV Shows</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Music</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Musical Instruments</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Office Products</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Pet Supplies</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Prime Video</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Shoes & Handbags</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Software</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Sports, Fitness & Outdoors</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Tools & Home Improvement</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Toys & Games</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Video Games</button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Watches </button>
+                                <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Renewed Speakers </button>
+                            </mat-menu>
+                        </div>
+                <form class="example-form" fxFlex="80%">
+                       <mat-icon>search</mat-icon>
+                        <input type="text" placeholder="search" aria-label="Number" matInput [formControl]="myControl"
+                            [matAutocomplete]="auto">
+                        <mat-autocomplete #auto="matAutocomplete">
+                            <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
+                                {{option}}
+                            </mat-option>
+                        </mat-autocomplete>
+                </form>
+            </div>
+           
+    </div>
+    </div>
+</section>

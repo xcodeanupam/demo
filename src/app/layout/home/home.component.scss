@@ -1,0 +1,227 @@
+.slide{
+    background-position: center;
+    background-size: cover;
+    height: 600px;
+    background: #F1F6F7;
+    position: relative;
+    margin-bottom: 10px;
+
+}
+.slide:before {
+    content: "";
+    display: block;
+    width: 40%;
+    height: 100%;
+    background:#384aeb;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.slide-amazon{
+    margin: auto;
+}
+.slide-amazon img {
+    position: relative;
+    height: 90%;
+    width: 62.6%;
+    position: relative;
+    top: 0;
+}
+.slide-text {
+    padding: 0px 6pc;
+}
+.slide-text p{
+    font-family: inter;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+}
+.slide-text h2{
+    font-family: inter;
+    font-size: 34px;
+    padding: 4px 7pc 10px 0;
+    line-height: 38px;
+    font-weight: 800;
+    margin-bottom: 0;
+}
+.slide-text h6{
+    font-family: inter;
+    font-size: 17px;
+    padding: 0px 7pc 10px 0;
+    font-weight: 600;
+    margin-bottom: 0;
+}
+.slide-text button{
+    background: #4571eb;
+    border-radius: 0;
+    box-shadow: none;
+    color: #fff;
+    border-radius: 26px;
+    padding: 2.5px 2pc;
+    font-weight: 600;
+    font-family: inter;
+    font-size: 13px;
+    margin: 1pc 0 0;
+
+}
+//heading
+.heading {
+    padding-bottom: 1.5pc;
+    padding-left: 1pc;
+}
+.heading p {
+    font-family: inter;
+    font-size: 13px;
+    margin: 0;
+    font-weight: 500;
+}
+.heading h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 27px;
+    font-weight: 800;
+    letter-spacing: 0.5px;
+}
+.heading h1 span{
+    border-bottom: 2px solid #4571eb;
+}
+
+/////banner
+.slide1-img img {
+    border-radius: 3px;
+    width: 100%;
+}
+.slide1-img h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+    padding-bottom: 5px;
+    font-family: inter;
+}
+.slide1-img p {
+    font-size: 12px;
+    padding: 4px 10px;
+    margin: 0;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+}
+.slide1-img p mat-icon {
+    font-size: 12px;
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 1.5px;
+    color: #36332c;
+}
+.img-slider {
+    padding: 1%;
+    margin: 0 auto;
+    box-shadow: 1px 1px 4px 1px #d7d4d4;
+    border-radius: 3px;
+    padding: 23px 22px 30px;
+}
+///cate-
+.new-featured-amazon {
+    margin: auto;
+    padding: 5pc 0 2pc;
+}
+.cate-amazon {
+    margin: auto;
+    padding: 3pc 0;
+}
+.Product-featured {
+    flex-wrap: wrap;
+}
+.Product-featured .Product {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    align-items: center;
+}
+.product-data {
+    padding: 3pc 1pc 0;
+    place-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0px 0.7pc 25px;
+    box-shadow: 1px 1px 4px 1px #ddd;
+    padding: 15px;
+}
+.product-data a {
+    width: 200px;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    height: 200px;
+    object-fit: cover;
+}
+.Product h4 {
+    text-align: center;
+    font-family: inter;
+    font-family: "Open Sans", sans-serif;
+    font-size: 12.5px;
+    line-height: 18px;
+    font-weight: 700;
+    padding: 4px 10px 0;
+    margin-bottom: 0px;
+}
+.price {
+    padding: 4px 0;
+    font-family: inter;
+    font-weight: 500;
+    color: #45d7eb;
+    font-size: 12px;
+}
+.price u {
+    text-decoration: line-through;
+    color: #999696;
+}
+.star mat-icon {
+    width: auto;
+    color: #ffc400;
+    font-size: 15px;
+    margin: 1px;
+    position: relative;
+    top: 5px;
+}
+.img {
+    display: flex;
+    align-items: center;
+}
+.img img {
+    width: 20px;
+}
+.img b {
+    font-family: "Open Sans", sans-serif;
+    padding: 0px 4px;
+    font-weight: 600;
+    font-size: 14px
+}
+.start {
+    padding: 17px 0pc 12px 0pc;
+}
+button {
+    border: 0;
+    background: #4571eb;
+    padding: 9.5px 1pc 10px;
+    border-radius: 27px;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    margin: 0px 0 15px;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+}
+button.more mat-icon {
+    font-size: 12px;
+    height: auto;
+    width: auto;
+    position: relative;
+    left: 2px;
+    top:1px;
+}
