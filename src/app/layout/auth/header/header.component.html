@@ -2,13 +2,13 @@
 ngClass.sm="amazonheader2"  ngClass.md="amazonheader3">
     <div class="header" fxLayout="row" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px"
         fxFlex.xl="1910px">
-        <div fxLayout="row" fxLayoutAlign="start center" fxFlex="100%">
-            <div class="logo" fxFlex="40%">
+        <div fxLayout="row"  fxLayout.xs="column"  fxLayoutAlign="start center" fxFlex="100%">
+            <div class="logo" fxFlex="40%" fxFlex.sm="25%" fxFlex.xs="100%">
                 amz Review
             </div>
           
-            <div class="search" fxFlex="60%" fxLayout="row" fxLayoutAlign="start center">
-                    <div class="menu" fxFlex="20%">
+            <div class="search" fxFlex="60%" fxFlex.xs="100%" fxFlex.sm="75%" fxLayout="row" fxLayoutAlign="start center">
+                    <div class="menu" fxFlex="22%" fxFlex.xs="33%" fxFlex.sm="35%">
                             <mat-icon>list</mat-icon> <button class="allcates" mat-button [matMenuTriggerFor]="menu">
                                    All Category
                             </button>
@@ -55,7 +55,7 @@ ngClass.sm="amazonheader2"  ngClass.md="amazonheader3">
                                 <button mat-menu-item><mat-icon>keyboard_arrow_left</mat-icon>Renewed Speakers </button>
                             </mat-menu>
                         </div>
-                <form class="example-form" fxFlex="80%">
+                <form class="example-form" fxFlex="78%" fxFlex.xs="67%"  fxFlex.sm="65%">
                        <mat-icon>search</mat-icon>
                         <input type="text" placeholder="search" aria-label="Number" matInput [formControl]="myControl"
                             [matAutocomplete]="auto">

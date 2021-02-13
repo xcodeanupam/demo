@@ -1,14 +1,12 @@
 <app-header></app-header>
-<section class="home" fxLayout="column"  ngClass.xs="amazonhome1" 
-ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
+<section class="home" fxLayout="column" ngClass.xs="amazonhome1" ngClass.sm="amazonhome2" ngClass.md="amazonhome3">
 
-    <div class="slide">
+    <!-- <div class="slide">
         <div class="slide-amazon" fxLayout="row" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px"
             fxFlex.xl="1910px">
             <div class="slide-img" fxLayout="column" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%"
                 fxLayoutAlign="end end">
                 <img src="https://preview.colorlib.com/theme/aroma/img/home/hero-banner.png">
-                <!-- <img src="https://preview.colorlib.com/theme/pillowmart/img/banner_pattern.png"> -->
             </div>
             <div class="slide-text" fxLayout="column" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%"
                 fxLayoutAlign="center start">
@@ -18,31 +16,41 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
                 <button mat-raised-button>Shop Now</button>
             </div>
         </div>
-    </div>
+    </div> -->
 
 
-    <!-- <div class="category">
-    <div class="cate-amazon" fxLayout="row" fxFlex.xs="588" fxFlex.sm="590px" 
-    fxFlex.md="950px" fxFlex.lg="1270px"
-        fxFlex.xl="1910px">
-        <div class="cate-img" fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%">
-            <img src="/assets/images/slider.jpg">
-        </div>
-        <div class="cate-img" fxFlex="60%" fxFlex.xs="100%" fxFlex.sm="100%" 
-         fxLayout="row">
-               <div class="two-cate" fxLayout="row" fxFlex="50%">
-                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/Desktop_QC_tile_graphic_186x116_1._SY116_CB414480869_.jpg">
-                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/Desktop_QC_tile_graphic_186x116_1._SY116_CB414480869_.jpg">
-                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/Desktop_QC_tile_graphic_186x116_1._SY116_CB414480869_.jpg">
-                    <img src="https://images-eu.ssl-images-amazon.com/images/G/31/IMG15/Irfan/Desktop_QC_tile_graphic_186x116_1._SY116_CB414480869_.jpg">
-               </div>
-               <div class="two-cate" fxLayout="column" fxFlex="50%">
-                    <img src="/assets/images/slider.jpg">
-                <img src="/assets/images/slider.jpg">
-               </div>
+    <div class="category">
+        <div class="cate-amazon" fxLayout="row"  fxLayout.xs="column" >
+            <div class="cate-img left1" fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%">
+                <h3>All Fashion</h3>
+                <p>Sitamet, consectetur adipiscing elit, sed do eiusmod tempor incidid-unt labore edolore magna
+                    aliquapendisse ultrices gravida.</p>
+                <b>Shop Now</b>
             </div>
+            <div class="cate-img" fxFlex="60%" fxFlex.xs="100%" fxFlex.sm="100%" fxLayout="row">
+                <div class="two-cate" fxLayout="column" fxFlex="50%">
+                    <div class="right1 allcate">
+                        <h3>All Fashion</h3>
+                        <b>Shop Now</b>
+                    </div>
+                    <div class="right2 allcate">
+                        <h3>All Fashion</h3>
+                        <b>Shop Now</b>
+                    </div>
+                </div>
+                <div class="two-cate" fxLayout="column" fxFlex="50%">
+                    <div class="right11 allcate">
+                        <h3>All Fashion</h3>
+                        <b>Shop Now</b>
+                    </div>
+                    <div class="right12 allcate">
+                        <h3>All Fashion</h3>
+                        <b>Shop Now</b>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</div> -->
 
 
 
@@ -105,26 +113,26 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
                             <u>₹ 2,199.00</u> ₹ 340.00
                         </div>
                         <div class="start">
-                                <div class="img" fxLayout="row">
-                                    <img
-                                        src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b>sapna</b>
+                            <div class="img" fxLayout="row">
+                                <img
+                                    src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                <b>sapna</b>
+                            </div>
+                            <div class="star">
+                                <div class="review">
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
                                 </div>
-                                <div class="star">
-                                    <div class="review">
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                    </div>
-                                    <div class="reviewd">
-                                        <p> If you will not buy it, you will miss it.</p>
-                                    </div>
+                                <div class="reviewd">
+                                    <p> If you will not buy it, you will miss it.</p>
                                 </div>
                             </div>
-                            <button class="more">View More <mat-icon>double_arrow
-                                </mat-icon></button>
+                        </div>
+                        <button class="more">View More <mat-icon>double_arrow
+                            </mat-icon></button>
                     </div>
                 </div>
 
@@ -141,26 +149,26 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
                             <u>₹ 2,199.00</u> ₹ 340.00
                         </div>
                         <div class="start">
-                                <div class="img" fxLayout="row">
-                                    <img
-                                        src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b>sapna</b>
+                            <div class="img" fxLayout="row">
+                                <img
+                                    src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                <b>sapna</b>
+                            </div>
+                            <div class="star">
+                                <div class="review">
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
                                 </div>
-                                <div class="star">
-                                    <div class="review">
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                    </div>
-                                    <div class="reviewd">
-                                        <p> If you will not buy it, you will miss it.</p>
-                                    </div>
+                                <div class="reviewd">
+                                    <p> If you will not buy it, you will miss it.</p>
                                 </div>
                             </div>
-                            <button class="more">View More <mat-icon>double_arrow
-                                </mat-icon></button>
+                        </div>
+                        <button class="more">View More <mat-icon>double_arrow
+                            </mat-icon></button>
                     </div>
                 </div>
 
@@ -177,26 +185,26 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
                             <u>₹ 2,199.00</u> ₹ 340.00
                         </div>
                         <div class="start">
-                                <div class="img" fxLayout="row">
-                                    <img
-                                        src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b>sapna</b>
+                            <div class="img" fxLayout="row">
+                                <img
+                                    src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                <b>sapna</b>
+                            </div>
+                            <div class="star">
+                                <div class="review">
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
                                 </div>
-                                <div class="star">
-                                    <div class="review">
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                    </div>
-                                    <div class="reviewd">
-                                        <p> If you will not buy it, you will miss it.</p>
-                                    </div>
+                                <div class="reviewd">
+                                    <p> If you will not buy it, you will miss it.</p>
                                 </div>
                             </div>
-                            <button class="more">View More <mat-icon>double_arrow
-                                </mat-icon></button>
+                        </div>
+                        <button class="more">View More <mat-icon>double_arrow
+                            </mat-icon></button>
                     </div>
                 </div>
 
@@ -214,26 +222,26 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
                             <u>₹ 2,199.00</u> ₹ 340.00
                         </div>
                         <div class="start">
-                                <div class="img" fxLayout="row">
-                                    <img
-                                        src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b>sapna</b>
+                            <div class="img" fxLayout="row">
+                                <img
+                                    src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                <b>sapna</b>
+                            </div>
+                            <div class="star">
+                                <div class="review">
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
                                 </div>
-                                <div class="star">
-                                    <div class="review">
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                    </div>
-                                    <div class="reviewd">
-                                        <p> If you will not buy it, you will miss it.</p>
-                                    </div>
+                                <div class="reviewd">
+                                    <p> If you will not buy it, you will miss it.</p>
                                 </div>
                             </div>
-                            <button class="more">View More <mat-icon>double_arrow
-                                </mat-icon></button>
+                        </div>
+                        <button class="more">View More <mat-icon>double_arrow
+                            </mat-icon></button>
                     </div>
                 </div>
 
@@ -250,26 +258,26 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
                             <u>₹ 2,199.00</u> ₹ 340.00
                         </div>
                         <div class="start">
-                                <div class="img" fxLayout="row">
-                                    <img
-                                        src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b>sapna</b>
+                            <div class="img" fxLayout="row">
+                                <img
+                                    src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                <b>sapna</b>
+                            </div>
+                            <div class="star">
+                                <div class="review">
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
                                 </div>
-                                <div class="star">
-                                    <div class="review">
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                    </div>
-                                    <div class="reviewd">
-                                        <p> If you will not buy it, you will miss it.</p>
-                                    </div>
+                                <div class="reviewd">
+                                    <p> If you will not buy it, you will miss it.</p>
                                 </div>
                             </div>
-                            <button class="more">View More <mat-icon>double_arrow
-                                </mat-icon></button>
+                        </div>
+                        <button class="more">View More <mat-icon>double_arrow
+                            </mat-icon></button>
                     </div>
                 </div>
 
@@ -281,31 +289,31 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
                             src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li2&o=31&a=B07NQPFTJV"
                             width="1" height="1" border="0" alt=""
                             style="border:none !important; margin:0px !important;" />
-                        <h4>Garnier Men Power  </h4>
+                        <h4>Garnier Men Power </h4>
                         <div class="price">
                             <u>₹ 2,199.00</u> ₹ 340.00
                         </div>
                         <div class="start">
-                                <div class="img" fxLayout="row">
-                                    <img
-                                        src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b>sapna</b>
+                            <div class="img" fxLayout="row">
+                                <img
+                                    src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                <b>sapna</b>
+                            </div>
+                            <div class="star">
+                                <div class="review">
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
                                 </div>
-                                <div class="star">
-                                    <div class="review">
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                    </div>
-                                    <div class="reviewd">
-                                        <p> If you will not buy it, you will miss it.</p>
-                                    </div>
+                                <div class="reviewd">
+                                    <p> If you will not buy it, you will miss it.</p>
                                 </div>
                             </div>
-                            <button class="more">View More <mat-icon>double_arrow
-                                </mat-icon></button>
+                        </div>
+                        <button class="more">View More <mat-icon>double_arrow
+                            </mat-icon></button>
                     </div>
                 </div>
 
@@ -322,26 +330,26 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
                             <u>₹ 2,199.00</u> ₹ 340.00
                         </div>
                         <div class="start">
-                                <div class="img" fxLayout="row">
-                                    <img
-                                        src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b>sapna</b>
+                            <div class="img" fxLayout="row">
+                                <img
+                                    src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                <b>sapna</b>
+                            </div>
+                            <div class="star">
+                                <div class="review">
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
                                 </div>
-                                <div class="star">
-                                    <div class="review">
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                    </div>
-                                    <div class="reviewd">
-                                        <p> If you will not buy it, you will miss it.</p>
-                                    </div>
+                                <div class="reviewd">
+                                    <p> If you will not buy it, you will miss it.</p>
                                 </div>
                             </div>
-                            <button class="more">View More <mat-icon>double_arrow
-                                </mat-icon></button>
+                        </div>
+                        <button class="more">View More <mat-icon>double_arrow
+                            </mat-icon></button>
                     </div>
                 </div>
             </div>
@@ -349,10 +357,9 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
     </div>
 
     <!----------top-deal-------------->
-    <div class="new-featured-amazon">
-        <div class="new featured-amazon" fxLayout="row" fxLayout.xs="column" 
-        fxLayout.sm="column" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px"
-            fxFlex.lg="1270px" fxFlex.xl="1910px">
+    <div class="new-featured-amazon allbanner">
+        <div class="new featured-amazon" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex.xs="588"
+            fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px" fxFlex.xl="1910px">
             <div class="img-slider" fxFlex="24%" fxFlex.xs="99%%" fxFlex.sm="99%">
                 <div class="slide1-img">
                     <h3>Up to 50% off | Like new products</h3>
@@ -400,7 +407,7 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
 
     <!----------top-deal-------------->
 
-    <div class="new-featured-amazon">
+    <div class="new-featured-amazon topdeal">
         <div class="new featured-amazon" fxLayout="column" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px"
             fxFlex.lg="1270px" fxFlex.xl="1910px">
             <div class="heading">
@@ -507,7 +514,7 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
                             src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li2&o=31&a=B07NQPFTJV"
                             width="1" height="1" border="0" alt=""
                             style="border:none !important; margin:0px !important;" />
-                        <h4>Garnier Men Power  </h4>
+                        <h4>Garnier Men Power </h4>
                         <div class="price">
                             <u>₹ 2,199.00</u> ₹ 340.00
                         </div>
@@ -525,7 +532,7 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
     </div>
 
     <!----------top-deal-------------->
-    <div class="new-featured-amazon">
+    <div class="new-featured-amazon arrive">
         <div class="new featured-amazon" fxLayout="column" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px"
             fxFlex.lg="1270px" fxFlex.xl="1910px">
             <div class="heading">
@@ -632,7 +639,7 @@ ngClass.sm="amazonhome2"  ngClass.md="amazonhome3">
                             src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li2&o=31&a=B07NQPFTJV"
                             width="1" height="1" border="0" alt=""
                             style="border:none !important; margin:0px !important;" />
-                        <h4>Garnier Men Power  </h4>
+                        <h4>Garnier Men Power </h4>
                         <div class="price">
                             <u>₹ 2,199.00</u> ₹ 340.00
                         </div>

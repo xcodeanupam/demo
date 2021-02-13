@@ -86,6 +86,70 @@
 .heading h1 span{
     border-bottom: 2px solid #4571eb;
 }
+//5cat
+.cate-amazon img {
+    width: 97%;
+     height: fit-content; 
+    margin: 8px;
+}
+.two-cate img {
+    height: 230px;
+    object-fit: cover;
+}
+.allcate {
+    background-position: center;
+    background-size: cover;
+    height: 250px ;
+    margin: 10px;
+    display: flex;
+    place-content: center;
+    align-items: start;
+    flex-direction: column;
+    padding: 0 2pc;
+}
+.left1{
+background: url('https://preview.colorlib.com/theme/ashion/img/categories/category-1.jpg');
+background-position: center;
+background-size: cover;
+height: 520px;
+margin: 10px;
+display: flex;
+place-content: center;
+align-items: start;
+flex-direction: column;
+padding: 5pc;
+}
+.right1{
+    background: url('https://preview.colorlib.com/theme/ashion/img/categories/category-2.jpg');
+}
+.right2{
+    background: url('https://preview.colorlib.com/theme/ashion/img/categories/category-3.jpg');
+  
+}
+.right11{
+    background: url('https://preview.colorlib.com/theme/ashion/img/categories/category-4.jpg');
+}
+.right12{
+    background: url('https://preview.colorlib.com/theme/ashion/img/categories/category-5.jpg');
+}
+.cate-amazon b {
+    font-size: 20px;
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    border-bottom: 1px solid #030303;
+}
+.cate-amazon h3 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 21px;
+    font-weight: 800;
+    padding: 0px;
+}
+.cate-amazon p {
+    font-family: "Open Sans", sans-serif;
+    font-size:16px;
+    font-weight: 500;
+    padding: 0px;
+}
 
 /////banner
 .slide1-img img {
@@ -129,7 +193,6 @@
 }
 .cate-amazon {
     margin: auto;
-    padding: 3pc 0;
 }
 .Product-featured {
     flex-wrap: wrap;
@@ -183,10 +246,15 @@
 .star mat-icon {
     width: auto;
     color: #ffc400;
-    font-size: 15px;
+    font-size: 11px;
     margin: 1px;
     position: relative;
     top: 5px;
+}
+.reviewd p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    letter-spacing: 0.2px;
 }
 .img {
     display: flex;
@@ -225,7 +293,41 @@ button.more mat-icon {
     left: 2px;
     top:1px;
 }
+.new-featured-amazon.topdeal {
+    padding: 2pc 0 2pc;
+}
+.new-featured-amazon.arrive {
+    padding: 2pc 0 2pc;
+}
+.new-featured-amazon.topdeal .Product-featured .Product {
+    box-shadow: none;
+}
+.new-featured-amazon.arrive .Product-featured .Product {
+    box-shadow: none;
+}
+.new-featured-amazon.arrive .heading {
+    padding-bottom: 0pc;
 
+}
+.new-featured-amazon.topdeal  .product-data
+{
+    padding: 0;
+}
+.new-featured-amazon.arrive  .product-data
+{
+    padding: 0;
+}
+.new-featured-amazon.topdeal .heading {
+    padding-bottom: 0pc;
+}
+.new-featured-amazon.arrive .Product-featured .Product {
+    width: 20%;
+    margin: 0;
+}
+.new-featured-amazon.topdeal .Product-featured .Product {
+    width: 20%;
+    margin: 0;
+}
 section.home.amazonhome1 .slide:before {
     width: 100%;
 }
@@ -272,4 +374,23 @@ section.home.amazonhome2 .slide-text {
 section.home.amazonhome2 .slide-amazon img {
     height: 100%;
     width: 92.6%;
+}
+section.home.amazonhome1 .new-featured-amazon.allbanner {
+    display: none !important;
+}
+section.home.amazonhome2 .new-featured-amazon.allbanner {
+    display: none !important;
+}
+section.home.amazonhome1 .allcate {
+    height: 200px;
+    padding: 0 1pc;
+}
+section.home.amazonhome1 .left1 {
+    padding: 1pc;
+}
+section.home.amazonhome2 .left1 {
+    padding: 1pc;
+}
+section.home.amazonhome2 .allcate {
+    padding: 0 1pc;
 }
