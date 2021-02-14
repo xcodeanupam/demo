@@ -7,7 +7,7 @@ const routes: Routes = [
   {
     path: '',
     component: HomeComponent,
-    data: { title: 'Amzon' }
+    data: { title: 'Amazon' }
   }
 ];
 @NgModule({
