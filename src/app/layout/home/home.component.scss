@@ -79,7 +79,7 @@
 }
 .heading h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 27px;
+    font-size: 23px;
     font-weight: 800;
     letter-spacing: 0.5px;
 }
@@ -91,6 +91,11 @@
     width: 97%;
      height: fit-content; 
     margin: 8px;
+}
+.cate-amazon a {
+    text-decoration: none;
+    border-bottom: 1px solid;
+    color: #454443;
 }
 .two-cate img {
     height: 230px;
@@ -105,7 +110,8 @@
     place-content: center;
     align-items: start;
     flex-direction: column;
-    padding: 0 2pc;
+    padding: 0 2pc;    border-radius: 3px;
+
 }
 .left1{
 background: url('https://preview.colorlib.com/theme/ashion/img/categories/category-1.jpg');
@@ -117,20 +123,28 @@ display: flex;
 place-content: center;
 align-items: start;
 flex-direction: column;
-padding: 5pc;
+padding: 5pc;    border-radius: 3px;
+
 }
 .right1{
-    background: url('https://preview.colorlib.com/theme/ashion/img/categories/category-2.jpg');
+    background: url(../../../assets/images/banner2.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .right2{
-    background: url('https://preview.colorlib.com/theme/ashion/img/categories/category-3.jpg');
-  
+    background: url(../../../assets/images/deal3.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .right11{
-    background: url('https://preview.colorlib.com/theme/ashion/img/categories/category-4.jpg');
+    background: url(../../../assets/images/banner4.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .right12{
-    background: url('https://preview.colorlib.com/theme/ashion/img/categories/category-5.jpg');
+    background: url(../../../assets/images/banner5.jpg);
+    background-position: center;
+    background-size: cover;
 }
 .cate-amazon b {
     font-size: 20px;
@@ -146,7 +160,7 @@ padding: 5pc;
 }
 .cate-amazon p {
     font-family: "Open Sans", sans-serif;
-    font-size:16px;
+    font-size:14px;
     font-weight: 500;
     padding: 0px;
 }
@@ -182,9 +196,8 @@ padding: 5pc;
 .img-slider {
     padding: 1%;
     margin: 0 auto;
-    box-shadow: 1px 1px 4px 1px #d7d4d4;
     border-radius: 3px;
-    padding: 23px 22px 30px;
+    padding: 0px;
 }
 ///cate-
 .new-featured-amazon {
@@ -253,8 +266,9 @@ padding: 5pc;
 }
 .reviewd p {
     font-family: "Open Sans", sans-serif;
-    font-size: 13px;
+    font-size: 12px;
     letter-spacing: 0.2px;
+    line-height: 18px;
 }
 .img {
     display: flex;
@@ -270,7 +284,7 @@ padding: 5pc;
     font-size: 14px
 }
 .start {
-    padding: 17px 0pc 12px 0pc;
+    padding: 17px 15px 12px 15px;
 }
 button {
     border: 0;
@@ -292,6 +306,68 @@ button.more mat-icon {
     position: relative;
     left: 2px;
     top:1px;
+}
+.date h6 {
+    display: flex;
+    align-items: center;
+    padding: 10px 10px 10px;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0;
+    width: 50%;
+    color: #393838;
+}
+.blog-featured h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 25px;
+    padding: 0px 10px;
+}
+.date h6 mat-icon {
+    font-size: 12px;
+    height: 10px;
+    width: 16px;
+    color: #ffac00;
+}
+.blog-featured p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 15px;
+    line-height: 23px;
+    padding: 0px 10px;
+    color: #6e6a6a;
+    /* letter-spacing: 0.2px; */
+}
+.blog-featured a {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    /* place-content: center; */
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 14px;
+    color: #283a45;
+    font-weight: 600;
+}
+.blog-featured a mat-icon {
+    position: relative;
+    animation: mymove infinite;
+    animation-duration: 6s;
+  }
+  .new-featured-amazon.arrive.blog {
+    padding-bottom: 5pc;
+}
+.new-featured-amazon.allbanner {
+    padding: 2pc 0 4pc;
+}
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 10px;}
+  }
+.blog-featured img {
+    width: 100%;
+}
+.blog-featured {
+    margin: 20px;
 }
 .new-featured-amazon.topdeal {
     padding: 2pc 0 2pc;

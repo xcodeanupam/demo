@@ -1,16 +1,19 @@
 section.amazonheader {
-    background: #0a0a0b;
-    padding: 6px;
+    padding: 10px 6px 6px 6px;
 }
 .header {
     margin: auto;
 }
 .logo {
     font-family: inter;
-    color: #fff;
-    font-weight: 800;
-    text-transform: inherit;
-    letter-spacing: 0.6px;
+    font-weight: 700;
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    letter-spacing: 0.4px;
+}
+.logo b {
+    font-size: 16px;
+    font-family: "Open Sans", sans-serif;
 }
 .menu button {
     background: transparent;
@@ -19,26 +22,37 @@ section.amazonheader {
     color: #5e5d5d;
     align-items: center;
     display: flex;
-    padding: 0pc 20px 0px;
-    border-radius: 25px 0 0px 25px;
-    font-weight: 600;
+    padding: 0pc 15px 0px;
+    font-weight: 500;
     font-family: inter;
     font-size: 13px;
     width: 100%;
     height: 47px;
     font-family: "Open Sans", sans-serif;
 }
+.search .menu button mat-icon.mat-icon.notranslate.material-icons.mat-icon-no-color {
+    position: relative;
+    padding: 0;
+    top:0px;
+    left: 10px;
+}
+.menu button span mat-icon {
+    position: relative;
+    padding: 0;
+    top: 12px;
+    left: 10px;
+    float: right;
+}
 ::ng-deep .menu button span.mat-button-wrapper{
     width: 100%;
-    padding: 0px 15px;
-  
+    font-size: 13px;
+    color: #a8a4a2;
 }
 .search {
-    padding: 10px;
+    border: 1px solid #ddd;
 }
 .menu {
     background: #ffffff;
-    border-radius: 33px 0 0 30px;
     height: 47px;
     border-right: 1px solid #ddd;
 }
@@ -48,20 +62,21 @@ section.amazonheader {
 .search input {
     width: 90%;
     height: 47px;
-    border-radius: 0 25px 25px 0px;
     border: 0;
     padding: 0px 0pc 0 2.2pc;
     height: 47px;
     position: relative;
     top: 1px;
+    font-family: "Open Sans", sans-serif;
 }
 
 .search mat-icon.mat-icon {
     position: absolute;
-    top: 0;
-    bottom: 0;
-    font-size: 17px;
-    padding:32.3px 13px 0;
+    font-size: 14px;
+    height: 47px;
+    line-height: 47px;
+    padding: 2px 0px 0 14px;
+    color: #b2aaa5 !important;
 }
 form.example-form mat-icon.mat-icon {
     color: #000;
@@ -71,6 +86,11 @@ form.example-form mat-icon.mat-icon {
 }
 :focus{
     outline: transparent;
+}
+.mat-option{
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
 }
 ::ng-deep .mat-menu-panel.menu_category {
     min-width: auto;
@@ -100,6 +120,31 @@ form.example-form mat-icon.mat-icon {
     font-size: 14px;
     height: auto;
     margin: 1px 4px;
+}
+.menus ul {
+    list-style: none;
+    display: flex;
+    float: right;
+    place-content: center;
+    align-items: center;
+    margin: 0;
+}
+.menus ul li {
+    font-size: 12px;
+    color: #6e6c6c;
+    font-family: "Open Sans", sans-serif;
+    padding: 0px 1pc;
+
+}
+.menus ul li button {
+    background: #feca0d;
+    border: 0;
+    padding: 10px 15px;
+    /* border-radius: 35px; */
+    color: #fff;
+    font-size: 13px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
 }
 .amazonheader1 .search mat-icon.mat-icon {
     padding: 3.3pc 8px 0;
