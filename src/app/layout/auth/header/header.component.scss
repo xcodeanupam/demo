@@ -134,8 +134,23 @@ form.example-form mat-icon.mat-icon {
     color: #6e6c6c;
     font-family: "Open Sans", sans-serif;
     padding: 0px 1pc;
+    cursor: pointer;
 
 }
+.menus ul li span:hover{
+    color:#fe9b3b;
+   text-decoration: underline;
+
+}
+.logo a {
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+}
+ul li span {
+    padding: 0px 5px;
+}
+
 .menus ul li button {
     background: #feca0d;
     border: 0;
@@ -145,6 +160,10 @@ form.example-form mat-icon.mat-icon {
     font-size: 13px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
+    cursor: pointer;
+    border-radius: 4px;
+
+
 }
 .amazonheader1 .search mat-icon.mat-icon {
     padding: 3.3pc 8px 0;

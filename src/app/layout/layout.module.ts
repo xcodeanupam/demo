@@ -12,11 +12,14 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
+import { LoginComponent } from './login/login.component';
+import { RegisterComponent } from './register/register.component';
+import { WriteReviewComponent } from './write-review/write-review.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, FooterComponent],
+  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent, RegisterComponent, WriteReviewComponent],
   imports: [
     CommonModule,
     layoutRoutingModule,FlexLayoutModule,MatAutocompleteModule,MatFormFieldModule,MatInputModule,
