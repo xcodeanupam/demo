@@ -97,6 +97,10 @@
     border-bottom: 1px solid;
     color: #454443;
 }
+.cate-amazon a:hover {
+    color: #d50890 !important;
+}
+
 .two-cate img {
     height: 230px;
     object-fit: cover;
@@ -200,6 +204,14 @@ padding: 5pc;    border-radius: 3px;
     padding: 0px;
 }
 ///cate-
+button.more mat-icon {
+    animation: mymoved infinite;
+    animation-duration: 6s;
+}
+@keyframes mymoved {
+    from {left: 0px;}
+    to {left: 6px;}
+  }
 .new-featured-amazon {
     margin: auto;
     padding: 5pc 0 2pc;
@@ -297,7 +309,11 @@ button {
     font-size: 12px;
     letter-spacing: 0.5px;
     display: flex;
+    cursor: pointer;
     align-items: center;
+}
+button.more:hover {
+    background: #f89468;
 }
 button.more mat-icon {
     font-size: 12px;
@@ -352,7 +368,7 @@ button.more mat-icon {
     position: relative;
     animation: mymove infinite;
     animation-duration: 6s;
-  }
+}
   .new-featured-amazon.arrive.blog {
     padding-bottom: 5pc;
 }

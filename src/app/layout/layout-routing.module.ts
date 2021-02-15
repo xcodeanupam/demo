@@ -5,6 +5,9 @@ import { HomeComponent } from './home/home.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { WriteReviewComponent } from './write-review/write-review.component';
+import { CategoryComponent } from './category/category.component';
+import { FullViewComponent } from './full-view/full-view.component';
+
 const routes: Routes = [
   {
     path: '',
@@ -26,6 +29,19 @@ const routes: Routes = [
     component: WriteReviewComponent,
     data: { title: 'Amazon' }
   }, 
+  {
+    path: 'category',
+    component: CategoryComponent,
+    data: { title: 'Amazon' }
+  }, 
+  {
+    path: 'view-product',
+    component: FullViewComponent,
+    data: { title: 'Amazon' }
+  }, 
+  
+
+  
 ];
 @NgModule({
   imports: [RouterModule.forChild(routes)],
