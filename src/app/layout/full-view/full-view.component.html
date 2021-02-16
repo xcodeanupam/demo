@@ -1,12 +1,11 @@
-<app-header></app-header>
 <section class="home" fxLayout="column" ngClass.xs="amazonhome1" ngClass.sm="amazonhome2" ngClass.md="amazonhome3">
     <!----top-line-->
     <div class="category-amazon" fxLayout="row">
         <div class="top-line">
             <div class="single-line" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px"
                 fxFlex.xl="1910px">
-                <b>Home</b>
-                <mat-icon>keyboard_arrow_right</mat-icon> <b><a>Fashion</a></b>
+                <b  class="home"  routerLink="/">Home</b>
+                <mat-icon>keyboard_arrow_right</mat-icon> <b  class="home"  routerLink="/category"><a>Fashion</a></b>
                 <mat-icon>keyboard_arrow_right</mat-icon> <b><a>Fashion</a></b>
             </div>
         </div>
@@ -130,5 +129,3 @@
         </div>
     </div>
 </section>
-
-<app-footer></app-footer>

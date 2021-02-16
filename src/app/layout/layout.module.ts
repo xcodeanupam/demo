@@ -18,15 +18,18 @@ import { WriteReviewComponent } from './write-review/write-review.component';
 import { CategoryComponent } from './category/category.component';
 import {MatPaginatorModule} from '@angular/material/paginator';
 import { FullViewComponent } from './full-view/full-view.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import { WebLayoutComponent } from './web-layout/web-layout.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent, RegisterComponent, WriteReviewComponent, CategoryComponent, FullViewComponent],
+  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent, RegisterComponent, WriteReviewComponent, CategoryComponent, FullViewComponent, WebLayoutComponent],
   imports: [
     CommonModule,
     layoutRoutingModule,FlexLayoutModule,MatAutocompleteModule,MatFormFieldModule,MatInputModule,
-    FormsModule,ReactiveFormsModule,MatIconModule,MatMenuModule,MatButtonModule,MatPaginatorModule,
+    FormsModule,ReactiveFormsModule,MatIconModule,MatMenuModule,MatButtonModule,
+    MatSidenavModule,MatPaginatorModule,
   ]
 })
 export class LayoutModule { }

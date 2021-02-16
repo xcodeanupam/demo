@@ -1,11 +1,9 @@
 
 //   <!----top-line-->
 .category-amazon{
-    margin: 10px auto 2pc;
-    background: #000;
+    margin: 10px auto 0pc;
     width: 100%;
     height: 55px;
-    color: #fff;
 }
 .top-line {
     margin: 0 auto;
@@ -13,17 +11,24 @@
 .single-line {
     display: flex;
     align-items: center;
+    padding: 0px 1pc;
+
 }
 .single-line b {
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     font-size: 12px;
+    color: #5e5e5e;
+
 }
 .single-line mat-icon {
     font-size: 15px;
     height: auto;
     width: 25px;
     text-align: center;
+    color: #5e5e5e;
+    position: relative;
+    top: 1px;
 }
 .category {
     margin: 0 auto;
@@ -83,12 +88,12 @@
 .addto-cart button {
     border: 0;
     background: #4571eb;
-    padding: 13px 2pc 13px;
+    padding: 12px 2pc 12px;
     border-radius: 27px;
     color: #fff;
     font-family: "Open Sans", sans-serif;
     margin: 14px 13px 15px;
-    font-size: 13px;
+    font-size: 12px;
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -160,6 +165,9 @@
 .text {
     padding: 0px 1.5pc;
 }
+.single-line .home{
+    cursor: pointer;
+}
 .price-cart {
     padding: 0px 1.5pc;
 }
@@ -187,4 +195,21 @@
 
 section.home.amazonhome1 .text{
     padding: 0;
+}
+section.home.amazonhome1 .addto-cart button {
+    padding: 12px 1.6pc 12px;
+    margin: 14px 5px 15px;
+}
+section.home.amazonhome2 .addto-cart button {
+    padding: 12px 1.6pc 12px;
+    margin: 14px 5px 15px;
+}
+section.home.amazonhome1 .top-line {
+    width: 90%;
+}
+section.home.amazonhome2 .top-line {
+    width: 90%;
+}
+section.home.amazonhome1  .single-line {
+    padding: 0px 0pc;
 }

@@ -1,11 +1,10 @@
-<app-header></app-header>
 <section class="home" fxLayout="column" ngClass.xs="amazonhome1" ngClass.sm="amazonhome2" ngClass.md="amazonhome3">
     <!----top-line-->
     <div class="category-amazon" fxLayout="row">
         <div class="top-line">
             <div class="single-line" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px"
                 fxFlex.xl="1910px">
-                <b>Home</b>
+                <b class="home" routerLink="/">Home</b>
                 <mat-icon>keyboard_arrow_right</mat-icon> <b><a>Fashion</a></b>
             </div>
         </div>
@@ -19,7 +18,7 @@
                     <div class="text">
                         <h3>New Apple iPhone 12 (64GB) - Blue</h3>
                         <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
-                            <div class="price" >
+                            <div class="price">
                                 <u> ₹84,900 </u> ₹84,889
                             </div>
                             <div class="star" fxLayout="row">
@@ -162,7 +161,7 @@
                     <div class="text">
                         <h3>New Apple iPhone 12 (64GB) - Blue</h3>
                         <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
-                            <div class="price" >
+                            <div class="price">
                                 <u> ₹84,900 </u> ₹84,889
                             </div>
                             <div class="star" fxLayout="row">
@@ -230,12 +229,10 @@
                 </div>
 
             </div>
-            <!-- <div class="paginatiion">
-                    <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]">
-                        </mat-paginator>
-            </div> -->
+            <div class="paginatiion">
+                <mat-paginator [length]="100" [pageSize]="10" [pageSizeOptions]="[5, 10, 25, 100]">
+                </mat-paginator>
+            </div>
         </div>
     </div>
 </section>
-
-<app-footer></app-footer>

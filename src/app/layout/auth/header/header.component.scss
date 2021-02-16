@@ -1,5 +1,7 @@
 section.amazonheader {
-    padding: 10px 6px 6px 6px;
+    padding: 10px 6px 11px 6px;
+    background: linear-gradient(45deg, #c4efe4, #bce2d0);
+
 }
 .header {
     margin: auto;
@@ -16,7 +18,7 @@ section.amazonheader {
     font-family: "Open Sans", sans-serif;
 }
 .menu button {
-    background: transparent;
+    background: white;
     border: 0;
     text-align: start;
     color: #5e5d5d;
@@ -29,6 +31,7 @@ section.amazonheader {
     width: 100%;
     height: 47px;
     font-family: "Open Sans", sans-serif;
+    border-radius: 40px 0 0 40px;
 }
 .search .menu button mat-icon.mat-icon.notranslate.material-icons.mat-icon-no-color {
     position: relative;
@@ -50,20 +53,27 @@ section.amazonheader {
 }
 .search {
     border: 1px solid #ddd;
+    background: #ffffff;
+    border-radius: 40px ;
+
 }
 .menu {
     background: #ffffff;
     height: 47px;
     border-right: 1px solid #ddd;
+    border-radius: 40px 0px 0px 40px;
+
 }
 .search form{
     height: 47px;
+    display: flex;
+
 }
 .search input {
     width: 90%;
     height: 47px;
     border: 0;
-    padding: 0px 0pc 0 2.2pc;
+    padding: 0px 0pc 0 1pc;
     height: 47px;
     position: relative;
     top: 1px;
@@ -71,11 +81,11 @@ section.amazonheader {
 }
 
 .search mat-icon.mat-icon {
-    position: absolute;
+    
     font-size: 14px;
     height: 47px;
     line-height: 47px;
-    padding: 2px 0px 0 14px;
+    padding: 0px 1px;
     color: #b2aaa5 !important;
 }
 form.example-form mat-icon.mat-icon {
@@ -131,10 +141,11 @@ form.example-form mat-icon.mat-icon {
 }
 .menus ul li {
     font-size: 12px;
-    color: #6e6c6c;
+    color: #5e5757;
     font-family: "Open Sans", sans-serif;
     padding: 0px 1pc;
     cursor: pointer;
+    font-weight: 600;
 
 }
 .menus ul li span:hover{
@@ -166,5 +177,118 @@ ul li span {
 
 }
 .amazonheader1 .search mat-icon.mat-icon {
-    padding: 3.3pc 8px 0;
+      padding: 0 10px;
+}
+
+
+//sidenav
+.mobile-view section.amazonheader{
+    padding: 0;
+}
+.mobile-haeder .logo-review{
+      width: 100%;
+  }
+.mobile-haeder .search{
+    width: 90%;
+    margin: 5px auto 0;
+    background: #fff;
+}
+.mobile-haeder .search input {
+    width: 89%;
+    border-radius: 0px 5px 5px 0;
+
+}
+.mobile-haeder .menus ul li {
+    padding: 0px 0pc;
+}
+.top-head {
+    background: linear-gradient(45deg, #c4efe4, #bce2d0);
+    padding:0.5pc 0 0.5pc;
+}
+.menus ul li img {
+    width: 34px;
+    margin: 0px 10px;
+}
+.cate-sidenav button {
+    font-size: 13px;
+    text-align: start;
+    border: 0;
+    font-family: "Open Sans", sans-serif;
+    height: 35px;
+    line-height: 35px;
+    display: flex;
+    /* place-content: center; */
+    align-items: center;
+}
+.cate-sidenav button mat-icon {
+    font-size: 15px;
+    height: auto;
+}
+.mobile-haeder .search {
+    border-radius: 5px;
+}
+::ng-deep .mobile-haeder mat-drawer-container.mat-drawer-container.mat-drawer-transition.mat-drawer-container-has-open mat-drawer-content.mat-drawer-content {
+    height: 100vh;
+}
+::ng-deep .layoutheader-mobile mat-drawer-content.mat-drawer-content {
+    overflow: hidden;
+}
+
+::ng-deep .mobile-haeder mat-drawer-container.mat-drawer-container.example-container {
+    width: 100%;
+}
+.example-sidenav-content {
+    flex-direction: column;
+}
+section.amazonheader.amazonheader2 .mobile-haeder .search{
+    width: 100%;
+}
+section.amazonheader.amazonheader2 .top-head {
+    padding:0.5pc 1pc;
+}
+section.amazonheader.amazonheader2 .mobile-haeder .search input {
+    width: 96%;
+    border-radius: 0px 5px 5px 0;
+
+}
+
+section.amazonheader.amazonheader3 .menus ul li button {
+    padding: 10px 10px;
+}
+section.amazonheader.amazonheader3 .menus ul li {
+    padding: 0px 0.4pc;
+}
+
+.mobile-haeder .search mat-icon.mat-icon {
+    padding: 0px 0px 0 11px;
+    top: 2px;
+    position: relative;
+}
+.mobile-haeder .search input {
+    padding: 0px 0pc 0 0pc;
+}
+.logo img{
+    width: 60%;
+}
+.amazonheader1 .logo img {
+    width: 90%;
+}
+.amazonheader2 .logo img {
+    width: 30%;
+}
+.mobile-haeder .menus {
+    place-content: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (min-width: 220px) and (max-width: 400px) {
+ .logo img {
+    width:75% !important;
+}
+}
+.amazonheader1 .logo img {
+width: 55%;
+display: block;
+margin: 0 auto;
 }

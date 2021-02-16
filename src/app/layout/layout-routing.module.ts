@@ -7,8 +7,12 @@ import { RegisterComponent } from './register/register.component';
 import { WriteReviewComponent } from './write-review/write-review.component';
 import { CategoryComponent } from './category/category.component';
 import { FullViewComponent } from './full-view/full-view.component';
+import { WebLayoutComponent } from './web-layout/web-layout.component';
 
 const routes: Routes = [
+  {
+    path: '', component: WebLayoutComponent,
+    children: [
   {
     path: '',
     component: HomeComponent,
@@ -38,7 +42,9 @@ const routes: Routes = [
     path: 'view-product',
     component: FullViewComponent,
     data: { title: 'Amazon' }
-  }, 
+  },
+    ] 
+}, 
   
 
   
