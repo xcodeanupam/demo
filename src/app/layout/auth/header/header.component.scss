@@ -274,6 +274,10 @@ section.amazonheader.amazonheader3 .menus ul li {
 .amazonheader2 .logo img {
     width: 30%;
 }
+section.amazonheader.amazonheader3 .menus ul {
+    float: left;
+    padding: 0;
+}
 .mobile-haeder .menus {
     place-content: flex-end;
     display: flex;

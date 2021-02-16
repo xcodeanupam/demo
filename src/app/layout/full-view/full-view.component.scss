@@ -5,9 +5,7 @@
     width: 100%;
     height: 55px;
 }
-section.home {
-    height: 100vh;
-}
+
 .top-line {
     margin: 0 auto;
 }
@@ -52,8 +50,8 @@ section.home {
 }
 .text ul li {
     font-family: "Open Sans", sans-serif;
-    font-size: 13px;
-    padding: 5px 0;
+    font-size: 12px;
+    padding: 4px 0;
 }
 .price {
     padding: 4px 10px 4px 0px;
@@ -79,7 +77,7 @@ section.home {
 }
 .product {
     box-shadow: 1px 1px 6px 0px #ddd;
-    padding: 2pc 2pc 2pc;
+    padding: 2pc 2pc 0.5pc;
     border-radius: 6px;
     background: #fff;
 
@@ -154,7 +152,8 @@ section.home {
 }
 .img {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+    place-content: flex-start;
 }
 .start .img img {
     width: 20px;
@@ -194,8 +193,31 @@ section.home {
     height: auto;
     width: 20px;
 }
+.item-ad .heading {
+    display: flex;
+}
+.item-ad .heading b {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    width: 30%;
 
-
+}
+.item-ad {
+    padding: 15px 0 6px;
+    border-bottom: 1px solid #e9e9e9;
+}
+.item-ad .heading {
+    display: flex;
+    height: 30px;
+    line-height: 30px;
+}
+.item-ad .heading p {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 300;
+    color: #7e7e7e;
+}
 section.home.amazonhome1 .text{
     padding: 0;
 }
