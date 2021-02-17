@@ -3,8 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "nodemon server.js",
+    "build": "ng build --prod --aot --outputPath=dist",
+    "dev": "concurrently -c \"yellow.bold,green.bold\" -n \"SERVER,BUILD\" \"nodemon server\" \"ng build --watch --outputPath=dist\"",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
