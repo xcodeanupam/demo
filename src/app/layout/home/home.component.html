@@ -22,7 +22,7 @@
         <div class="cate-amazon" fxLayout="row" fxLayout.xs="column">
             <div class="cate-img left1" fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%">
                 <h3>All Fashion</h3>
-                <p>Purchase Women's Clothes handpicked by style <br/>specialists on the Amazon</p>
+                <p>Purchase Women's Clothes handpicked by style <br />specialists on the Amazon</p>
                 <a target="_blank"
                     href="https://www.amazon.in/gp/bestsellers/apparel?_encoding=UTF8&linkCode=ib1&tag=stackasian-21&linkId=07d4225b3d4856f46549a58179aecedf&ref_=ihub_curatedcontent_c71318f9-d59d-4bc1-bc5a-6fdf0c0257fc">
                     Shop Now</a>
@@ -30,14 +30,14 @@
             <div class="cate-img" fxFlex="60%" fxFlex.xs="100%" fxFlex.sm="100%" fxLayout="row">
                 <div class="two-cate" fxLayout="column" fxFlex="50%" fxFlex.sm="100%">
                     <div class="right1 allcate">
-                        <h3>Best Ofiice <br/>Products</h3>
+                        <h3>Best Ofiice <br />Products</h3>
                         <a target="_blank"
                             href="https://www.amazon.in/gp/bestsellers/office?_encoding=UTF8&linkCode=ib1&tag=stackasian-21&linkId=8c9232753a401575bd7eb7e03d504128&ref_=ihub_curatedcontent_8f708d9a-64ce-4bed-85b7-94f94d716dc2">
                             Shop Now</a>
                         <!-- <b>Shop Now</b> -->
                     </div>
                     <div class="right2 allcate">
-                        <h3> Best Electronics<br/> Products </h3>
+                        <h3> Best Electronics<br /> Products </h3>
                         <a target="_blank"
                             href="https://www.amazon.in/gp/bestsellers/electronics?_encoding=UTF8&linkCode=ib1&tag=stackasian-21&linkId=8daf83ed68c42f86005af4cca04a3788&ref_=ihub_curatedcontent_77c1e3ed-d73a-4007-95f7-f90c6eda3fb5">
                             Shop Now</a>
@@ -45,13 +45,13 @@
                 </div>
                 <div class="two-cate lastline" fxLayout="column" fxFlex="50%" fxFlex.sm="00%">
                     <div class="right11 allcate">
-                        <h3>Offer in <br/>Home & Kitchen</h3>
+                        <h3>Offer in <br />Home & Kitchen</h3>
                         <a target="_blank"
                             href="https://www.amazon.in/gp/bestsellers/kitchen?_encoding=UTF8&linkCode=ib1&tag=stackasian-21&linkId=61408a008c1d530fac8b38051ba6500c&ref_=ihub_curatedcontent_2e530050-9472-4d77-97b5-c487432167c5">Shop
                             Now</a>
                     </div>
                     <div class="right12 allcate">
-                        <h3>Best Sellers in <br/>Beauty</h3>
+                        <h3>Best Sellers in <br />Beauty</h3>
                         <a target="_blank"
                             href="https://www.amazon.in/gp/bestsellers/beauty?_encoding=UTF8&linkCode=ib1&tag=stackasian-21&linkId=ede907e959a7eb028b0c4d7b8397c252&ref_=ihub_curatedcontent_e7b9e653-4711-4332-ae1a-8e2c3724cc74">Shop
                             Now</a>
@@ -407,7 +407,7 @@
                     <div class="slide1-img">
                         <div class="slide1-img">
                             <img src="/assets/images/off4.jpg">
-                           
+
                         </div>
                     </div>
                 </div>
@@ -676,6 +676,17 @@
                 <p>From The Blog</p>
                 <h1>Our <span>Blog</span></h1>
             </div>
+
+
+            <mat-carousel timings="250ms ease-in" [autoplay]="true" color="accent" maxWidth="auto" [loop]="true"
+                [hideArrows]="false" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="false"
+                orientation="ltr">
+                <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index">
+                    <img src={{slide.image}} />
+
+                </mat-carousel-slide>
+            </mat-carousel>
+
             <div class="blog-data" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
                 <div class="blog-featured" fxLayout="column">
                     <img src="https://preview.colorlib.com/theme/ashion/img/discount.jpg">
@@ -688,15 +699,17 @@
                         </h6>
                     </div>
                     <h1> Amazon Fashion Shopping</h1>
-                    <p> Upto 60% off - Top Brands - Jackets, Shirts, Dresses &  formal wear, western wear, nightwear and lingerie.
-                        Get addition discounts on Slected cards.    
+                    <p> Upto 60% off - Top Brands - Jackets, Shirts, Dresses & formal wear, western wear, nightwear and
+                        lingerie.
+                        Get addition discounts on Slected cards.
                         Buy now! Easy & Fast Delivery. No Cost EMI Available. Best Deals.</p>
 
-                        <a target="_blank"
+                    <a target="_blank"
                         href="https://www.amazon.in/gp/bestsellers/apparel?_encoding=UTF8&linkCode=ib1&tag=stackasian-21&linkId=07d4225b3d4856f46549a58179aecedf&ref_=ihub_curatedcontent_c71318f9-d59d-4bc1-bc5a-6fdf0c0257fc">
-                       Read More
+                        Read More
                         <mat-icon>arrow_right_alt
-                        </mat-icon></a>
+                        </mat-icon>
+                    </a>
 
                 </div>
                 <div class="blog-featured" fxLayout="column">
@@ -709,9 +722,25 @@
                             <mat-icon>date_range</mat-icon>May 4,2019
                         </h6>
                     </div>
-                    <h1>The Richland Center Shooping News and weekly shooper</h1>
-                    <p>Let one fifth i bring fly to divided face for bearing divide unto seed. Winged divided light
-                        Forth.</p>
+                    <h1>Sony WF-XB700 Truly Wireless Extra Bass Bluetooth Earbuds with 18 Hours Battery Life, True Wireless Earbuds with Mic for Phone Calls, Quick Charge, BT Ver 5.0 (Black)
+                    </h1>
+                    <p>Additional Bass: WF-XB700 includes EXTRA BASS for genuinely ground-breaking, punchy low-end sound. Your most loved basslines never sounded so great with 12mm driver unit 
+
+                        Water Resistant: With an IPX4 water opposition rating, sprinkles and sweat will not stop these earphones, so you can continue moving to the music 
+                        
+                        Battery Life: Enjoy as long as 18 hours of tuning in (9hrs Earbuds + 9hrs Carrying Case), in case you're in a rush, 10 minutes' fast energizing offers you to an hour of music playback 
+                        
+                        Simple Operations: The catches on the earphones allows you to play, stop, skirt through tracks and change the volume 
+                        
+                        Ergonomic Tri-hold structure: The WF-XB700 earbuds are ergonomically intended to contact three distinct focuses on your ear for a protected, agreeable fit 
+                        
+                        Attractive Charging Case: The smaller charging case secures your WF-XB700 earbuds and allows you to control up in a hurry 
+                        
+                        Stable Connection/Low Latency: A BT chip that sends sound to one side and right ears at the same time, combined with streamlined reception apparatus plan. Low sound inactivity makes for pleasant video seeing as well 
+                        
+                        Inherent Mic: Conversation streams uninhibitedly with simple sans hands calling, because of the underlying receiver. No compelling reason to try and take your telephone from your pocket 
+                        
+                        Google Assistant/Siri: A straightforward catch press interfaces you to your cell phone's Voice Assistant to get headings, play music and speak with contacts.</p>
                     <a>Read More <mat-icon>arrow_right_alt
                         </mat-icon></a>
                 </div>
@@ -733,37 +762,5 @@
                 </div>
             </div>
         </div>
-
-
-        <!-- <div  class="slider-home-page-multiple">
-                <ngu-carousel #myCarousel [inputs]="carouselConfig" [dataSource]="[first, second, third]">
-                        <div *nguCarouselDef="let item;" class="item">
-                            <div class="tile">
-                                <ng-container *ngTemplateOutlet="item"></ng-container>
-                            </div>
-                        </div>
-                    
-                        <ng-template #first>
-                            <p>First</p>
-                        </ng-template>
-                    
-                        <ng-template #second>
-                            <p>Second</p>
-                        </ng-template>
-                    
-                        <ng-template #third>
-                            <p>Third</p>
-                        </ng-template>
-                    
-                        <button NguCarouselNext class="rightRs">></button>
-                        <button NguCarouselPrev class="leftRs"><</button>
-                        <ul class="myPoint" NguCarouselPoint>
-                            <li *ngFor="let j of myCarousel.pointNumbers; let j = index" [class.active]="j==myCarousel.activePoint" (click)="myCarousel.moveTo(j)"></li>
-                        </ul>
-                    </ngu-carousel>
-              </div> -->
-
-
     </div>
 </section>
-

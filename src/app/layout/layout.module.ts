@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home/home.component';
 import { layoutRoutingModule } from './layout-routing.module';
@@ -20,6 +20,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
 import { FullViewComponent } from './full-view/full-view.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { WebLayoutComponent } from './web-layout/web-layout.component';
+import { MatCarouselModule } from '@ngbmodule/material-carousel';
 
 
 
@@ -28,8 +29,9 @@ import { WebLayoutComponent } from './web-layout/web-layout.component';
   imports: [
     CommonModule,
     layoutRoutingModule,FlexLayoutModule,MatAutocompleteModule,MatFormFieldModule,MatInputModule,
-    FormsModule,ReactiveFormsModule,MatIconModule,MatMenuModule,MatButtonModule,
+    FormsModule,ReactiveFormsModule,MatIconModule,MatMenuModule,MatButtonModule,MatCarouselModule,
     MatSidenavModule,MatPaginatorModule,
-  ]
+  ],
+  schemas:[CUSTOM_ELEMENTS_SCHEMA]
 })
 export class LayoutModule { }
