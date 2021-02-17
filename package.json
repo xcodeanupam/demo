@@ -26,6 +26,7 @@
     "@angular/service-worker": "~11.2.0",
     "@ngbmodule/material-carousel": "^0.7.1",
     "@ngu/carousel": "^3.0.2",
+    "async": "^3.2.0",
     "base64url": "^3.0.1",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
