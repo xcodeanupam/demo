@@ -4,9 +4,10 @@ var CategoryProductSchema = new mongoose.Schema({
     categoryName: {type:String},
     productName: {type: String},
     image: { type: String},
-    description: { type: String, default: 1 },
-    review: [{
-        username: '',
+    allRatings: {type: String, default:'9/10'},
+    description: { type: String, default: '' },
+    reviews: [{
+        userName: '',
         userImage:'',
         review:'',
         rating:''
@@ -21,6 +22,6 @@ var CategoryProductSchema = new mongoose.Schema({
     ]
 }, { timestamps: true });
 
-var Categoryproducts = mongoose.model('categoryproducts', CategoryProductSchema);
+var Categoryproduct = mongoose.model('categoryproducts', CategoryProductSchema);
 
-module.exports = Categoryproducts;
+module.exports = Categoryproduct;
