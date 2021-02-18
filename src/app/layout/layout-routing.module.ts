@@ -34,7 +34,7 @@ const routes: Routes = [
     data: { title: 'Amazon' }
   }, 
   {
-    path: 'category',
+    path: 'category/:categoryname',
     component: CategoryComponent,
     data: { title: 'Amazon' }
   }, 

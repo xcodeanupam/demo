@@ -21,6 +21,9 @@ import { FullViewComponent } from './full-view/full-view.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import { WebLayoutComponent } from './web-layout/web-layout.component';
 import { MatCarouselModule } from '@ngbmodule/material-carousel';
+import { UserService } from '../core/user/user.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ApiService } from '../core/user/api.service';
 
 
 
@@ -30,8 +33,9 @@ import { MatCarouselModule } from '@ngbmodule/material-carousel';
     CommonModule,
     layoutRoutingModule,FlexLayoutModule,MatAutocompleteModule,MatFormFieldModule,MatInputModule,
     FormsModule,ReactiveFormsModule,MatIconModule,MatMenuModule,MatButtonModule,MatCarouselModule,
-    MatSidenavModule,MatPaginatorModule,
+    MatSidenavModule,MatPaginatorModule, HttpClientModule
   ],
-  schemas:[CUSTOM_ELEMENTS_SCHEMA]
+  schemas:[CUSTOM_ELEMENTS_SCHEMA],
+  providers:[UserService, ApiService]
 })
 export class LayoutModule { }

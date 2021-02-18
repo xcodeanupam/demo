@@ -23,14 +23,17 @@ export class UserService {
       }));
   }
 
-
-  gettestBycategory(data): Observable<any> {
+  getProductsByCategory(cat: any): Observable<any> {
+  
     var reqHeader = new HttpHeaders({
-      'Content-Type': 'application/json',
+      'Content-Type': 'application/json'
     });
 
-    console.log(data)
-    return this.httpClient.post(`https://blogs-daily.herokuapp.com/api/alltest/testbycategory`, { "categoryname": data }, { headers: reqHeader })
+    let data = {
+      "categoryName": cat
+          }
+
+    return this.httpClient.post(`https://reviews-stackasian.herokuapp.com/api/categoryproducts/getCategoryProducts`, data, { headers: reqHeader })
       .pipe(map((data: any) => {
         return data;
       }));
@@ -53,7 +56,7 @@ export class UserService {
   }
 
 
-  gettestQuestions(question, testname) {
+  gettestQuestions(question: string, testname: string) {
     var reqHeader = new HttpHeaders({
       'Content-Type': 'application/json'
     });
@@ -69,7 +72,7 @@ export class UserService {
       }));
   }
 
-  getResult(result_id) {
+  getResult(result_id: string) {
     var reqHeader = new HttpHeaders({
       'Content-Type': 'application/json'
     });
@@ -92,7 +95,7 @@ export class UserService {
       }));
   }
 
-  startTest(testname, resultId, right, wrong, onques ) {
+  startTest(testname: string, resultId: string, right: string, wrong: string, onques:string ) {
     var reqHeader = new HttpHeaders({
       'Content-Type': 'application/json'
     });
@@ -112,42 +115,9 @@ export class UserService {
   }
 
 
-  addAnswer(testname, result_id, istrue, answer,  questionnumber){
-    var reqHeader = new HttpHeaders({
-      'Content-Type': 'application/json'
-    });
-
-    let data = {
-      "testname": testname,
-      "result_id": result_id,
-      "answer": answer,
-      "correct": istrue,
-      "onquestion": questionnumber
-    }
-
-    return this.httpClient.post(`https://blogs-daily.herokuapp.com/api/answers/add`, data, { headers: reqHeader })
-      .pipe(map((data: any) => {
-        return data;
-      }));
-  }
+ 
 
 
-  updateTest(testname, resultId, right, wrong) {
-    var reqHeader = new HttpHeaders({
-      'Content-Type': 'application/json'
-    });
 
-    let data = {
-      "testname": testname,
-      "result_id": resultId,
-      "right": right,
-      "wrong": wrong,
-    }
-
-    return this.httpClient.post(`https://blogs-daily.herokuapp.com/api/results/starttest`, data, { headers: reqHeader })
-      .pipe(map((data: any) => {
-        return data;
-      }));
-  }
 
 }
