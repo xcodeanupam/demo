@@ -7,6 +7,7 @@ router.use('/alltest', require('./alltest'));
 router.use('/questions', require('./questions'));
 router.use('/results', require('./results'));
 router.use('/categoryproducts', require('./categoryproducts'));
+router.use('/blogs', require('./blog'));
 
 
 module.exports = router;
