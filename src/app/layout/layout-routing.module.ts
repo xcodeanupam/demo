@@ -9,6 +9,8 @@ import { CategoryComponent } from './category/category.component';
 import { FullViewComponent } from './full-view/full-view.component';
 import { WebLayoutComponent } from './web-layout/web-layout.component';
 import { BlogComponent } from './blog/blog.component';
+import { BlogTwoComponent } from './blog-two/blog-two.component';
+import { BlogThreeComponent } from './blog-three/blog-three.component';
 
 const routes: Routes = [
   {
@@ -42,6 +44,17 @@ const routes: Routes = [
   {
     path: 'blog/:title',
     component: BlogComponent,
+    data: { title: 'Amazon' }
+  }, 
+  {
+    path: 'blog-two/:title',
+    component: BlogTwoComponent,
+    data: { title: 'Amazon' }
+  }, 
+
+  {
+    path: 'blog-three/:title',
+    component: BlogThreeComponent,
     data: { title: 'Amazon' }
   }, 
   {

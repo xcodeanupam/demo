@@ -25,7 +25,7 @@ export class BlogComponent implements OnInit {
   getAblog() {
     this.userService.getBlog(this.title).subscribe(
       (data: any) => {
-        this.blog = data;
+        this.blog = data[0];
         console.log('blog data', data)
       },
       error => {

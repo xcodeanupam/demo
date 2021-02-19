@@ -25,11 +25,13 @@ import { UserService } from '../core/user/user.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from '../core/user/api.service';
 import { BlogComponent } from './blog/blog.component';
+import { BlogTwoComponent } from './blog-two/blog-two.component';
+import { BlogThreeComponent } from './blog-three/blog-three.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent, RegisterComponent, WriteReviewComponent, CategoryComponent, FullViewComponent, WebLayoutComponent, BlogComponent],
+  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent, RegisterComponent, WriteReviewComponent, CategoryComponent, FullViewComponent, WebLayoutComponent, BlogComponent, BlogTwoComponent, BlogThreeComponent],
   imports: [
     CommonModule,
     layoutRoutingModule,FlexLayoutModule,MatAutocompleteModule,MatFormFieldModule,MatInputModule,
