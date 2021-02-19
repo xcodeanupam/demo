@@ -24,14 +24,14 @@ export class UserService {
   }
 
   getProductsByCategory(cat: any): Observable<any> {
-  
+
     var reqHeader = new HttpHeaders({
       'Content-Type': 'application/json'
     });
 
     let data = {
       "categoryName": cat
-          }
+    }
 
     return this.httpClient.post(`https://reviews-stackasian.herokuapp.com/api/categoryproducts/getCategoryProducts`, data, { headers: reqHeader })
       .pipe(map((data: any) => {
@@ -40,10 +40,28 @@ export class UserService {
   }
 
 
+  getBlog(cat: any): Observable<any> {
+
+    var reqHeader = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+
+    let data = {
+      "title": cat
+    }
+
+    return this.httpClient.post(`https://reviews-stackasian.herokuapp.com/api/blogs/getBlog`, data, { headers: reqHeader })
+      .pipe(map((data: any) => {
+        return data;
+      }));
+  }
+
+
+
   getTableData(): Observable<any> {
     var reqHeader = new HttpHeaders({
       'Access-Control-Allow-Origin': "*",
-      'Access-Control-Allow-Methods':'GET',
+      'Access-Control-Allow-Methods': 'GET',
       'Content-Type': 'application/json',
       'Bearer': 'szdp79a2kz4wh4frjzuqu4sz6qeth8m3',
     });
@@ -95,7 +113,7 @@ export class UserService {
       }));
   }
 
-  startTest(testname: string, resultId: string, right: string, wrong: string, onques:string ) {
+  startTest(testname: string, resultId: string, right: string, wrong: string, onques: string) {
     var reqHeader = new HttpHeaders({
       'Content-Type': 'application/json'
     });
@@ -115,7 +133,7 @@ export class UserService {
   }
 
 
- 
+
 
 
 

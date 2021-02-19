@@ -16,7 +16,7 @@ router.post('/add', (req, res) => {
 router.post('/getBlog', async (req, res) => {
     try {
         console.log('sadasd', req.body.title)
-        const blog = await Blog.find({title: req.body.title})
+        const blog = await Blog.find({titleLink: req.body.title})
         res.send(blog)
     } catch (error) {
         console.log(error)

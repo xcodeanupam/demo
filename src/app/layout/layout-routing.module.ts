@@ -8,6 +8,7 @@ import { WriteReviewComponent } from './write-review/write-review.component';
 import { CategoryComponent } from './category/category.component';
 import { FullViewComponent } from './full-view/full-view.component';
 import { WebLayoutComponent } from './web-layout/web-layout.component';
+import { BlogComponent } from './blog/blog.component';
 
 const routes: Routes = [
   {
@@ -36,6 +37,11 @@ const routes: Routes = [
   {
     path: 'category/:categoryname',
     component: CategoryComponent,
+    data: { title: 'Amazon' }
+  }, 
+  {
+    path: 'blog/:title',
+    component: BlogComponent,
     data: { title: 'Amazon' }
   }, 
   {

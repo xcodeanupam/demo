@@ -24,11 +24,12 @@ import { MatCarouselModule } from '@ngbmodule/material-carousel';
 import { UserService } from '../core/user/user.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ApiService } from '../core/user/api.service';
+import { BlogComponent } from './blog/blog.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent, RegisterComponent, WriteReviewComponent, CategoryComponent, FullViewComponent, WebLayoutComponent],
+  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent, RegisterComponent, WriteReviewComponent, CategoryComponent, FullViewComponent, WebLayoutComponent, BlogComponent],
   imports: [
     CommonModule,
     layoutRoutingModule,FlexLayoutModule,MatAutocompleteModule,MatFormFieldModule,MatInputModule,
