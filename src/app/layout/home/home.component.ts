@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MatCarousel, MatCarouselComponent } from '@ngbmodule/material-carousel';
+import { BreakpointService } from 'src/app/shared/breakpoint.service';
 
 @Component({
   selector: 'app-home',
@@ -16,9 +17,11 @@ export class HomeComponent implements OnInit {
     { 'image': '../assets/images/banner5.jpg' },
     { 'image': '../assets/images/banner4.jpg' },
   ];
-  constructor() { }
-
+  constructor(private breakpointService: BreakpointService, )
+  {}
   ngOnInit(): void {
   }
-
+  isMobile(): boolean {
+    return this.breakpointService.isMobile();
+  }
 }

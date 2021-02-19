@@ -1,0 +1,74 @@
+.category {
+    margin: auto;
+    min-height: 100vh;
+
+}
+
+.top-line {
+   margin: 20px auto 3pc;
+}
+.single-line .home{
+    cursor: pointer;
+    padding-left: 1pc;
+
+}
+.single-line {
+    display: flex;
+    align-items: center;
+}
+.single-line b {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #5e5e5e;
+
+}
+.single-line mat-icon {
+    font-size: 15px;
+    height: auto;
+    width: 25px;
+    text-align: center;
+    color: #5e5e5e;
+    position: relative;
+    top: 1px;
+}
+.heading-product h1 {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+.heading-product h5 {
+    font-weight: 900;
+    font-family: "Open Sans", sans-serif;
+    color: #2a2a2a;
+}
+.heading-product p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    line-height: 25px;
+    letter-spacing: 0.2px;
+}
+.img-product img {
+    width: 100%;
+}
+.img-product {
+    margin: 10px 0 20px;
+}
+.img-product {
+    flex-wrap: wrap;
+    place-content: start;
+}
+.heading-product {
+    padding-left: 30px;
+}
+.img-product a{
+    width: 47%;
+    margin: 5px;
+}
+section.home.amazonhome1 .img-product a {
+    width: 30%;
+}
+section.home.amazonhome2 .img-product a {
+    width: 30%;
+}

@@ -29,8 +29,12 @@
                                     <mat-icon>star</mat-icon>
                                     <mat-icon>star</mat-icon>
                                 </div>
+
                                 <div class="viewer">
                                     <b>({{product.allReviews}} Reviews)</b>
+                                    <div class="iconmore">
+                                            <mat-icon class="add">add</mat-icon>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -54,8 +58,7 @@
                     <div class="price-cart">
                         <div class="start" *ngFor="let review of product.reviews">
                             <div class="img" fxLayout="row">
-                                <img
-                                    src={{review.userImage}}>
+                                <img src={{review.userImage}}>
                                 <b> {{review.userName}} </b>
                             </div>
                             <div class="star">

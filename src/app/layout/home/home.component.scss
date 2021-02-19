@@ -335,11 +335,34 @@ button.more mat-icon {
 }
 .blog-featured h1 {
     font-family: "Open Sans", sans-serif;
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     line-height: 25px;
     padding: 0px 10px;
 }
+.blog-img1{
+background: url('https://footwearnews.com/wp-content/uploads/2018/02/online-shopping.jpg?w=700&h=437&crop=1');
+height: 300px;
+background-position: center;
+background-size: cover;
+width: 100%;
+}
+.blog-img2{
+    background: url('https://cdn.cnetcontent.com/syndication/mediaserverredirect/b1cc83a25da2e57e450fbea92886a9d0/original.jpg');
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.blog-img3{
+        background: url('https://etimg.etb2bimg.com/photo/66182971.cms');
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+}
+
 .date h6 mat-icon {
     font-size: 12px;
     height: 10px;
@@ -443,8 +466,14 @@ section.home.amazonhome1 .Product-featured .Product {
     margin: 20px 0;
     margin: 9px auto 9px;
 }
+section.home.mobile-home.amazonhome2 {
+    background: #fff;
+}
+section.home.mobile-home.amazonhome2 {
+    background: #fff;
+}
 section.home.amazonhome2 .Product-featured .Product {
-    width:46.2%;
+    width: 33%;
 }
 section.home.amazonhome3 .Product-featured .Product {
     width: 30.9%;
@@ -454,7 +483,9 @@ section.home.amazonhome1 .start{
 }
 
 section.home.amazonhome1 .new-featured-amazon {
-    padding: 2pc 0 0pc;
+    padding: 2pc 0 2pc;
+    margin: 0px 1pc;
+    background: #fff;
 }
 section.home.amazonhome2 .new-featured-amazon {
     padding: 2pc 0 0pc;
@@ -467,8 +498,13 @@ section.home.amazonhome2 .slide-amazon img {
     height: 100%;
     width: 92.6%;
 }
-section.home.amazonhome1 .new-featured-amazon.allbanner {
-    display: none !important;
+section.home.amazonhome1 .blog-featured .blog-img1 {
+    height: 185px;
+    object-fit: cover;
+}
+section.home.amazonhome2 .blog-featured .blog-img1 {
+    height: 250px;
+    object-fit: cover;
 }
 section.home.amazonhome2 .new-featured-amazon.allbanner {
     display: none !important;
@@ -490,10 +526,15 @@ section.home.amazonhome1 .allcate {
     display: none;
 }
 section.home.amazonhome1 .new-featured-amazon.topdeal .Product {
-    width: 50% !important;
+    width: 33% !important;
+    margin: initial;
 }
 section.home.amazonhome1 .new-featured-amazon.arrive .Product {
-    width: 50% !important;
+    width: 33% !important;
+    margin: initial;
+}
+section.home.amazonhome1 .product-data a {
+    width: 170px;
 }
 section.home.amazonhome1 .product-data a img {
     width: 55%;
@@ -502,3 +543,16 @@ section.home.amazonhome2 .two-cate.lastline{
     display: none !important;
 }
 
+::ng-deep .mobile-view .carousel {
+    height: 515px !important;
+    background: #fff;
+}
+::ng-deep .carousel-slide-content{
+    background: #fff;
+}
+section.home.amazonhome1  .product-data{
+    padding: 0px 0;
+}
+::ng-deep .mobile-view button.mat-focus-indicator.mat-icon-button.mat-button-base.mat-accent span.mat-button-wrapper {
+    color: transparent !important;
+}
