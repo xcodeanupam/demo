@@ -75,12 +75,13 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
                         <div class="addto-cart">
-                            <button routerLink="/view-product">
+                            <button  [routerLink]="'/product/'+product.productName">
                                 <mat-icon>add_shopping_cart</mat-icon>Add to Cart
                             </button>
                         </div>
+                    </div>
+
                     </div>
                 </div>
             </div>

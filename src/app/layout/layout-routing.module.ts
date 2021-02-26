@@ -57,7 +57,7 @@ const routes: Routes = [
     data: { title: 'Amazon' }
   }, 
   {
-    path: 'view-product/:title',
+    path: 'product/:title',
     component: FullViewComponent,
     data: { title: 'Amazon' }
   },

@@ -16,10 +16,10 @@
                             All Category <mat-icon>keyboard_arrow_down</mat-icon>
                         </button>
                         <mat-menu #menu="matMenu" class="menu_category">
-                            <button mat-menu-item routerLink="/category/mobiles">
+                            <button mat-menu-item [routerLink]="'/category/mobiles'">
                                 <mat-icon>keyboard_arrow_left</mat-icon>mobiles
                             </button>
-                            <button mat-menu-item routerLink="/category/refined-oil">
+                            <button mat-menu-item [routerLink]="'/category/refined-oil'">
                                 <mat-icon>keyboard_arrow_left</mat-icon>refined oil
                             </button>
                             <button mat-menu-item>

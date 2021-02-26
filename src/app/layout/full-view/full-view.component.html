@@ -18,19 +18,15 @@
                 <div class="product-amazon">
                     <div class="product" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
                         <div class="img" fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%">
-                            <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                                target="_blank"><img border="0"
-                                    src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                                src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                                width="1" height="1" border="0" alt=""
-                                style="border:none !important; margin:0px !important;" />
+                            <a href={{product.productLink}} target="_blank">
+                                <img height="200px" width="200px" border="0" src={{product.image}}></a>
                         </div>
                         <div class="text" fxFlex="60%" fxFlex.xs="100%" fxFlex.sm="100%">
 
                             <h3>{{product.productName}}</h3>
                             <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
                                 <div class="price">
-                                    <u> ₹84,900 </u> ₹84,889
+                                    <u> ₹{{product.originalPrice}} </u> ₹{{product.sellPrice}}
                                 </div>
                                 <div class="star" fxLayout="row">
                                     <div class="review">
@@ -41,32 +37,16 @@
                                         <mat-icon>star</mat-icon>
                                     </div>
                                     <div class="viewer">
-                                        <b>(10 Reviews)</b>
+                                        <b>({{product.allReviews}} Reviews)</b>
                                     </div>
                                 </div>
                             </div>
 
                             <div class="item-ad">
-                                <div class="heading">
-                                    <b>Wireless Carrier </b>
-                                    <p>Unlocked for All Carriers</p>
+                                <div class="heading" *ngFor="let allpros of product.allPros">
+                                    <b> {{allpros.pros}}</b>
                                 </div>
-                                <div class="heading">
-                                    <b>Brand</b>
-                                    <p>Apple</p>
-                                </div>
-                                <div class="heading">
-                                    <b>Colour</b>
-                                    <p>Blue</p>
-                                </div>
-                                <div class="heading">
-                                    <b>Memory Storage Capacity </b>
-                                    <p>128 GB</p>
-                                </div>
-                                <div class="heading">
-                                    <b>Operating System </b>
-                                    <p>IOS 14</p>
-                                </div>
+                             
                             </div>
 
 
@@ -77,15 +57,7 @@
                                 <mat-icon>thumb_up_off_alt</mat-icon>About this item
                             </h4>
                             <ul>
-                                <li> 6.1-inch Super Retina XDR display</li>
-                                <li> A14 Bionic chip, the fastest chip ever in a smartphone</li>
-                                <li> Advanced dual-camera system with 12MP Ultra Wide and Wide cameras; Night mode, Deep
-                                    Fusion, Smart HDR 3, 4K Dolby Vision HDR recording</li>
-                                <li> 12MP TrueDepth front camera with Night mode, 4K Dolby Vision HDR recording</li>
-                                <li> Industry-leading IP68 water resistance</li>
-                                <li> Supports MagSafe accessories for easy attach and faster wireless charging</li>
-                                <li> iOS with redesigned widgets on the Home screen, all-new App Library, App Clips and
-                                    more</li>
+                                <li *ngFor="let descption of product.description"> {{descption.desc}}</li>
                             </ul>
                             <div class="addto-cart" fxLayout="row">
                                 <button>
@@ -99,11 +71,10 @@
                     </div>
                     <div class="price-review">
                         <div class="price-cart">
-                            <div class="start">
+                            <div class="start" *ngFor="let review of product.reviews">
                                 <div class="img" fxLayout="row">
-                                    <img
-                                        src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b>S.Siva Ram Kris</b>
+                                    <img src={{review.userImage}}>
+                                    <b> {{review.userName}} </b>
                                 </div>
                                 <div class="star">
                                     <div class="review">
@@ -113,35 +84,10 @@
                                         <mat-icon>star</mat-icon>
                                         <mat-icon>star</mat-icon>
                                     </div>
-                                    <div class="reviewd">
-                                        <p> Another magnificence from Apple. I was updated from iPhone X and it was an
-                                            extraordinary involvement in all the most recent specs and impeccably
-                                            smooth.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                                    <label> {{review.rating}}/5</label>
 
-                        <div class="price-cart">
-                            <div class="start">
-                                <div class="img" fxLayout="row">
-                                    <img
-                                        src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b>S.Siva Ram Kris</b>
-                                </div>
-                                <div class="star">
-                                    <div class="review">
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                    </div>
                                     <div class="reviewd">
-                                        <p> Another magnificence from Apple. I was updated from iPhone X and it was an
-                                            extraordinary involvement in all the most recent specs and impeccably
-                                            smooth.
+                                        <p> {{review.review}}
                                         </p>
                                     </div>
                                 </div>
