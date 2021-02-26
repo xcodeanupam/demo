@@ -15,9 +15,9 @@ var BlogSchema = new mongoose.Schema({
         }
     ],
     productLink: { type: String },
-    price: {type: string},
-    views: {type: string, default: '3440'},
-    reviews: {type: string, default: '6340'}
+    price: {type: String},
+    views: {type: String, default: '3440'},
+    reviews: {type: String, default: '6340'}
 
 }, { timestamps: true });
 
