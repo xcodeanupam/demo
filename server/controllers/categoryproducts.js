@@ -24,5 +24,15 @@ router.post('/getCategoryProducts', async (req, res) => {
     }
 });
 
+router.post('/getAProduct', async (req, res) => {
+    try {
+        console.log('sadasd', req.body.productName)
+        const categoryProduct = await CategoryProduct.find({productName: req.body.productName})
+        res.send(categoryProduct)
+    } catch (error) {
+        console.log(error)
+        res.status(500).send()
+    }
+});
 
 module.exports = router;

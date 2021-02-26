@@ -57,6 +57,24 @@ export class UserService {
   }
 
 
+  getProduct(cat: any): Observable<any> {
+
+    var reqHeader = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+
+    let data = {
+      "productName": cat
+    }
+
+    return this.httpClient.post(`https://reviews-stackasian.herokuapp.com/api/categoryproducts/getAProduct`, data, { headers: reqHeader })
+      .pipe(map((data: any) => {
+        return data;
+      }));
+  }
+
+
+
 
   getTableData(): Observable<any> {
     var reqHeader = new HttpHeaders({
