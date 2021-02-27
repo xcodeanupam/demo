@@ -15,7 +15,7 @@ router.post('/add', (req, res) => {
 
 router.post('/getCategoryProducts', async (req, res) => {
     try {
-        console.log('sadasd', req.body.categoryName)
+        // console.log('sadasd', req.body.categoryName)
         const categoryProduct = await CategoryProduct.find({categoryName: req.body.categoryName})
         res.send(categoryProduct)
     } catch (error) {
