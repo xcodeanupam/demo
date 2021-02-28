@@ -25,22 +25,41 @@
                     <a href={{blog.productLink}} target="_blank">
                         <img src={{blog.imageTwo}}></a>
 
-
                     <a href={{blog.productLink}} target="_blank">
                         <img src={{blog.imageThree}}></a>
                 </div>
                 <div class="heading-product" fxFlex="60%">
                     <h1> {{blog.title}}</h1>
                     <h5>{{blog.productName}}</h5>
+
+                    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+                        <div class="price">
+                            <!-- <u> ₹{{product.originalPrice}} </u> -->
+                            ₹ {{blog.price}}
+                        </div>
+                        <div class="star" fxLayout="row">
+                            <div class="review">
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                            </div>
+                            <div class="viewer">
+                                <b>( {{blog.reviews}} Reviews)</b>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reviewviewicon">
+                            <div class="viewer">
+                              <mat-icon>visibility</mat-icon> 
+                               <b>{{blog.views}} (Product View)</b>
+                            </div>
+                        </div>
                     <p *ngFor="let paragraph of blog.paragraphs">
                         {{paragraph.para}}
                     </p>
                 </div>
-
-                <h1> product price {{blog.price}}</h1>
-                <h1> product views {{blog.views}}</h1>
-                <h1> product re-views {{blog.reviews}}</h1>
-
             </div>
         </div>
 

@@ -11,7 +11,9 @@
             <div class="single-line" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px"
                 fxFlex.xl="1910px">
                 <b class="home" routerLink="/">Home</b>
-                <mat-icon>keyboard_arrow_right</mat-icon> <b><a>Products</a></b>
+                <mat-icon>keyboard_arrow_right</mat-icon> <b>
+                     <a>Products</a>
+                </b>
             </div>
         </div>
     </div>
@@ -81,11 +83,18 @@
                                     </p>
                                 </div>
                             </div>
-                        <div class="addto-cart">
+                        <div class="addto-cart" fxLayout="row">
                             <button  [routerLink]="'/product/'+product.productName">
-                                <mat-icon>add_shopping_cart</mat-icon>Add to Cart
+                                <mat-icon>add_shopping_cart</mat-icon><span>Buy Now</span>
                             </button>
+                            <button style="background: #ff9f0d;" [routerLink]="'/product/'+product.productName">
+                                <mat-icon>visibility</mat-icon><span>View More</span></button>
                         </div>
+
+<div class="blog-detail">
+    <a>(Review on Blog) </a>
+</div>
+
                     </div>
 
                     </div>

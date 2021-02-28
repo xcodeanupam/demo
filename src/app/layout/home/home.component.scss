@@ -354,7 +354,6 @@ width: 100%;
     background-size: cover;
     width: 100%;
 }
-
 .blog-img3{
         background: url('https://etimg.etb2bimg.com/photo/66182971.cms');
         height: 300px;
@@ -362,7 +361,6 @@ width: 100%;
         background-size: cover;
         width: 100%;
 }
-
 .date h6 mat-icon {
     font-size: 12px;
     height: 10px;
@@ -371,21 +369,22 @@ width: 100%;
 }
 .blog-featured p {
     font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    line-height: 23px;
+    font-size: 13px;
+    line-height: 22px;
     padding: 0px 10px;
     color: #6e6a6a;
-    /* letter-spacing: 0.2px; */
+    height: 110px;
 }
 .blog-featured a {
     font-family: "Open Sans", sans-serif;
     display: flex;
-    /* place-content: center; */
     align-items: center;
     padding: 0px 10px;
     font-size: 14px;
-    color: #283a45;
+    color:#3fe2f4;
     font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
 }
 .blog-featured a mat-icon {
     position: relative;
@@ -555,4 +554,14 @@ section.home.amazonhome1  .product-data{
 }
 ::ng-deep .mobile-view button.mat-focus-indicator.mat-icon-button.mat-button-base.mat-accent span.mat-button-wrapper {
     color: transparent !important;
+}
+
+section.home.amazonhome1 .blog-featured p {
+    height: auto;
+}
+section.home.amazonhome2 .blog-featured p {
+    height: auto;
+}
+section.home.amazonhome3 .blog-featured p {
+    height: 140px;
 }
