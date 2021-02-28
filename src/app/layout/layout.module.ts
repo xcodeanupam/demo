@@ -13,6 +13,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatMenuModule} from '@angular/material/menu';
 import {MatButtonModule} from '@angular/material/button';
 import { LoginComponent } from './login/login.component';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
+
 import { RegisterComponent } from './register/register.component';
 import { WriteReviewComponent } from './write-review/write-review.component';
 import { CategoryComponent } from './category/category.component';
@@ -36,7 +38,7 @@ import { BlogThreeComponent } from './blog-three/blog-three.component';
     CommonModule,
     layoutRoutingModule,FlexLayoutModule,MatAutocompleteModule,MatFormFieldModule,MatInputModule,
     FormsModule,ReactiveFormsModule,MatIconModule,MatMenuModule,MatButtonModule,MatCarouselModule,
-    MatSidenavModule,MatPaginatorModule, HttpClientModule
+    MatSidenavModule,MatPaginatorModule, HttpClientModule, MatProgressSpinnerModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   providers:[UserService, ApiService]

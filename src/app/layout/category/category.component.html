@@ -1,4 +1,10 @@
 <section class="home" fxLayout="column" ngClass.xs="amazonhome1" ngClass.sm="amazonhome2" ngClass.md="amazonhome3">
+
+<div class="ft" *ngIf="dataload">
+    <mat-spinner></mat-spinner>
+</div>
+<div *ngIf="!dataload">
+
     <!----top-line-->
     <div class="category-amazon" fxLayout="row">
         <div class="top-line">
@@ -90,5 +96,7 @@
                 </mat-paginator>
             </div> -->
         </div>
+    </div>
+
     </div>
 </section>

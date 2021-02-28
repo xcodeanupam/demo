@@ -10,8 +10,9 @@ import { UserService } from 'src/app/core/user/user.service';
 export class CategoryComponent implements OnInit {
   categoryName!: string | null;
   products: any;
+  dataload = true;
 
-  constructor(public userService: UserService,  public router: Router, public route: ActivatedRoute) { }
+  constructor(public userService: UserService, public router: Router, public route: ActivatedRoute) { }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -25,6 +26,7 @@ export class CategoryComponent implements OnInit {
     this.userService.getProductsByCategory(this.categoryName).subscribe(
       (data: any) => {
         this.products = data;
+        this.dataload = false;
         console.log('all products', data)
       },
       error => {
@@ -32,6 +34,6 @@ export class CategoryComponent implements OnInit {
       }
     );
   }
-  
+
 
 }

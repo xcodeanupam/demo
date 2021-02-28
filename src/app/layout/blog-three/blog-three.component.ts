@@ -11,6 +11,7 @@ export class BlogThreeComponent implements OnInit {
 
   title: string | null | undefined;
   blog: any;
+  dataload = true;
 
   constructor(public userService: UserService,  public router: Router, public route: ActivatedRoute) { }
 
@@ -26,6 +27,7 @@ export class BlogThreeComponent implements OnInit {
     this.userService.getBlog(this.title).subscribe(
       (data: any) => {
         this.blog = data[0];
+        this.dataload = false;
         console.log('blog data', data)
       },
       error => {
