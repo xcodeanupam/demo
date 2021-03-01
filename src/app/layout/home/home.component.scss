@@ -5,7 +5,9 @@
     background: #F1F6F7;
     position: relative;
     margin-bottom: 10px;
-
+}
+section.home{
+    background:#fafafa;
 }
 .slide:before {
     content: "";
@@ -17,59 +19,11 @@
     top: 0;
     left: 0;
 }
-
-.slide-amazon{
-    margin: auto;
-}
-.slide-amazon img {
-    position: relative;
-    height: 90%;
-    width: 62.6%;
-    position: relative;
-    top: 0;
-}
-.slide-text {
-    padding: 0px 6pc;
-}
-.slide-text p{
-    font-family: inter;
-    font-size: 15px;
-    line-height: 22px;
-    font-weight: 300;
-    letter-spacing: 0.2px;
-}
-.slide-text h2{
-    font-family: inter;
-    font-size: 34px;
-    padding: 4px 7pc 10px 0;
-    line-height: 38px;
-    font-weight: 800;
-    margin-bottom: 0;
-}
-.slide-text h6{
-    font-family: inter;
-    font-size: 17px;
-    padding: 0px 7pc 10px 0;
-    font-weight: 600;
-    margin-bottom: 0;
-}
-.slide-text button{
-    background: #4571eb;
-    border-radius: 0;
-    box-shadow: none;
-    color: #fff;
-    border-radius: 26px;
-    padding: 2.5px 2pc;
-    font-weight: 600;
-    font-family: inter;
-    font-size: 13px;
-    margin: 1pc 0 0;
-
-}
 //heading
 .heading {
     padding-bottom: 1.5pc;
     padding-left: 1pc;
+    text-align: center;
 }
 .heading p {
     font-family: inter;
@@ -83,19 +37,25 @@
     font-weight: 800;
     letter-spacing: 0.5px;
 }
-.heading h1 span{
-    border-bottom: 2px solid #4571eb;
-}
+
+// .heading h1 span{
+//     border-bottom: 2px solid #4571eb;
+// }
 //5cat
+
 .cate-amazon img {
     width: 97%;
      height: fit-content; 
     margin: 8px;
 }
+
 .cate-amazon a {
     text-decoration: none;
     border-bottom: 1px solid;
     color: #454443;
+    font-size: 14px;
+    font-family: "Cabin", sans-serif;
+    letter-spacing: 0.5px;
 }
 .cate-amazon a:hover {
     color: #d50890 !important;
@@ -124,10 +84,11 @@ background-size: cover;
 height: 520px;
 margin: 10px;
 display: flex;
-place-content: center;
+place-content: start;
 align-items: start;
 flex-direction: column;
-padding: 5pc;    border-radius: 3px;
+padding: 4pc 5pc;
+border-radius: 3px;
 
 }
 .right1{
@@ -156,17 +117,24 @@ padding: 5pc;    border-radius: 3px;
     font-size: 17px;
     border-bottom: 1px solid #030303;
 }
-.cate-amazon h3 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 21px;
-    font-weight: 800;
-    padding: 0px;
+.cate-amazon h1 {
+    font-size: 20px;
+    font-weight: 900;
+    padding: 4px 0 0;
+    font-family: "Cabin", sans-serif;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    color: #414141;
+    text-transform: capitalize;
 }
 .cate-amazon p {
-    font-family: "Open Sans", sans-serif;
-    font-size:14px;
+    font-size: 15px;
     font-weight: 500;
+    font-family: "Cabin", sans-serif;
     padding: 0px;
+    color: #666460;
+    letter-spacing: 0.75px;
+    line-height: 21px;
 }
 
 /////banner
@@ -222,6 +190,42 @@ button.more mat-icon {
 .Product-featured {
     flex-wrap: wrap;
 }
+.newatricel h1 {
+    background: #ff583d;
+    font-size: 11px;
+    padding: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    line-height: 25px;
+    float: right;
+    margin: 0px 5px 0;
+    position: relative;
+    z-index: 1;
+}
+.newatricel-off{
+    width: 100%;
+    text-align: center;
+}
+.newatricel-off h1{
+    background: #4ed15e;
+    font-size: 11px;
+    padding: 5px;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    color: #fff;
+    line-height: 25px;
+    float: right;
+    margin: 0px 5px 0;
+    position: relative;
+    z-index: 1;
+}
+.newatricel {
+    width: 100%;
+    text-align: center;
+}
 .Product-featured .Product {
     width: 23.2%;
     display: flex;
@@ -229,14 +233,15 @@ button.more mat-icon {
     place-content: center;
     align-items: center;
     margin: 0px 0.7pc 25px;
-    box-shadow: 1px 1px 4px 1px #ddd;
+    border-radius: 5px;
+    background: #fff;
 }
 .product-data {
     place-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    padding: 15px 0;
+    padding:0px 0;
     width: 100%;
 }
 .product-data a {
@@ -254,7 +259,7 @@ button.more mat-icon {
     font-size: 12.5px;
     line-height: 18px;
     font-weight: 700;
-    padding: 4px 10px 0;
+    padding:7px 10px 0;
     margin-bottom: 0px;
 }
 .price {
@@ -277,10 +282,11 @@ button.more mat-icon {
     top: 5px;
 }
 .reviewd p {
-    font-family: "Open Sans", sans-serif;
     font-size: 12px;
-    letter-spacing: 0.2px;
+    letter-spacing: 0.5px;
     line-height: 18px;
+    font-family: "Cabin", sans-serif;
+    color: #6e6e6e;
 }
 .img {
     display: flex;
@@ -298,30 +304,49 @@ button.more mat-icon {
 .start {
     padding: 17px 15px 12px 15px;
 }
+.twocart-btn button mat-icon {
+    font-size: 14px;
+    height: auto;
+    width: 20px;
+    position: relative;
+    top: 1px;
+}
+.iconview:hover{
+    // background:#ffaa8e;
+    background:#6271e3;
+}
+button:hover {
+    background: red;
+}
 button {
     border: 0;
-    background: #4571eb;
-    padding: 9.5px 1pc 10px;
-    border-radius: 27px;
-    color: #fff;
+    background: #4a3434;
+    padding: 0px 10px;
+    border-radius: 30px;
+    color: #ffffff;
+    height: 37px;
+    width: 37px;
     font-family: "Open Sans", sans-serif;
-    margin: 0px 0 15px;
-    font-size: 12px;
-    letter-spacing: 0.5px;
+    margin: 0px 5px 15px;
+    font-size: 14px;
+    letter-spacing: 0;
     display: flex;
     cursor: pointer;
     align-items: center;
+    place-content: center;
+    border: 2px solid #eae7e7;
+    box-shadow: 0px 0px 8px #ddd;
 }
 button.more:hover {
-    background: #7ac0a3;
+    color: #413b3b;
 }
 button.more mat-icon {
-    font-size: 12px;
+    font-size: 10px;
     height: auto;
     width: auto;
     position: relative;
     left: 2px;
-    top:1px;
+    top: 1px;
 }
 .date h6 {
     display: flex;
@@ -391,12 +416,50 @@ width: 100%;
     animation: mymove infinite;
     animation-duration: 6s;
 }
+.new-featured-amazon.topdeal .star span {
+    font-size: 11px;
+    color: #817a7a;
+    font-family: sans-serif;
+    position: relative;
+    top: -1.6px;
+}
+.new-featured-amazon.topdeal .star {
+    place-content: center;
+    align-items: center;
+    display: flex;
+}
+
   .new-featured-amazon.arrive.blog {
     padding-bottom: 5pc;
 }
 .new-featured-amazon.allbanner {
     padding: 2pc 0 4pc;
 }
+.new-featured-amazon.topdeald button {
+    background: #ffffff;
+    color: #000000;
+    margin: 0px 5px 7px;
+}.new-featured-amazon.topdeal .Product:hover {
+    box-shadow: 0px 1px 4px 0px #ddd;
+    /* border-radius: 19px; */
+}
+.new-featured-amazon.topdeal .Product:hover .twocart-btn {
+    opacity: 1;
+}
+.new-featured-amazon.topdeal .twocart-btn {
+     opacity: 0;
+    margin: 0.4pc 0 0;
+}
+.new-featured-amazon.topdeal .newatricel {
+    position: relative;
+    top: 1.1pc;
+}
+
+.new-featured-amazon.topdeal .newatricel-off{
+    position: relative;
+    top: 1.1pc;
+}
+
 @keyframes mymove {
     from {left: 0px;}
     to {left: 10px;}
@@ -410,37 +473,16 @@ width: 100%;
 .new-featured-amazon.topdeal {
     padding: 2pc 0 2pc;
 }
-.new-featured-amazon.arrive {
-    padding: 2pc 0 2pc;
-}
-.new-featured-amazon.topdeal .Product-featured .Product {
-    box-shadow: none;
-}
-.new-featured-amazon.arrive .Product-featured .Product {
-    box-shadow: none;
-}
-.new-featured-amazon.arrive .heading {
-    padding-bottom: 0pc;
-
-}
 .new-featured-amazon.topdeal  .product-data
-{
-    padding: 0;
-}
-.new-featured-amazon.arrive  .product-data
 {
     padding: 0;
 }
 .new-featured-amazon.topdeal .heading {
     padding-bottom: 0pc;
 }
-.new-featured-amazon.arrive .Product-featured .Product {
-    width: 20%;
-    margin: 0;
-}
 .new-featured-amazon.topdeal .Product-featured .Product {
-    width: 20%;
-    margin: 0;
+    width: 19%;
+    margin: 0.5%;
 }
 section.home.amazonhome1 .slide:before {
     width: 100%;
@@ -493,10 +535,7 @@ section.home.amazonhome2 .new-featured-amazon {
 section.home.amazonhome2 .slide-text {
     padding: 0px 3pc;
 }
-section.home.amazonhome2 .slide-amazon img {
-    height: 100%;
-    width: 92.6%;
-}
+
 section.home.amazonhome1 .blog-featured .blog-img1 {
     height: 185px;
     object-fit: cover;
@@ -521,29 +560,68 @@ section.home.amazonhome2 .left1 {
 section.home.amazonhome2 .allcate {
     padding: 0 1pc;
 }
-section.home.amazonhome1 .allcate {
-    display: none;
+
+section.home.amazonhome1 .cate-amazon h1 {
+    font-size: 15px;
+    line-height: 18px;
+    font-weight: 900;
+}
+section.home.amazonhome1 .cate-amazon a {
+    font-size: 12px;
+    font-weight: 900;
 }
 section.home.amazonhome1 .new-featured-amazon.topdeal .Product {
-    width: 33% !important;
+    width: 49% !important;
     margin: initial;
 }
-section.home.amazonhome1 .new-featured-amazon.arrive .Product {
-    width: 33% !important;
-    margin: initial;
+section.home.amazonhome1 .new-featured-amazon.topdeal .twocart-btn {
+     opacity: 1; 
+     display: none !important;
+
 }
+section.home.amazonhome2 .new-featured-amazon.topdeal .twocart-btn {
+    opacity: 1; 
+    display: none !important;
+}
+
+// section.home.amazonhome1 .new-featured-amazon.topdeal button.iconview {
+//     background: #4571eb;
+// }
+// section.home.amazonhome1 .new-featured-amazon.topdeal button {
+//     background: #fea03b;
+//     border-radius: 5px;
+
+// }
+
+
 section.home.amazonhome1 .product-data a {
     width: 170px;
 }
 section.home.amazonhome1 .product-data a img {
     width: 55%;
 }
+.twocart-btn.mobile button {
+    width: auto;
+    height: 45px;
+    padding: 0px 16px;
+    background:#ff9f0d;
+
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: none;
+    border: 0;
+}
+.twocart-btn.mobile button.iconview{
+    background: #4571eb;
+
+}
+
 section.home.amazonhome2 .two-cate.lastline{
     display: none !important;
 }
 
 ::ng-deep .mobile-view .carousel {
-    height: 515px !important;
+    height: 550px !important;
     background: #fff;
 }
 ::ng-deep .carousel-slide-content{
@@ -564,4 +642,19 @@ section.home.amazonhome2 .blog-featured p {
 }
 section.home.amazonhome3 .blog-featured p {
     height: 140px;
+}
+section.home.amazonhome3 .left1 {
+    padding: 4pc 1pc;
+}
+section.home.amazonhome3 .allcate {
+    padding: 0 1pc;
+}
+.topdeald {
+    background: #fff;
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+}
+.new.featured-amazon {
+    margin: 0 auto;
 }
