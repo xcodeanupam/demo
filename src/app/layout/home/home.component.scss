@@ -7,7 +7,7 @@
     margin-bottom: 10px;
 }
 section.home{
-    background:#fafafa;
+    background:#f8f8f8;
 }
 .slide:before {
     content: "";
@@ -53,7 +53,7 @@ section.home{
     text-decoration: none;
     border-bottom: 1px solid;
     color: #454443;
-    font-size: 14px;
+    font-size: 12px;
     font-family: "Cabin", sans-serif;
     letter-spacing: 0.5px;
 }
@@ -190,20 +190,7 @@ button.more mat-icon {
 .Product-featured {
     flex-wrap: wrap;
 }
-.newatricel h1 {
-    background: #ff583d;
-    font-size: 11px;
-    padding: 5px;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    color: #fff;
-    line-height: 25px;
-    float: right;
-    margin: 0px 5px 0;
-    position: relative;
-    z-index: 1;
-}
+
 .newatricel-off{
     width: 100%;
     text-align: center;
@@ -235,7 +222,61 @@ button.more mat-icon {
     margin: 0px 0.7pc 25px;
     border-radius: 5px;
     background: #fff;
+    box-shadow: 0px 0px 1px 1px #f4f4f4;
 }
+.ppt {
+    background: #fff;
+    width: 100%;
+}
+.product-image {
+    width: 100%;
+}
+.newatricel{
+    background: #fff;
+}
+.twocart-btn button {
+    position: absolute;
+    margin: 0px 5px 6px;
+}
+.twocart-btn button.iconview {
+    margin: 3pc 5px 0;
+}
+.twocart-btn {
+    position: absolute;
+    opacity: 0;
+    -webkit-transform: translateY(25px) translateZ(0);
+    transform: translateY(25px) translateZ(0);
+    visibility: hidden;
+    text-align: center;
+    transition: opacity .3s ease,visibility .3s ease,-webkit-transform .3s ease;
+    transition: opacity .3s ease,visibility .3s ease,transform .3s ease;
+    transition: opacity .3s ease,visibility .3s ease,transform .3s ease,-webkit-transform .3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.Product:hover .twocart-btn{
+    opacity: 1;
+    -webkit-transform: translateY(0) translateZ(0);
+    transform: translateY(0) translateZ(0);
+    visibility: visible;
+}
+.newatricel h1 {
+    background: #ff583d;
+    font-size: 10px;
+    padding: 5px;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    color: #fff;
+    line-height: 25px;
+    float: right;
+    margin: 0px 5px 0;
+    position: relative;
+    z-index: 1;
+    top: 5px;
+}
+
 .product-data {
     place-content: center;
     align-items: center;
@@ -251,6 +292,7 @@ button.more mat-icon {
     align-items: center;
     height: 200px;
     object-fit: cover;
+    margin: 0 auto;
 }
 .Product h4 {
     text-align: center;
@@ -259,7 +301,7 @@ button.more mat-icon {
     font-size: 12.5px;
     line-height: 18px;
     font-weight: 700;
-    padding:7px 10px 0;
+    padding:0px 10px 0;
     margin-bottom: 0px;
 }
 .price {
@@ -287,6 +329,7 @@ button.more mat-icon {
     line-height: 18px;
     font-family: "Cabin", sans-serif;
     color: #6e6e6e;
+    padding-bottom: 1pc;
 }
 .img {
     display: flex;
@@ -311,16 +354,15 @@ button.more mat-icon {
     position: relative;
     top: 1px;
 }
-.iconview:hover{
-    // background:#ffaa8e;
-    background:#6271e3;
+.iconview:hover {
+    color: #000;
 }
 button:hover {
-    background: red;
+    color: #000;
 }
 button {
     border: 0;
-    background: #4a3434;
+    background: #ffc63d;
     padding: 0px 10px;
     border-radius: 30px;
     color: #ffffff;
@@ -335,8 +377,9 @@ button {
     align-items: center;
     place-content: center;
     border: 2px solid #eae7e7;
-    box-shadow: 0px 0px 8px #ddd;
+    box-shadow: 0px 0px 8px #e3dede;
 }
+
 button.more:hover {
     color: #413b3b;
 }
@@ -415,6 +458,30 @@ width: 100%;
     position: relative;
     animation: mymove infinite;
     animation-duration: 6s;
+}
+.new-featured-amazon.topdeal .twocart-btn {
+    position: relative;
+    width: 100%;
+}
+.new-featured-amazon.topdeal .twocart-btn button.iconview {
+    margin: 0px 5px;
+}
+.new-featured-amazon.topdeal button {
+    width: 50%;
+    border-radius: 0;
+    height: 40px;
+    font-size: 12px;
+    margin: 0 !important;
+    box-shadow: none;
+    border: 1px solid;
+}
+.new-featured-amazon.topdeal .twocart-btn button {
+    position: relative;
+}
+.new-featured-amazon.topdeal button:hover {
+    border: 0 !important;
+    background: #fab205;
+    color: #fff;
 }
 .new-featured-amazon.topdeal .star span {
     font-size: 11px;
@@ -657,4 +724,23 @@ section.home.amazonhome3 .allcate {
 }
 .new.featured-amazon {
     margin: 0 auto;
+}
+
+.cate-img  mat-icon {
+    font-size: 14px;
+    color: #f0b630;
+    width: auto;
+    height: auto;
+}
+.right1.allcate h1 mat-icon {
+    color: #d97046;
+}
+.right2.allcate h1 mat-icon {
+    color: #3bdeee;
+}
+.right11.allcate h1 mat-icon {
+    color: #c5d77e;
+}
+.right12.allcate h1 mat-icon {
+    color:#e598da;
 }
