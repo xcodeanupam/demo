@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import {FormControl} from '@angular/forms';
-import {Observable} from 'rxjs';
-import {map, startWith} from 'rxjs/operators';
+import { FormControl } from '@angular/forms';
+import { Observable } from 'rxjs';
+import { map, startWith } from 'rxjs/operators';
 import { BreakpointService } from 'src/app/shared/breakpoint.service';
 
 
@@ -11,9 +11,13 @@ import { BreakpointService } from 'src/app/shared/breakpoint.service';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
-  
+
   myControl = new FormControl();
-  options: string[] = ['One', 'Two', 'Three'];
+  options = [{
+    name: 'sony',
+    link: '',
+    image: ''
+  }];
   filteredOptions: Observable<string[]> | undefined;
   showFiller = false;
 
@@ -24,15 +28,12 @@ export class HeaderComponent implements OnInit {
         map(value => this._filter(value))
       );
   }
-  constructor(private breakpointService: BreakpointService, )
-  {}
-  private _filter(value: string): string[] {
+  constructor(private breakpointService: BreakpointService,) { }
+  private _filter(value: string): any {
     const filterValue = value.toLowerCase();
 
-    return this.options.filter(option => option.toLowerCase().includes(filterValue));
+    return this.options.filter(option => option.name.toLowerCase().includes(filterValue));
   }
-
-
 
   isMobile(): boolean {
     return this.breakpointService.isMobile();
