@@ -52,15 +52,14 @@ section.home{
 .cate-amazon a {
     text-decoration: none;
     border-bottom: 1px solid;
-    color: #454443;
+    color:#202020;
     font-size: 12px;
     font-family: "Cabin", sans-serif;
     letter-spacing: 0.5px;
 }
 .cate-amazon a:hover {
-    color: #d50890 !important;
+    color: #f0ae0c !important;
 }
-
 .two-cate img {
     height: 230px;
     object-fit: cover;
@@ -92,7 +91,7 @@ border-radius: 3px;
 
 }
 .right1{
-    background: url(../../../assets/images/banner2.jpg);
+    background: url(../../../assets/images/banner-office.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -119,20 +118,21 @@ border-radius: 3px;
 }
 .cate-amazon h1 {
     font-size: 20px;
-    font-weight: 900;
-    padding: 4px 0 0;
+    font-weight: 700;
+    padding: 0 0;
     font-family: "Cabin", sans-serif;
-    line-height: 22px;
-    letter-spacing: 0.5px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
     color: #414141;
     text-transform: capitalize;
+    font-family: 'Poppins', sans-serif;
 }
 .cate-amazon p {
     font-size: 15px;
     font-weight: 500;
     font-family: "Cabin", sans-serif;
     padding: 0px;
-    color: #666460;
+    color:#3b3a39;
     letter-spacing: 0.75px;
     line-height: 21px;
 }
@@ -236,10 +236,13 @@ button.more mat-icon {
 }
 .twocart-btn button {
     position: absolute;
-    margin: 0px 5px 6px;
+    margin: 0pc 5px 6px;
+    background: #000;
 }
+
 .twocart-btn button.iconview {
-    margin: 3pc 5px 0;
+    margin: 2.5pc 5px 0;
+    background: #000;
 }
 .twocart-btn {
     position: absolute;
@@ -342,10 +345,10 @@ button.more mat-icon {
     font-family: "Open Sans", sans-serif;
     padding: 0px 4px;
     font-weight: 600;
-    font-size: 14px
+    font-size: 13px
 }
 .start {
-    padding: 17px 15px 12px 15px;
+    padding: 7px 15px 12px 15px;
 }
 .twocart-btn button mat-icon {
     font-size: 14px;
@@ -354,17 +357,15 @@ button.more mat-icon {
     position: relative;
     top: 1px;
 }
-.iconview:hover {
-    color: #000;
-}
+
 button:hover {
-    color: #000;
+    color: #ffc63d;
 }
 button {
     border: 0;
     background: #ffc63d;
     padding: 0px 10px;
-    border-radius: 30px;
+    border-radius: 5px;
     color: #ffffff;
     height: 37px;
     width: 37px;
@@ -581,7 +582,7 @@ section.home.mobile-home.amazonhome2 {
     background: #fff;
 }
 section.home.amazonhome2 .Product-featured .Product {
-    width: 33%;
+    width: 32%;
 }
 section.home.amazonhome3 .Product-featured .Product {
     width: 30.9%;
@@ -591,7 +592,7 @@ section.home.amazonhome1 .start{
 }
 
 section.home.amazonhome1 .new-featured-amazon {
-    padding: 2pc 0 2pc;
+    padding: 3pc 0 2pc;
     margin: 0px 1pc;
     background: #fff;
 }
@@ -680,11 +681,6 @@ section.home.amazonhome1 .product-data a img {
 }
 .twocart-btn.mobile button.iconview{
     background: #4571eb;
-
-}
-
-section.home.amazonhome2 .two-cate.lastline{
-    display: none !important;
 }
 
 ::ng-deep .mobile-view .carousel {
@@ -733,7 +729,7 @@ section.home.amazonhome3 .allcate {
     height: auto;
 }
 .right1.allcate h1 mat-icon {
-    color: #d97046;
+    color: #d7b962;
 }
 .right2.allcate h1 mat-icon {
     color: #3bdeee;
@@ -742,5 +738,94 @@ section.home.amazonhome3 .allcate {
     color: #c5d77e;
 }
 .right12.allcate h1 mat-icon {
-    color:#e598da;
+    color:#e49587;
+}
+
+
+
+
+
+// ------categoryy------
+
+.category-featured-amazon{
+       background: #fff;
+       padding: 4pc 0 6pc;
+}
+.category-featured {
+    flex-wrap: wrap;
+}
+.cate {
+    border-radius: 50%;
+    width: 190px;
+    height:190px;
+    padding: 2px;
+    // box-shadow: 1px 1px 5px 5px #f2f1f1;
+    background: #fff;
+
+}
+.cate-text {
+    margin: 0px 10px;
+    background: #f8f8f8;
+    padding: 20px;
+}
+.cate a img {
+    width: 120px;
+    height: 190px;
+    border-radius: 50%;
+    background: #fff;
+    object-fit: contain;
+    /* padding: 17px; */
+    margin: 0 auto;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+.cate-text h1 {
+    font-size: 15px;
+    text-align: center;
+    padding: 5px 0;
+    font-family: ppoins;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    margin-bottom: 0;
+    padding-bottom: 0;
+
+}
+::ng-deep .new.category-amazon .carousel {
+    height: 375px !important;
+}
+
+section.home.mobile-home.amazonhome1 .cate-text {
+    margin: 33px auto;
+    background: #f8f8f8;
+    padding: 20px;
+}
+section.home.mobile-home.amazonhome1 .category-featured {
+    background: #fff;
+}
+section.home.mobile-home.amazonhome1 .new.category-amazon .heading{
+    padding-bottom:0pc;
+    padding-top: 2pc;
+    background: #fff;
+}
+section.home.mobile-home.amazonhome2 .new.category-amazon .heading{
+    padding-bottom:0pc;
+    padding-top: 2pc;
+    background: #fff;
+}
+section.home.mobile-home.amazonhome2  .category-featured {
+    place-content: center;
+    align-items: center;
+}
+section.home.amazonhome3 .cate-text {
+    margin: 0px 10px;
+    padding: 11px;
+}
+section.home.mobile-home.amazonhome1 .twocart-btn {
+    opacity:1;    visibility: visible;
+
+}
+section.home.mobile-home.amazonhome2 .twocart-btn {
+    opacity:1;    visibility: visible;
+
 }

@@ -15,12 +15,11 @@
                             All Category<mat-icon>keyboard_arrow_down</mat-icon>
                         </button>
                         <mat-menu #menu="matMenu" class="menu_category">
-                            <a  *ngFor="let category of categories">
-                                <button mat-menu-item [routerLink]="category.categorylink">
-                                    {{category.categoryname}}
-                                </button>
-                            </a>
-                          
+                            <button *ngFor="let category of categories" mat-menu-item
+                                [routerLink]="category.categorylink">
+                                {{category.categoryname}}
+                            </button>
+
                             <!-- <button mat-menu-item [routerLink]="'/category/refined-oil'">
                                 <mat-icon>keyboard_arrow_left</mat-icon>refined oil
                             </button>
@@ -140,15 +139,15 @@
                             </button> -->
                         </mat-menu>
                     </div>
-                    <form class="example-form" fxFlex="78%" fxFlex.xs="67%" fxFlex.sm="65%">
+                    <form class="example-form search-auto" fxFlex="78%" fxFlex.xs="67%" fxFlex.sm="65%">
                         <input type="text" placeholder="search" aria-label="Number" matInput [formControl]="myControl"
                             [matAutocomplete]="auto">
                         <mat-icon>search</mat-icon>
 
                         <mat-autocomplete #auto="matAutocomplete">
                             <mat-option *ngFor="let option of options" [value]="option.name">
-                                <button mat-menu-item [routerLink]="option.link">
-                                    <img height="40px" width="40px" src={{option.image}}>{{option.name}}
+                                <button class="searchfield" mat-menu-item [routerLink]="option.link">
+                                    <img class="imgsearch" src={{option.image}}>{{option.name}}
                                 </button>
                             </mat-option>
                         </mat-autocomplete>
@@ -178,7 +177,7 @@
             <mat-drawer-container class="example-container" autosize>
                 <mat-drawer #drawer class="example-sidenav" mode="over">
                     <div class="cate-sidenav" fxLayout="column">
-                        <a  *ngFor="let category of categories">
+                        <a *ngFor="let category of categories">
                             <button mat-menu-item [routerLink]="category.categorylink">
                                 {{category.categoryname}}
                             </button>
