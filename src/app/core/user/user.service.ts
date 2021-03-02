@@ -40,6 +40,23 @@ export class UserService {
   }
 
 
+  getSearch(): Observable<any> {
+
+    var reqHeader = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+
+    let data = {
+      "categoryName": 's'
+    }
+
+    return this.httpClient.post(`https://reviews-stackasian.herokuapp.com/api/search/getSearch`, data, { headers: reqHeader })
+      .pipe(map((data: any) => {
+        return data;
+      }));
+  }
+
+
   getBlog(cat: any): Observable<any> {
 
     var reqHeader = new HttpHeaders({

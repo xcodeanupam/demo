@@ -15,8 +15,9 @@ router.post('/add', (req, res) => {
 
 router.post('/getSearch', async (req, res) => {
     try {
-        // console.log('sadasd', req.body.title)
+        console.log('sadasd', req.body.title)
         const search = await Search.find()
+        console.log('sdf',search)
         res.send(search)
     } catch (error) {
         console.log(error)

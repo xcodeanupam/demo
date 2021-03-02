@@ -6,6 +6,6 @@ var SearchSchema = new mongoose.Schema({
     image: { type: String },
 }, { timestamps: true });
 
-var Search = mongoose.model('search', SearchSchema);
+var Search = mongoose.model('searchs', SearchSchema);
 
 module.exports = Search;
