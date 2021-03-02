@@ -22,6 +22,7 @@ export class HeaderComponent implements OnInit {
   filteredOptions: Observable<string[]> | undefined;
   showFiller = false;
   dataload: boolean = true;
+  categories: any;
 
   ngOnInit() {
     this.filteredOptions = this.myControl.valueChanges
@@ -30,6 +31,7 @@ export class HeaderComponent implements OnInit {
         map(value => this._filter(value))
       );
       this.getSearchList()
+      this.getCategories()
   }
   constructor(private breakpointService: BreakpointService, public userService: UserService,  public router: Router, public route: ActivatedRoute) { }
   private _filter(value: string): any {
@@ -48,6 +50,19 @@ export class HeaderComponent implements OnInit {
         this.options = data;
         this.dataload = false;
         console.log('search data', data)
+      },
+      error => {
+        console.log('error', error);
+      }
+    );
+  }
+
+  getCategories() {
+    this.userService.getCategoriesData().subscribe(
+      (data: any) => {
+        this.categories = data;
+        // this.dataload = false;
+        console.log('category data', data)
       },
       error => {
         console.log('error', error);

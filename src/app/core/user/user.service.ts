@@ -57,6 +57,23 @@ export class UserService {
   }
 
 
+  getCategoriesData(): Observable<any> {
+    var reqHeader = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+
+    let data = {
+      "categoryName": 's'
+    }
+
+    return this.httpClient.post(`https://reviews-stackasian.herokuapp.com/api/category/listcategory`, { headers: reqHeader })
+      .pipe(map((data: any) => {
+        return data;
+      }));
+  }
+
+
+
   getBlog(cat: any): Observable<any> {
 
     var reqHeader = new HttpHeaders({

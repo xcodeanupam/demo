@@ -15,16 +15,19 @@
                             All Category<mat-icon>keyboard_arrow_down</mat-icon>
                         </button>
                         <mat-menu #menu="matMenu" class="menu_category">
-                            <button mat-menu-item [routerLink]="'/category/mobiles'">
-                                <mat-icon>keyboard_arrow_left</mat-icon>mobiles
-                            </button>
-                            <button mat-menu-item [routerLink]="'/category/refined-oil'">
+                            <a  *ngFor="let category of categories">
+                                <button mat-menu-item [routerLink]="category.categorylink">
+                                    {{category.categoryname}}
+                                </button>
+                            </a>
+                          
+                            <!-- <button mat-menu-item [routerLink]="'/category/refined-oil'">
                                 <mat-icon>keyboard_arrow_left</mat-icon>refined oil
                             </button>
                             <button mat-menu-item [routerLink]="'/category/computer-monitor'">
                                 <mat-icon>keyboard_arrow_left</mat-icon> lcd/led monitor
-                            </button>
-                            <button mat-menu-item>
+                            </button> -->
+                            <!-- <button mat-menu-item>
                                 <mat-icon>keyboard_arrow_left</mat-icon>Amazon Fashion
                             </button>
                             <button mat-menu-item>
@@ -134,7 +137,7 @@
                             </button>
                             <button mat-menu-item>
                                 <mat-icon>keyboard_arrow_left</mat-icon>Renewed Speakers
-                            </button>
+                            </button> -->
                         </mat-menu>
                     </div>
                     <form class="example-form" fxFlex="78%" fxFlex.xs="67%" fxFlex.sm="65%">
@@ -143,9 +146,9 @@
                         <mat-icon>search</mat-icon>
 
                         <mat-autocomplete #auto="matAutocomplete">
-                            <mat-option *ngFor="let option of options" [value]="option">
-                                <button mat-menu-item [routerLink]="'/category/mobiles'">
-                                    <mat-icon>keyboard_arrow_left</mat-icon>{{option.name}}
+                            <mat-option *ngFor="let option of options" [value]="option.name">
+                                <button mat-menu-item [routerLink]="option.link">
+                                    <img height="40px" width="40px" src={{option.image}}>{{option.name}}
                                 </button>
                             </mat-option>
                         </mat-autocomplete>
@@ -175,10 +178,12 @@
             <mat-drawer-container class="example-container" autosize>
                 <mat-drawer #drawer class="example-sidenav" mode="over">
                     <div class="cate-sidenav" fxLayout="column">
-                        <button mat-menu-item routerLink="/category">
-                            <mat-icon>keyboard_arrow_left</mat-icon>Deals
-                        </button>
-                        <button mat-menu-item>
+                        <a  *ngFor="let category of categories">
+                            <button mat-menu-item [routerLink]="category.categorylink">
+                                {{category.categoryname}}
+                            </button>
+                        </a>
+                        <!-- <button mat-menu-item>
                             <mat-icon>keyboard_arrow_left</mat-icon>Alexa Skills
                         </button>
                         <button mat-menu-item>
@@ -294,7 +299,7 @@
                         </button>
                         <button mat-menu-item>
                             <mat-icon>keyboard_arrow_left</mat-icon>Renewed Speakers
-                        </button>
+                        </button> -->
                     </div>
                 </mat-drawer>
                 <div class="example-sidenav-content">
@@ -326,9 +331,9 @@
                                 <input type="text" placeholder="search" aria-label="Number" matInput
                                     [formControl]="myControl" [matAutocomplete]="auto">
                                 <mat-autocomplete #auto="matAutocomplete">
-                                    <mat-option *ngFor="let option of filteredOptions | async" [value]="option">
-                                        <button mat-menu-item [routerLink]="'/category/mobiles'">
-                                            <mat-icon>keyboard_arrow_left</mat-icon>{{option}}
+                                    <mat-option *ngFor="let option of options" [value]="option.name">
+                                        <button mat-menu-item [routerLink]="option.link">
+                                            <img height="40px" width="40px" src={{option.image}}>{{option.name}}
                                         </button>
                                     </mat-option>
                                 </mat-autocomplete>
