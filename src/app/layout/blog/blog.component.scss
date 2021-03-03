@@ -39,14 +39,19 @@
 .heading-product h1 {
     font-family: "Open Sans", sans-serif;
     font-weight: 700;
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    padding: 0px 7pc 2pc;
 }
 
 .heading-product h5 {
-    font-weight: 900;
+    font-weight: 400;
     font-family: "Open Sans", sans-serif;
     color: #2a2a2a;
+    font-size: 25px;
+    padding: 15px 0 3px;
+
 }
 .heading-product p {
     font-family: "Open Sans", sans-serif;
@@ -134,6 +139,11 @@ section.home.amazonhome1 .heading-product {
     padding-left: 5px;
 }
 section.home.amazonhome1 .heading-product h1 {
-    font-size: 14px;
-    line-height: 22px;
+    font-size: 17px;
+    line-height: 27px;
+    padding: 0px 0pc 2pc;
+}
+section.home.amazonhome2 .heading-product h1 {
+    line-height: 27px;
+    padding: 0px 0pc 2pc;
 }

@@ -16,49 +16,53 @@
         </div>
         <!----category-line-->
         <div class="category" fxLayout="row">
-            <div class="category" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxFlex.xs="97%"
-                fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px" fxFlex.xl="1910px">
-                <div class="img-product" fxFlex="40%" fxLayout="row">
-                    <a href={{blog.productLink}} target="_blank">
-                        <img src={{blog.image}}></a>
-
-                    <a href={{blog.productLink}} target="_blank">
-                        <img src={{blog.imageTwo}}></a>
-
-                    <a href={{blog.productLink}} target="_blank">
-                        <img src={{blog.imageThree}}></a>
-                </div>
-                <div class="heading-product" fxFlex="60%">
+            <div class="category" fxLayout="column" fxFlex.xs="97%" fxFlex.sm="590px" fxFlex.md="950px"
+                fxFlex.lg="1270px" fxFlex.xl="1910px">
+                <div class="heading-product">
                     <h1> {{blog.title}}</h1>
-                    <h5>{{blog.productName}}</h5>
+                </div>
+                <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+                    <div class="img-product" fxFlex="40%" fxLayout="row">
+                        <a href={{blog.productLink}} target="_blank">
+                            <img src={{blog.image}}></a>
 
-                    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
-                        <div class="price">
-                            <!-- <u> ₹{{product.originalPrice}} </u> -->
-                            ₹ {{blog.price}}
-                        </div>
-                        <div class="star" fxLayout="row">
-                            <div class="review">
-                                <mat-icon>star</mat-icon>
-                                <mat-icon>star</mat-icon>
-                                <mat-icon>star</mat-icon>
-                                <mat-icon>star</mat-icon>
-                                <mat-icon>star</mat-icon>
-                            </div>
-                            <div class="viewer">
-                                <b>( {{blog.reviews}} Reviews)</b>
-                            </div>
-                        </div>
+                        <a href={{blog.productLink}} target="_blank">
+                            <img src={{blog.imageTwo}}></a>
+
+                        <a href={{blog.productLink}} target="_blank">
+                            <img src={{blog.imageThree}}></a>
                     </div>
-                    <div class="reviewviewicon">
-                            <div class="viewer">
-                              <mat-icon>visibility</mat-icon> 
-                               <b>{{blog.views}} (Product View)</b>
+                    <div class="heading-product" fxFlex="60%">
+                        <!-- <h1> {{blog.title}}</h1> -->
+                        <h5>{{blog.productName}}</h5>
+                        <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+                            <div class="price">
+                                <!-- <u> ₹{{product.originalPrice}} </u> -->
+                                ₹ {{blog.price}}
+                            </div>
+                            <div class="star" fxLayout="row">
+                                <div class="review">
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                </div>
+                                <div class="viewer">
+                                    <b>( {{blog.reviews}} Reviews)</b>
+                                </div>
                             </div>
                         </div>
-                    <p *ngFor="let paragraph of blog.paragraphs">
-                        {{paragraph.para}}
-                    </p>
+                        <div class="reviewviewicon">
+                            <div class="viewer">
+                                <mat-icon>visibility</mat-icon>
+                                <b>{{blog.views}} (Product View)</b>
+                            </div>
+                        </div>
+                        <p *ngFor="let paragraph of blog.paragraphs">
+                            {{paragraph.para}}
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
