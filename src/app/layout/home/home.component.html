@@ -89,12 +89,15 @@
             <div class="category-featured" fxLayout="row">
                 <div class="cate-text" *ngFor="let category of categories">
                     <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
+                        <a>
+                            <img src="{{category.image}}">
+                        </a>
+                        <!-- <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
                             target="_blank"><img border="0"
                                 src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
                             src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
                             width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
+                            style="border:none !important; margin:0px !important;" /> -->
 
                     </div>
                     <h1> {{category.categoryname}}

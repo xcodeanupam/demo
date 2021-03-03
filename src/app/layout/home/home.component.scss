@@ -21,7 +21,7 @@ section.home{
 }
 //heading
 .heading {
-    padding-bottom: 1.5pc;
+    padding-bottom: 2pc;
     padding-left: 1pc;
     text-align: center;
 }
@@ -501,7 +501,7 @@ width: 100%;
     padding-bottom: 5pc;
 }
 .new-featured-amazon.allbanner {
-    padding: 2pc 0 4pc;
+    padding: 5pc 0 1pc;
 }
 .new-featured-amazon.topdeald button {
     background: #ffffff;
@@ -538,16 +538,12 @@ width: 100%;
 .blog-featured {
     margin: 20px;
 }
-.new-featured-amazon.topdeal {
-    padding: 2pc 0 2pc;
-}
+
 .new-featured-amazon.topdeal  .product-data
 {
     padding: 0;
 }
-.new-featured-amazon.topdeal .heading {
-    padding-bottom: 0pc;
-}
+
 .new-featured-amazon.topdeal .Product-featured .Product {
     width: 19%;
     margin: 0.5%;
@@ -749,32 +745,32 @@ section.home.amazonhome3 .allcate {
 
 .category-featured-amazon{
        background: #fff;
-       padding: 4pc 0 6pc;
+       padding: 5pc 0 7pc;
 }
 .category-featured {
     flex-wrap: wrap;
 }
 .cate {
     border-radius: 50%;
-    width: 190px;
-    height:190px;
+    width: 160px;
+    height: 160px;
     padding: 2px;
-    // box-shadow: 1px 1px 5px 5px #f2f1f1;
     background: #fff;
-
+    margin: 35px auto 0;
 }
 .cate-text {
-    margin: 0px 10px;
     background: #f8f8f8;
-    padding: 20px;
+    width: 18%;
+    margin: 1%;
+    padding-bottom: 2.5pc;
+
 }
 .cate a img {
     width: 120px;
-    height: 190px;
+    height: 160px;
     border-radius: 50%;
     background: #fff;
     object-fit: contain;
-    /* padding: 17px; */
     margin: 0 auto;
     display: flex;
     place-content: center;
@@ -783,22 +779,25 @@ section.home.amazonhome3 .allcate {
 .cate-text h1 {
     font-size: 15px;
     text-align: center;
-    padding: 5px 0;
+    line-height: 21px;
+    padding: 10px 20px;
     font-family: ppoins;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     margin-bottom: 0;
     padding-bottom: 0;
-
+    text-transform: capitalize;
+    letter-spacing: -0.2px;
 }
 ::ng-deep .new.category-amazon .carousel {
     height: 375px !important;
 }
 
 section.home.mobile-home.amazonhome1 .cate-text {
-    margin: 33px auto;
+    margin: 11px auto;
     background: #f8f8f8;
     padding: 20px;
+    width: 75%;
 }
 section.home.mobile-home.amazonhome1 .category-featured {
     background: #fff;
@@ -817,9 +816,16 @@ section.home.mobile-home.amazonhome2  .category-featured {
     place-content: center;
     align-items: center;
 }
+section.home.mobile-home.amazonhome2 .cate-text {
+    margin: 11px auto;
+    background: #f8f8f8;
+    padding: 20px;
+    width: 50%;
+}
 section.home.amazonhome3 .cate-text {
-    margin: 0px 10px;
+    margin: 8px ;
     padding: 11px;
+    width: 21%;
 }
 section.home.mobile-home.amazonhome1 .twocart-btn {
     opacity:1;    visibility: visible;
