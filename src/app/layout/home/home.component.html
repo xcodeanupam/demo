@@ -87,7 +87,7 @@
                 <h1>Category <span>Product</span></h1>
             </div>
             <div class="category-featured" fxLayout="row">
-                <div class="cate-text">
+                <div class="cate-text" *ngFor="let category of categories">
                     <div class="cate">
                         <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
                             target="_blank"><img border="0"
@@ -97,188 +97,12 @@
                             style="border:none !important; margin:0px !important;" />
 
                     </div>
-                    <h1>Mobiles</h1>
+                    <h1> {{category.categoryname}}
+                    </h1>
                 </div>
-
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-
-                <div class="cate-text">
-                    <div class="cate">
-                        <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" />
-
-                    </div>
-                    <h1>Mobiles</h1>
-                </div>
-
-
             </div>
         </div>
     </div>
-
-
-
-
 
 
     <div class="new-featured-amazon">
@@ -1300,32 +1124,32 @@
     </div>
 
     <div class="new category-amazon" fxLayout="column" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px"
-    fxFlex.lg="1270px" fxFlex.xl="1910px">
-    <div class="heading">
-        <p>category Item in the market</p>
-        <h1>Category <span>Product</span></h1>
-    </div>
-        <mat-carousel timings="250ms ease-in" [autoplay]="true" color="accent" maxWidth="auto" [loop]="true"
-        [hideArrows]="false" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="false"
-        orientation="ltr">
-        <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index">
-    <div class="category-featured" fxLayout="row">
-            <div class="cate-text">
-                <div class="cate">
-                    <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                        target="_blank"><img border="0"
-                            src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                        src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                        width="1" height="1" border="0" alt=""
-                        style="border:none !important; margin:0px !important;" />
-    
-                </div>
-                <h1>Mobiles</h1>
-            </div>
+        fxFlex.lg="1270px" fxFlex.xl="1910px">
+        <div class="heading">
+            <p>category Item in the market</p>
+            <h1>Category <span>Product</span></h1>
         </div>
-        </mat-carousel-slide>
-    </mat-carousel>
-</div>
+        <mat-carousel timings="250ms ease-in" [autoplay]="true" color="accent" maxWidth="auto" [loop]="true"
+            [hideArrows]="false" [hideIndicators]="false" [useKeyboard]="true" [useMouseWheel]="false"
+            orientation="ltr">
+            <mat-carousel-slide #matCarouselSlide *ngFor="let slide of slides; let i = index">
+                <div class="category-featured" fxLayout="row">
+                    <div class="cate-text">
+                        <div class="cate">
+                            <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
+                                target="_blank"><img border="0"
+                                    src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
+                                src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
+                                width="1" height="1" border="0" alt=""
+                                style="border:none !important; margin:0px !important;" />
+
+                        </div>
+                        <h1>Mobiles</h1>
+                    </div>
+                </div>
+            </mat-carousel-slide>
+        </mat-carousel>
+    </div>
 
 
 
@@ -1364,7 +1188,7 @@
                                     </button>
                                 </div>
                             </div>
-    
+
                             <h4> iphone 12 </h4>
                             <div class="price">
                                 <u> ₹84,900 </u> ₹84,889
@@ -1385,7 +1209,8 @@
                                     </div>
                                     <div class="reviewd">
                                         <p> Another greatness from Apple. I was refreshed from iPhone X and it was a
-                                            phenomenal association, on the whole, the latest specs and faultlessly smooth.
+                                            phenomenal association, on the whole, the latest specs and faultlessly
+                                            smooth.
                                         </p>
                                     </div>
                                 </div>
