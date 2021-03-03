@@ -331,8 +331,8 @@
                                     [formControl]="myControl" [matAutocomplete]="auto">
                                 <mat-autocomplete #auto="matAutocomplete">
                                     <mat-option *ngFor="let option of options" [value]="option.name">
-                                        <button mat-menu-item [routerLink]="option.link">
-                                            <img height="40px" width="40px" src={{option.image}}>{{option.name}}
+                                        <button class="searchfield" mat-menu-item [routerLink]="option.link">
+                                            <img class="imgsearch" src={{option.image}}>{{option.name}}
                                         </button>
                                     </mat-option>
                                 </mat-autocomplete>

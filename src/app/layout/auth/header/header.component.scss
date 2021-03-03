@@ -204,15 +204,15 @@ ul li span {
     margin: 0px 10px;
 }
 .cate-sidenav button {
-    font-size: 13px;
+      font-size: 13px;
     text-align: start;
     border: 0;
     font-family: "Open Sans", sans-serif;
-    height: 35px;
-    line-height: 35px;
+    height: 45px;
+    line-height: 45px;
     display: flex;
-    /* place-content: center; */
     align-items: center;
+    padding: 0px 10px;
 }
 .cate-sidenav button mat-icon {
     font-size: 15px;
@@ -259,11 +259,10 @@ section.amazonheader.amazonheader3 .menus ul li {
 
 .mobile-haeder .search mat-icon.mat-icon {
     padding: 0px 0px 0 11px;
-    top: 2px;
-    position: relative;
+    position: absolute;
 }
 .mobile-haeder .search input {
-    padding: 0px 0pc 0 0pc;
+    padding: 0px 0pc 0 2pc;
 }
 .logo img{
     width: 60%;
@@ -301,6 +300,7 @@ button.mat-focus-indicator.searchfield.mat-menu-item {
     padding: 0px 0px;
     font-family: inter;
     letter-spacing: 0.4px;
+    border: 0;
 }
 .mat-menu-content a {
     width: 33%;

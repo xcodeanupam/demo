@@ -228,7 +228,7 @@ section.home.amazonhome1 .text{
     padding: 0;
 }
 section.home.amazonhome1 .addto-cart button {
-    padding: 12px 1.6pc 12px;
+    padding: 12px 1pc 12px;
     margin: 14px 5px 15px;
 }
 section.home.amazonhome2 .addto-cart button {
@@ -247,4 +247,16 @@ section.home.amazonhome1  .single-line {
 
 .ft{
     margin: 0 auto;
+}
+
+.img img {
+    height: auto;
+    width: 70%;
+    margin: 0.5pc 0;
+}
+.price-review .price-cart .img {
+    align-items: center;
+}
+section.home.amazonhome1 .product {
+    padding: 2pc 1pc 0.5pc;
 }

@@ -462,7 +462,7 @@ width: 100%;
 }
 .new-featured-amazon.topdeal .twocart-btn {
     position: relative;
-    width: 100%;
+    width: 98%;
 }
 .new-featured-amazon.topdeal .twocart-btn button.iconview {
     margin: 0px 5px;
@@ -515,8 +515,8 @@ width: 100%;
     opacity: 1;
 }
 .new-featured-amazon.topdeal .twocart-btn {
-     opacity: 0;
-    margin: 0.4pc 0 0;
+    opacity: 0;
+    margin: 0.4pc auto 0;
 }
 .new-featured-amazon.topdeal .newatricel {
     position: relative;
@@ -628,7 +628,6 @@ section.home.amazonhome2 .allcate {
 section.home.amazonhome1 .cate-amazon h1 {
     font-size: 15px;
     line-height: 18px;
-    font-weight: 900;
 }
 section.home.amazonhome1 .cate-amazon a {
     font-size: 12px;
@@ -788,19 +787,21 @@ section.home.amazonhome3 .allcate {
     padding-bottom: 0;
     text-transform: capitalize;
     letter-spacing: -0.2px;
+    cursor: pointer;
 }
 ::ng-deep .new.category-amazon .carousel {
     height: 375px !important;
 }
 
 section.home.mobile-home.amazonhome1 .cate-text {
-    margin: 11px auto;
-    background: #f8f8f8;
-    padding: 20px;
-    width: 75%;
+    margin: 0px auto;
+    background: #f9f9f9;
+    padding: 0 8px;
+    width: 25%;
 }
 section.home.mobile-home.amazonhome1 .category-featured {
-    background: #fff;
+    background: #fff;    flex-wrap: nowrap;
+
 }
 section.home.mobile-home.amazonhome1 .new.category-amazon .heading{
     padding-bottom:0pc;
@@ -814,7 +815,8 @@ section.home.mobile-home.amazonhome2 .new.category-amazon .heading{
 }
 section.home.mobile-home.amazonhome2  .category-featured {
     place-content: center;
-    align-items: center;
+    align-items: center;    flex-wrap: nowrap;
+
 }
 section.home.mobile-home.amazonhome2 .cate-text {
     margin: 11px auto;
@@ -829,9 +831,54 @@ section.home.amazonhome3 .cate-text {
 }
 section.home.mobile-home.amazonhome1 .twocart-btn {
     opacity:1;    visibility: visible;
-
 }
 section.home.mobile-home.amazonhome2 .twocart-btn {
     opacity:1;    visibility: visible;
+}
+:focus{
+    outline: transparent;
+}
+section.home.mobile-home.amazonhome1 .new.featured-amazon {
+    margin: 0 auto;
+    overflow-x: scroll;
+}
+section.home.mobile-home.amazonhome1 .new.featured-amazon::-webkit-scrollbar-track
+{
+	background-color: #F5F5F5;
+}
 
+section.home.mobile-home.amazonhome1 .new.featured-amazon::-webkit-scrollbar
+{
+	width:4px;
+	background-color: #F5F5F5;
+}
+
+section.home.mobile-home.amazonhome1 .new.featured-amazon::-webkit-scrollbar-thumb
+{
+	background-color: #F5F5F5;
+}
+
+
+
+
+section.home.mobile-home.amazonhome1 .category-featured-amazon {
+    padding: 0pc 0 0pc;
+}
+section.home.mobile-home.amazonhome2 .category-featured-amazon {
+    padding: 0pc 0 0pc;
+}
+section.home.mobile-home.amazonhome1 .cate {
+    width: 80px;
+    height: 80px;
+    margin: 15px auto 0;
+}
+section.home.mobile-home.amazonhome1 .cate a img {
+    width:60px;
+    height: 80px;
+}
+section.home.mobile-home.amazonhome1 .cate-text h1 {
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 500;
+    padding: 10px 7px;
 }
