@@ -16,7 +16,8 @@
                         </button>
                         <mat-menu #menu="matMenu" class="menu_category">
                             <button *ngFor="let category of categories" mat-menu-item
-                                [routerLink]="category.categorylink">
+                               (click)="catgoryPage(category.categorylink)"
+                           >
                                 {{category.categoryname}}
                             </button>
 

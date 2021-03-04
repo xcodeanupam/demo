@@ -5,6 +5,7 @@ import { map, startWith } from 'rxjs/operators';
 import { BreakpointService } from 'src/app/shared/breakpoint.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from 'src/app/core/user/user.service';
+import { MesssageService } from 'src/app/core/user/message.service';
 
 @Component({
   selector: 'app-header',
@@ -30,10 +31,10 @@ export class HeaderComponent implements OnInit {
         startWith(''),
         map(value => this._filter(value))
       );
-      this.getSearchList()
-      this.getCategories()
+    this.getSearchList()
+    this.getCategories()
   }
-  constructor(private breakpointService: BreakpointService, public userService: UserService,  public router: Router, public route: ActivatedRoute) { }
+  constructor(private breakpointService: BreakpointService, public message: MesssageService, public userService: UserService, public router: Router, public route: ActivatedRoute) { }
   private _filter(value: string): any {
     const filterValue = value.toLowerCase();
 
@@ -55,6 +56,13 @@ export class HeaderComponent implements OnInit {
         console.log('error', error);
       }
     );
+  }
+
+  catgoryPage(s: any) {
+    this.router.navigate([s]);
+   const x = s.replace('category/', '');
+
+    this.message.changeRoute(x)
   }
 
   getCategories() {
