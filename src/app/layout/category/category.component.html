@@ -85,7 +85,11 @@
                             </div>
                         <div class="addto-cart" fxLayout="row">
                             <button  [routerLink]="'/product/'+product.productName">
-                                <mat-icon>add_shopping_cart</mat-icon><span>Buy Now</span>
+                                <mat-icon>add_shopping_cart</mat-icon>
+                                <a target="blank" href="{{product.productLink}}">
+                                    <span>Buy Now</span>
+                                </a>
+                              
                             </button>
                             <button style="background: #ff9f0d;" [routerLink]="'/product/'+product.productName">
                                 <mat-icon>visibility</mat-icon><span>View More</span></button>
