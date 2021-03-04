@@ -2,7 +2,7 @@
     ngClass.md="amazonhome3">
     <div class="category">
         <div class="cate-amazon" fxLayout="row" fxLayout.xs="column">
-            <div class="cate-img left1" fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%">
+            <div class="cate-img left1" fxFlex="35%" fxFlex.xs="100%" fxFlex.sm="100%">
                 <h1>Amazon Best Seller Fashion Products
                     <br />
                     <mat-icon>star</mat-icon>
@@ -15,7 +15,7 @@
                 <a target="_blank" href="https://amzn.to/2ML7fhR">
                     Shop Now</a>
             </div>
-            <div class="cate-img" fxFlex="60%" fxFlex.xs="100%" fxFlex.sm="100%" fxLayout="row">
+            <div class="cate-img" fxFlex="65%" fxFlex.xs="100%" fxFlex.sm="100%" fxLayout="row">
                 <div class="two-cate" fxLayout="column" fxFlex="50%" fxFlex.sm="100%">
                     <div class="right1 allcate">
                         <h1>Amazon Best Sellers Ofiice <br />Products
@@ -88,13 +88,6 @@
                         <a [routerLink]="category.categorylink">
                             <img src="{{category.image}}">
                         </a>
-                        <!-- <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
-                            target="_blank"><img border="0"
-                                src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                            src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
-                            width="1" height="1" border="0" alt=""
-                            style="border:none !important; margin:0px !important;" /> -->
-
                     </div>
                     <h1 [routerLink]="category.categorylink"> {{category.categoryname}}
                     </h1>
@@ -119,15 +112,15 @@
                     <div class="product-data">
                         <div class="ppt" fxLayout="row">
                             <div class="product-image">
-                                <a href="https://www.amazon.in/dp/B08L5WHFT9?&linkCode=li3&tag=stackasian-21&linkId=2ebacfa51f6ae8cb07ea47d683617b27&ref_=as_li_ss_il"
+                                <a href="https://www.amazon.in/OnePlus-Mirror-Black-128GB-Storage/dp/B085J1PFYB?hvadid=397080665189&hvpos=&hvnetw=g&hvrand=1070242398799892343&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9302748&hvtargid=pla-1050648922517&psc=1&ext_vrnc=hi&linkCode=li2&tag=reviewstackas-21&linkId=e6914f9d55b40484a6e3f4c66937474a&language=en_IN&ref_=as_li_ss_il"
                                     target="_blank"><img border="0"
-                                        src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B08L5WHFT9&Format=_SL250_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                                    src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li3&o=31&a=B08L5WHFT9"
+                                        src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B085J1PFYB&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=reviewstackas-21&language=en_IN"></a><img
+                                    src="https://ir-in.amazon-adsystem.com/e/ir?t=reviewstackas-21&language=en_IN&l=li2&o=31&a=B085J1PFYB"
                                     width="1" height="1" border="0" alt=""
                                     style="border:none !important; margin:0px !important;" />
                             </div>
                             <div class="twocart-btn" fxLayout="column">
-                                <button routerLink="/category" class="iconview" matTooltip="Add to cart">
+                                <button class="iconview" matTooltip="Shop Now">
                                     <mat-icon>add_shopping_cart</mat-icon>
                                 </button>
                                 <button routerLink="/category" class="" matTooltip="View More">
@@ -135,16 +128,31 @@
                                 </button>
                             </div>
                         </div>
-
-                        <h4> iphone 12 </h4>
+                        <div class="star amazon-revirew">
+                            <div class="review">
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star_border</mat-icon>
+                                <a
+                                    href="https://www.amazon.in/OnePlus-Mirror-Black-128GB-Storage/dp/B085J1PFYB?hvadid=397080665189&hvpos=&hvnetw=g&hvrand=1070242398799892343&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9302748&hvtargid=pla-1050648922517&psc=1&ext_vrnc=hi&linkCode=ll1&tag=reviewstackas-21&linkId=e5becf027ddb9503d64305085e04e164&language=en_IN&ref_=as_li_ss_tl">
+                                    <span>| 6,577 ratings </span>
+                                </a>
+                            </div>
+                        </div>
+                        <h4>
+                            <a
+                                href="https://www.amazon.in/OnePlus-Mirror-Black-128GB-Storage/dp/B085J1PFYB?hvadid=397080665189&hvpos=&hvnetw=g&hvrand=1070242398799892343&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9302748&hvtargid=pla-1050648922517&psc=1&ext_vrnc=hi&linkCode=ll1&tag=reviewstackas-21&linkId=e5becf027ddb9503d64305085e04e164&language=en_IN&ref_=as_li_ss_tl">
+                                OnePlus 8T 5G </a></h4>
                         <div class="price">
-                            <u> ₹84,900 </u> ₹84,889
+                            ₹ 42,999.00
                         </div>
                         <div class="start">
                             <div class="img" fxLayout="row">
                                 <img
                                     src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                <b>S.Siva Ram Kris</b>
+                                <b> Sachin Aravind</b>
                             </div>
                             <div class="star">
                                 <div class="review">
@@ -155,9 +163,10 @@
                                     <mat-icon>star</mat-icon>
                                 </div>
                                 <div class="reviewd">
-                                    <p> Another greatness from Apple. I was refreshed from iPhone X and it was a
-                                        phenomenal association, on the whole, the latest specs and faultlessly smooth.
-                                    </p>
+                                    <p>An amazing phone which is feature packed and it's definitely value for money.
+                                        Very good sound quality,
+                                        Video stabilization is awesome,
+                                        Very satisfied with the phone.</p>
                                 </div>
                             </div>
                         </div>
@@ -174,15 +183,15 @@
                     <div class="product-data">
                         <div class="ppt" fxLayout="row">
                             <div class="product-image">
-                                <a href="https://www.amazon.in/dp/B07X8V5YKR?pf_rd_s=merchandised-search-12&pf_rd_t=Gateway&pf_rd_i=mobile&pf_rd_m=A1VBAL9TL5WCBF&pf_rd_r=5XTG75K8JAAK3FKWQPVV&pf_rd_p=98283c99-ef45-44df-a457-13fde8f48220&linkCode=li2&tag=stackasian-21&linkId=0b40561d2324d6b2f26baaddb41fa852&ref_=as_li_ss_il"
+                                <a href="https://www.amazon.in/Sony-WF-XB700-Wireless-Bluetooth-Headphones/dp/B085VQFZ8Z?_encoding=UTF8&pd_rd_w=ycqE0&pf_rd_p=25041c4e-bc5b-4063-99b1-635043c8cad4&pf_rd_r=Z6QP1NKCW9AVRKCWFGZH&pd_rd_r=997afa44-43cf-438f-a458-579797200e71&pd_rd_wg=JwcJL&linkCode=li2&tag=reviewstackas-21&linkId=d5ee9817c92d2c9932957405c341cfd9&language=en_IN&ref_=as_li_ss_il"
                                     target="_blank"><img border="0"
-                                        src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07X8V5YKR&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                                    src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li2&o=31&a=B07X8V5YKR"
+                                        src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B085VQFZ8Z&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=reviewstackas-21&language=en_IN"></a><img
+                                    src="https://ir-in.amazon-adsystem.com/e/ir?t=reviewstackas-21&language=en_IN&l=li2&o=31&a=B085VQFZ8Z"
                                     width="1" height="1" border="0" alt=""
                                     style="border:none !important; margin:0px !important;" />
                             </div>
                             <div class="twocart-btn" fxLayout="column">
-                                <button routerLink="/category" class="iconview" matTooltip="Add to cart">
+                                <button class="iconview" matTooltip="Shop Now">
                                     <mat-icon>add_shopping_cart</mat-icon>
                                 </button>
                                 <button routerLink="/category" class="" matTooltip="View More">
@@ -190,16 +199,31 @@
                                 </button>
                             </div>
                         </div>
-
-                        <h4> Note10 Lite </h4>
+                        <div class="star amazon-revirew">
+                            <div class="review">
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star_border</mat-icon>
+                                <a target="_blank"
+                                    href="https://www.amazon.in/Sony-WF-XB700-Wireless-Bluetooth-Headphones/dp/B085VQFZ8Z?_encoding=UTF8&pd_rd_w=ycqE0&pf_rd_p=25041c4e-bc5b-4063-99b1-635043c8cad4&pf_rd_r=Z6QP1NKCW9AVRKCWFGZH&pd_rd_r=997afa44-43cf-438f-a458-579797200e71&pd_rd_wg=JwcJL&linkCode=ll1&tag=reviewstackas-21&linkId=c1d16b69c57bdf1e9a6e2b2c4c0a20e9&language=en_IN&ref_=as_li_ss_tl">
+                                    <span>| 7,335 ratings </span>
+                                </a>
+                            </div>
+                        </div>
+                        <h4>
+                            <a target="_blank"
+                                href="https://www.amazon.in/Sony-WF-XB700-Wireless-Bluetooth-Headphones/dp/B085VQFZ8Z?_encoding=UTF8&pd_rd_w=ycqE0&pf_rd_p=25041c4e-bc5b-4063-99b1-635043c8cad4&pf_rd_r=Z6QP1NKCW9AVRKCWFGZH&pd_rd_r=997afa44-43cf-438f-a458-579797200e71&pd_rd_wg=JwcJL&linkCode=ll1&tag=reviewstackas-21&linkId=c1d16b69c57bdf1e9a6e2b2c4c0a20e9&language=en_IN&ref_=as_li_ss_tl">
+                                Sony WF-XB700 Wireless Headphone </a></h4>
                         <div class="price">
-                            <u>₹ 43,000.00</u> ₹ 31,999.00
+                            <u>₹ 11,990.00</u> ₹ 7,990.00
                         </div>
                         <div class="start">
                             <div class="img" fxLayout="row">
                                 <img
                                     src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                <b>Subhas</b>
+                                <b> Prashant Pandey</b>
                             </div>
                             <div class="star">
                                 <div class="review">
@@ -210,13 +234,15 @@
                                     <mat-icon>star</mat-icon>
                                 </div>
                                 <div class="reviewd">
-                                    <p> Phenomenal item its plan, camera, execution, super AMOLED show, sound
-                                        everything
-                                        is super Spen highlights omg. super lead cell phone.</p>
+                                    <p>Bass is perfectly punchy, Clarity is awesome, Comfortable to wear
+                                        Battery backup is 8h+ on buds, Plastic quality is awesome .Bass is just Awesome!
+                                    </p>
                                 </div>
                             </div>
                         </div>
-
+                        <!-- <button routerLink="/category" class="more">View More 
+                                <mat-icon>double_arrow</mat-icon>
+                            </button> -->
                     </div>
                 </div>
 
@@ -243,9 +269,25 @@
                                 </button>
                             </div>
                         </div>
-                        <h4>Smart speaker with Alexa </h4>
+                        <div class="star amazon-revirew">
+                            <div class="review">
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star_half</mat-icon>
+                                <a target="_blank"
+                                    href="https://www.amazon.in/Echo-Dot-3rd-Gen/dp/B07PKXJN7J?dchild=1&qid=1613207974&s=amazon-devices&sr=1-9&linkCode=ll1&tag=reviewstackas-21&linkId=44b91e85338b1e7a893d2b198c7c9fa6&language=en_IN&ref_=as_li_ss_tl">
+                                    <span>| 40,129 ratings</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h4> <a target="_blank"
+                                href="https://www.amazon.in/Echo-Dot-3rd-Gen/dp/B07PKXJN7J?dchild=1&qid=1613207974&s=amazon-devices&sr=1-9&linkCode=ll1&tag=reviewstackas-21&linkId=44b91e85338b1e7a893d2b198c7c9fa6&language=en_IN&ref_=as_li_ss_tl">
+                                Smart speaker with Alexa
+                            </a></h4>
                         <div class="price">
-                            <u>₹ 3,499</u> ₹ 4,499
+                            <u>₹ 4,499</u> ₹ 3,499
                         </div>
                         <div class="start">
                             <div class="img" fxLayout="row">
@@ -274,8 +316,8 @@
                 </div>
 
                 <div class="Product">
-                    <div class="newatricel">
-                        <h1>New</h1>
+                    <div class="newatricel-off">
+                        <h1>Sale</h1>
                     </div>
                     <div class="product-data">
                         <div class="ppt" fxLayout="row">
@@ -296,9 +338,26 @@
                                 </button>
                             </div>
                         </div>
-                        <h4>Smart Home Camera </h4>
+                        <div class="star amazon-revirew">
+                            <div class="review">
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star_border</mat-icon>
+                                <a target="_blank"
+                                    href="https://www.amazon.in/TP-Link-Wireless-Security-Tapo-C200/dp/B07XLML2YS?dchild=1&qid=1613207974&s=amazon-devices&sr=1-10&linkCode=ll1&tag=reviewstackas-21&linkId=dad9f656bf9a369b6de1d9cb88f02eeb&language=en_IN&ref_=as_li_ss_tl">
+                                    <span>| 20,256 ratings</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h4>
+                            <a target="_blank"
+                                href="https://www.amazon.in/TP-Link-Wireless-Security-Tapo-C200/dp/B07XLML2YS?dchild=1&qid=1613207974&s=amazon-devices&sr=1-10&linkCode=ll1&tag=reviewstackas-21&linkId=dad9f656bf9a369b6de1d9cb88f02eeb&language=en_IN&ref_=as_li_ss_tl">
+                                Smart Home Camera
+                            </a></h4>
                         <div class="price">
-                            ₹ 2,899.00
+                            <u>₹ 3,299.00</u> ₹ 2,499.00
                         </div>
                         <div class="start">
                             <div class="img" fxLayout="row">
@@ -328,6 +387,77 @@
                 </div>
 
 
+
+                <div class="Product">
+                    <div class="newatricel-off">
+                        <h1>Sale</h1>
+                    </div>
+                    <div class="product-data">
+                        <div class="ppt" fxLayout="row">
+                            <div class="product-image">
+                                <a href="https://www.amazon.in/arts-Multiple-Beautiful-Painting-76cmx148cm/dp/B07N79M41Z?dchild=1&pf_rd_i=1380374031&pf_rd_m=A1K21FY43GMZF8&pf_rd_p=bd537944-6bbc-4a91-b0d4-b37817ca3dee&pf_rd_r=FJEQQ8NB9BC6APHC1YBE&pf_rd_s=merchandised-search-8&pf_rd_t=101&qid=1614848281&refinements=p_n_pct-off-with-tax%3A2665401031%2Cp_85%3A10440599031%2Cp_36%3A150000-&rps=1&s=kitchen&sr=1-7&linkCode=li2&tag=reviewstackas-21&linkId=35b63134a4bf73c3cf19831cf6684882&language=en_IN&ref_=as_li_ss_il"
+                                    target="_blank"><img border="0"
+                                        src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07N79M41Z&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=reviewstackas-21&language=en_IN"></a><img
+                                    src="https://ir-in.amazon-adsystem.com/e/ir?t=reviewstackas-21&language=en_IN&l=li2&o=31&a=B07N79M41Z"
+                                    width="1" height="1" border="0" alt=""
+                                    style="border:none !important; margin:0px !important;" />
+                            </div>
+                            <div class="twocart-btn" fxLayout="column">
+                                <button routerLink="/category" class="iconview" matTooltip="Add to cart">
+                                    <mat-icon>add_shopping_cart</mat-icon>
+                                </button>
+                                <button routerLink="/category" class="" matTooltip="View More">
+                                    <mat-icon>visibility</mat-icon>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="star amazon-revirew">
+                            <div class="review">
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star_border</mat-icon>
+                                <a target="_blank"
+                                    href="https://www.amazon.in/arts-Multiple-Beautiful-Painting-76cmx148cm/dp/B07N79M41Z?dchild=1&pf_rd_i=1380374031&pf_rd_m=A1K21FY43GMZF8&pf_rd_p=bd537944-6bbc-4a91-b0d4-b37817ca3dee&pf_rd_r=FJEQQ8NB9BC6APHC1YBE&pf_rd_s=merchandised-search-8&pf_rd_t=101&qid=1614848281&refinements=p_n_pct-off-with-tax%3A2665401031%2Cp_85%3A10440599031%2Cp_36%3A150000-&rps=1&s=kitchen&sr=1-7&linkCode=ll1&tag=reviewstackas-21&linkId=d1b4b47c8dbaeec8ad1ef733f2364f8a&language=en_IN&ref_=as_li_ss_tl">
+                                    <span>| 120 ratings</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h4>
+                            <a target="_blank"
+                                href="https://www.amazon.in/arts-Multiple-Beautiful-Painting-76cmx148cm/dp/B07N79M41Z?dchild=1&pf_rd_i=1380374031&pf_rd_m=A1K21FY43GMZF8&pf_rd_p=bd537944-6bbc-4a91-b0d4-b37817ca3dee&pf_rd_r=FJEQQ8NB9BC6APHC1YBE&pf_rd_s=merchandised-search-8&pf_rd_t=101&qid=1614848281&refinements=p_n_pct-off-with-tax%3A2665401031%2Cp_85%3A10440599031%2Cp_36%3A150000-&rps=1&s=kitchen&sr=1-7&linkCode=ll1&tag=reviewstackas-21&linkId=d1b4b47c8dbaeec8ad1ef733f2364f8a&language=en_IN&ref_=as_li_ss_tl">
+                                Buddha Framed Painting
+                            </a></h4>
+                        <div class="price">
+                            <u>₹ 4,999.00</u> ₹ 2,299.00
+                        </div>
+                        <div class="start">
+                            <div class="img" fxLayout="row">
+                                <img
+                                    src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                <b> Sunita </b>
+                            </div>
+                            <div class="star">
+                                <div class="review">
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                    <mat-icon>star</mat-icon>
+                                </div>
+                                <div class="reviewd">
+                                    <p> Amezing .....wall art....thank u amazon. My hall looks beautiful.👍
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+
                 <div class="Product">
                     <div class="newatricel-off">
                         <h1>Sale</h1>
@@ -351,9 +481,25 @@
                                 </button>
                             </div>
                         </div>
-                        <h4>P10 Wireless Speaker </h4>
+                        <div class="star amazon-revirew">
+                            <div class="review">
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star_border</mat-icon>
+                                <a target="_blank"
+                                    href="https://www.amazon.in/Photron-P10-Wireless-Portable-Bluetooth/dp/B01EM2ZFJW?dchild=1&qid=1613207974&s=amazon-devices&sbo=Tc8eqSFhUl4VwMzbE4fw%2Fw%3D%3D&smid=A14CZOWI0VEHLG&sr=1-19&linkCode=ll1&tag=reviewstackas-21&linkId=eedb4776a86e589cd676e7b0c8744a0a&language=en_IN&ref_=as_li_ss_tl">
+                                    <span>| 20,256 ratings</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h4><a target="_blank"
+                                href="https://www.amazon.in/Photron-P10-Wireless-Portable-Bluetooth/dp/B01EM2ZFJW?dchild=1&qid=1613207974&s=amazon-devices&sbo=Tc8eqSFhUl4VwMzbE4fw%2Fw%3D%3D&smid=A14CZOWI0VEHLG&sr=1-19&linkCode=ll1&tag=reviewstackas-21&linkId=eedb4776a86e589cd676e7b0c8744a0a&language=en_IN&ref_=as_li_ss_tl">
+                                P10 Wireless Speaker</a> </h4>
                         <div class="price">
-                            <u>₹ 1,990.00</u> ₹ 599.00
+                            <u>₹ 1,291.00</u> ₹ 699.00
                         </div>
                         <div class="start">
                             <div class="img" fxLayout="row">
@@ -405,9 +551,26 @@
                                 </button>
                             </div>
                         </div>
-                        <h4> 3-Ply Cotton Face-Mask</h4>
+                        <div class="star amazon-revirew">
+                            <div class="review">
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star_border</mat-icon>
+                                <a target="_blank"
+                                    href="https://www.amazon.in/MediWeave-Meltblown-Reusable-Washable-Pattern/dp/B08H44TVMY?crid=2200D59ZSQHXT&dchild=1&keywords=mask+cotton+washable&qid=1613301368&s=industrial&sprefix=mask+cott%2Cindustrial%2C398&sr=1-9&linkCode=ll1&tag=reviewstackas-21&linkId=6ee3abac39bde742e0cd145208348d25&language=en_IN&ref_=as_li_ss_tl">
+                                    <span>| 318 ratings</span>
+                                </a>
+                            </div>
+                        </div>
+
+                        <h4>
+                            <a target="_blank"
+                                href="https://www.amazon.in/MediWeave-Meltblown-Reusable-Washable-Pattern/dp/B08H44TVMY?crid=2200D59ZSQHXT&dchild=1&keywords=mask+cotton+washable&qid=1613301368&s=industrial&sprefix=mask+cott%2Cindustrial%2C398&sr=1-9&linkCode=ll1&tag=reviewstackas-21&linkId=6ee3abac39bde742e0cd145208348d25&language=en_IN&ref_=as_li_ss_tl">
+                                3-Ply Cotton Face-Mask </a></h4>
                         <div class="price">
-                            ₹ 487.00 - ₹ 312.00
+                            ₹ 240.00 - ₹ 487.00
                         </div>
                         <div class="start">
                             <div class="img" fxLayout="row">
@@ -436,59 +599,7 @@
                     </div>
                 </div>
 
-                <div class="Product">
-                    <div class="newatricel-off">
-                        <h1>Sale</h1>
-                    </div>
-                    <div class="product-data">
-                        <div class="ppt" fxLayout="row">
-                            <div class="product-image">
-                                <a href="https://www.amazon.in/Garnier-Acno-Fight-Anti-Pimple-Facewash/dp/B07NQPFTJV?dchild=1&qid=1613208373&s=hpc&sr=1-20&linkCode=li2&tag=stackasian-21&linkId=53ca2d3d162edd7de201f44bba94bb18&ref_=as_li_ss_il"
-                                    target="_blank"><img border="0"
-                                        src="//ws-in.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=B07NQPFTJV&Format=_SL160_&ID=AsinImage&MarketPlace=IN&ServiceVersion=20070822&WS=1&tag=stackasian-21"></a><img
-                                    src="https://ir-in.amazon-adsystem.com/e/ir?t=stackasian-21&l=li2&o=31&a=B07NQPFTJV"
-                                    width="1" height="1" border="0" alt=""
-                                    style="border:none !important; margin:0px !important;" />
-                            </div>
-                            <div class="twocart-btn" fxLayout="column">
-                                <button routerLink="/category" class="iconview" matTooltip="Add to cart">
-                                    <mat-icon>add_shopping_cart</mat-icon>
-                                </button>
-                                <button routerLink="/category" class="" matTooltip="View More">
-                                    <mat-icon>visibility</mat-icon>
-                                </button>
-                            </div>
-                        </div>
-                        <h4>Garnier Men Power </h4>
-                        <div class="price">
-                            <u>₹ 360.00</u> ₹ 288.00
-                        </div>
-                        <div class="start">
-                            <div class="img" fxLayout="row">
-                                <img
-                                    src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                <b> Nalin Purohit</b>
-                            </div>
-                            <div class="star">
-                                <div class="review">
-                                    <mat-icon>star</mat-icon>
-                                    <mat-icon>star</mat-icon>
-                                    <mat-icon>star</mat-icon>
-                                    <mat-icon>star</mat-icon>
-                                    <mat-icon>star</mat-icon>
-                                </div>
-                                <div class="reviewd">
-                                    <p> It was for my child, yet can honestly say, HE , had attempted different
-                                        other
-                                        comparative items (scarcely any accessible at a large portion of the
-                                        rate, as
-                                        well), yet is ATTACHED, to this brand and item</p>
-                                </div>
-                            </div>
-                        </div>
 
-                    </div>
-                </div>
 
                 <div class="Product">
                     <div class="newatricel-off">
@@ -513,9 +624,25 @@
                                 </button>
                             </div>
                         </div>
-                        <h4>Wooden Furniture</h4>
+                        <div class="star amazon-revirew">
+                            <div class="review">
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star</mat-icon>
+                                <mat-icon>star_border</mat-icon>
+                                <a target="_blank"
+                                    href="https://www.amazon.in/Furniture-World-Sheesham-Wooden-Dining/dp/B07NQMN2VV?&linkCode=ll1&tag=reviewstackas-21&linkId=5958c30978eba92747b92db118934bf6&language=en_IN&ref_=as_li_ss_tl">
+                                    <span>| 191 ratings</span>
+                                </a>
+                            </div>
+                        </div>
+                        <h4>
+                            <a target="_blank"
+                                href="https://www.amazon.in/Furniture-World-Sheesham-Wooden-Dining/dp/B07NQMN2VV?&linkCode=ll1&tag=reviewstackas-21&linkId=5958c30978eba92747b92db118934bf6&language=en_IN&ref_=as_li_ss_tl">
+                                Wooden Furniture </a></h4>
                         <div class="price">
-                            ₹ 16,599
+                            ₹ 16,599.00 - ₹ 22,599.00
                         </div>
                         <div class="start">
                             <div class="img" fxLayout="row">
@@ -547,6 +674,8 @@
         </div>
     </div>
 
+
+
     <!----------top-deal-------------->
     <div class="topdeald">
         <div class="new-featured-amazon allbanner">
@@ -556,42 +685,26 @@
                     <p>New launches in AMAZON electronics</p>
                     <h1>Best <span>Offers</span></h1>
                 </div>
-                <!-- <div fxLayout="row" class="banner-slide">
-                    <div class="tabreviews" fxFlex="30%">
-
-
-                    </div> -->
-
                 <div fxLayout="row" class="pics">
-                    <div class="img-slider" fxFlex="24%" fxFlex.xs="99%%" fxFlex.sm="99%">
+                    <div class="img-slider" fxFlex="80%" fxFlex.md="72%" fxFlex.xs="99%%" fxFlex.sm="99%">
                         <div class="slide1-img">
-                            <p class="cOne">
+
                                 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
                                     scrolling="no" frameborder="0"
                                     src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B089QP8Y81&asins=B089QP8Y81&linkId=0b63c8e1bd30b5184eef8d6ef8d6b068&show_border=true&link_opens_in_new_window=true"></iframe>
-                            </p>
-
-                            <p class="cTwo">
+                          
                                 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
                                     scrolling="no" frameborder="0"
                                     src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B08WWP2JJR&asins=B08WWP2JJR&linkId=dc22d4e513add04dae3a5fcb5923d79d&show_border=true&link_opens_in_new_window=true"></iframe>
-                            </p>
-
-                            <p class="cThree">
+                          
                                 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
                                     scrolling="no" frameborder="0"
                                     src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B07YYNX5X6&asins=B07YYNX5X6&linkId=3b40915cf9c3552970dea2b994bcb34c&show_border=true&link_opens_in_new_window=true"></iframe>
-                            </p>
-
-                            <p class="cFour">
+                           
                                 <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
                                     scrolling="no" frameborder="0"
                                     src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B08TN6F939&asins=B08TN6F939&linkId=09c1964799da89b0ec72e809288c84e6&show_border=true&link_opens_in_new_window=true"></iframe>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="img-slider" fxFlex="24%" fxFlex.xs="99%%" fxFlex.sm="99%">
-                        <div class="slide1-img">
+                           
                             <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
                                 frameborder="0"
                                 src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B074WZJ4MF&asins=B074WZJ4MF&linkId=f5b0208e9ef77ed9d12aa64b4bc0b07c&show_border=true&link_opens_in_new_window=true"></iframe>
@@ -604,36 +717,32 @@
                             <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
                                 frameborder="0"
                                 src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B082PGPHWZ&asins=B082PGPHWZ&linkId=49d5900e114183c1ce720636f248f847&show_border=true&link_opens_in_new_window=true"></iframe>
+                            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
+                                frameborder="0"
+                                src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B07S85MJT8&asins=B07S85MJT8&linkId=8db540e454d301c2d19bbf1e56287425&show_border=true&link_opens_in_new_window=true"></iframe>
+                            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
+                                frameborder="0"
+                                src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B07WSHWNH8&asins=B07WSHWNH8&linkId=e256e9879155498039ce333ac5acd981&show_border=true&link_opens_in_new_window=true"></iframe>
+                            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
+                                frameborder="0"
+                                src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B085VQFZ8Z&asins=B085VQFZ8Z&linkId=69154aa174d3668c25363124665c754e&show_border=true&link_opens_in_new_window=true"></iframe>
+                            <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
+                                frameborder="0"
+                                src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B08L8XSJWB&asins=B08L8XSJWB&linkId=0fa2f50b640855e2ca0d000a83e4e179&show_border=true&link_opens_in_new_window=true"></iframe>
+
                         </div>
                     </div>
-                    <div class="img-slider" fxFlex="24%" fxFlex.xs="99%%" fxFlex.sm="99%">
-                        <div class="slide1-img">
-                            <div class="slide1-img">
-                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
-                                    scrolling="no" frameborder="0"
-                                    src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B07S85MJT8&asins=B07S85MJT8&linkId=8db540e454d301c2d19bbf1e56287425&show_border=true&link_opens_in_new_window=true"></iframe>
-                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
-                                    scrolling="no" frameborder="0"
-                                    src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B07WSHWNH8&asins=B07WSHWNH8&linkId=e256e9879155498039ce333ac5acd981&show_border=true&link_opens_in_new_window=true"></iframe>
-                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
-                                    scrolling="no" frameborder="0"
-                                    src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B085VQFZ8Z&asins=B085VQFZ8Z&linkId=69154aa174d3668c25363124665c754e&show_border=true&link_opens_in_new_window=true"></iframe>
-                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
-                                    scrolling="no" frameborder="0"
-                                    src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B08L8XSJWB&asins=B08L8XSJWB&linkId=0fa2f50b640855e2ca0d000a83e4e179&show_border=true&link_opens_in_new_window=true"></iframe>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="img-slider" fxFlex="24%" fxFlex.xs="99%%" fxFlex.sm="99%">
+
+                    <div class="img-slider" fxFlex="20%" fxFlex.md="28%"  fxFlex.xs="99%%" fxFlex.sm="99%">
                         <div class="slide1-img">
                             <div class="slide1-img">
                                 <img src="/assets/images/off4.jpg">
-
+                                <img src="/assets/images/off1.jpg">
                             </div>
+                            
                         </div>
                     </div>
                 </div>
-                <!-- </div> -->
             </div>
         </div>
 
@@ -820,6 +929,89 @@
                 </div>
             </div>
         </div>
+
+        
+
+
+
+
+    <!----------top-deal-------------->
+            <div class="new-featured-amazon allbanner">
+                <div class="new featured-amazon" fxLayout="column" fxLayout.xs="column" fxLayout.sm="column" fxFlex.xs="588"
+                    fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px" fxFlex.xl="1910px">
+                    <div class="heading">
+                        <p>New launches in AMAZON electronics</p>
+                        <h1>Best <span>offers</span></h1>
+                    </div>
+                    <div fxLayout="row" class="pics">
+
+                            <div class="img-slider" fxFlex="20%" fxFlex.md="28%"  fxFlex.xs="99%%" fxFlex.sm="99%">
+                                    <div class="slide1-img">
+                                        <div class="slide1-img">
+                                            <img src="/assets/images/off4.jpg">
+                                            <img src="/assets/images/off1.jpg">
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                        <div class="img-slider" fxFlex="80%" fxFlex.md="72%" fxFlex.xs="99%%" fxFlex.sm="99%">
+                            <div class="slide1-img">
+    
+                                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
+                                        scrolling="no" frameborder="0"
+                                        src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B089QP8Y81&asins=B089QP8Y81&linkId=0b63c8e1bd30b5184eef8d6ef8d6b068&show_border=true&link_opens_in_new_window=true"></iframe>
+                              
+                                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
+                                        scrolling="no" frameborder="0"
+                                        src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B08WWP2JJR&asins=B08WWP2JJR&linkId=dc22d4e513add04dae3a5fcb5923d79d&show_border=true&link_opens_in_new_window=true"></iframe>
+                              
+                                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
+                                        scrolling="no" frameborder="0"
+                                        src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B07YYNX5X6&asins=B07YYNX5X6&linkId=3b40915cf9c3552970dea2b994bcb34c&show_border=true&link_opens_in_new_window=true"></iframe>
+                               
+                                    <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0"
+                                        scrolling="no" frameborder="0"
+                                        src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B08TN6F939&asins=B08TN6F939&linkId=09c1964799da89b0ec72e809288c84e6&show_border=true&link_opens_in_new_window=true"></iframe>
+                               
+                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
+                                    frameborder="0"
+                                    src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B074WZJ4MF&asins=B074WZJ4MF&linkId=f5b0208e9ef77ed9d12aa64b4bc0b07c&show_border=true&link_opens_in_new_window=true"></iframe>
+                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
+                                    frameborder="0"
+                                    src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B07VTGBWYH&asins=B07VTGBWYH&linkId=e210ef2abed21d94e9873df1e7f19cc7&show_border=true&link_opens_in_new_window=true"></iframe>
+                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
+                                    frameborder="0"
+                                    src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B08K7JBD76&asins=B08K7JBD76&linkId=6e7b286b5ac52b62b0845c7480a0c539&show_border=true&link_opens_in_new_window=true"></iframe>
+                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
+                                    frameborder="0"
+                                    src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B082PGPHWZ&asins=B082PGPHWZ&linkId=49d5900e114183c1ce720636f248f847&show_border=true&link_opens_in_new_window=true"></iframe>
+                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
+                                    frameborder="0"
+                                    src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B07S85MJT8&asins=B07S85MJT8&linkId=8db540e454d301c2d19bbf1e56287425&show_border=true&link_opens_in_new_window=true"></iframe>
+                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
+                                    frameborder="0"
+                                    src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B07WSHWNH8&asins=B07WSHWNH8&linkId=e256e9879155498039ce333ac5acd981&show_border=true&link_opens_in_new_window=true"></iframe>
+                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
+                                    frameborder="0"
+                                    src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B085VQFZ8Z&asins=B085VQFZ8Z&linkId=69154aa174d3668c25363124665c754e&show_border=true&link_opens_in_new_window=true"></iframe>
+                                <iframe style="width:120px;height:240px;" marginwidth="0" marginheight="0" scrolling="no"
+                                    frameborder="0"
+                                    src="//ws-in.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=IN&source=ss&ref=as_ss_li_til&ad_type=product_link&tracking_id=reviewstackas-21&language=en_IN&marketplace=amazon&region=IN&placement=B08L8XSJWB&asins=B08L8XSJWB&linkId=0fa2f50b640855e2ca0d000a83e4e179&show_border=true&link_opens_in_new_window=true"></iframe>
+    
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+    
+
+
+
+
+
+
+
 
         <!----------top-deal-------------->
         <div class="new-featured-amazon arrive topdeal">

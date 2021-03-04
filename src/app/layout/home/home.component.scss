@@ -86,7 +86,7 @@ display: flex;
 place-content: start;
 align-items: start;
 flex-direction: column;
-padding: 4pc 5pc;
+padding: 4pc 3pc;
 border-radius: 3px;
 
 }
@@ -117,15 +117,14 @@ border-radius: 3px;
     border-bottom: 1px solid #030303;
 }
 .cate-amazon h1 {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     padding: 0 0;
     font-family: "Cabin", sans-serif;
-    line-height: 23px;
-    letter-spacing: 0.2px;
+    line-height: 24px;
     color: #414141;
     text-transform: capitalize;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .cate-amazon p {
     font-size: 15px;
@@ -141,6 +140,7 @@ border-radius: 3px;
 .slide1-img img {
     border-radius: 3px;
     width: 100%;
+    margin: 20px 0 0;
 }
 .slide1-img h3 {
     font-weight: 700;
@@ -246,16 +246,16 @@ button.more mat-icon {
 }
 .twocart-btn {
     position: absolute;
-    opacity: 0;
+    opacity: 1;
     -webkit-transform: translateY(25px) translateZ(0);
     transform: translateY(25px) translateZ(0);
-    visibility: hidden;
+    // visibility: hidden;
     text-align: center;
     transition: opacity .3s ease,visibility .3s ease,-webkit-transform .3s ease;
     transition: opacity .3s ease,visibility .3s ease,transform .3s ease;
     transition: opacity .3s ease,visibility .3s ease,transform .3s ease,-webkit-transform .3s ease;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
 }
 
 .Product:hover .twocart-btn{
@@ -288,7 +288,7 @@ button.more mat-icon {
     padding:0px 0;
     width: 100%;
 }
-.product-data a {
+.product-data .product-image a {
     width: 200px;
     display: flex;
     place-content: center;
@@ -307,16 +307,63 @@ button.more mat-icon {
     padding:0px 10px 0;
     margin-bottom: 0px;
 }
+.Product h4 a:hover {
+    color: #e77f35 !important;
+}
+.Product h4 a{
+text-decoration: none;
+color: #000;
+}
 .price {
     padding: 4px 0;
-    font-family: inter;
-    font-weight: 500;
-    color: #45d7eb;
+    font-family: sans-serif;
+    font-weight: 600;
+    color: #e10001;
     font-size: 12px;
+    letter-spacing: 0.3px;
 }
 .price u {
     text-decoration: line-through;
     color: #999696;
+}
+.star.amazon-revirew {
+    position: relative;
+    top: -5px;
+}
+.star.amazon-revirew .review {
+    display: flex;
+    padding: 0px 0px 5px;
+    place-content: center;
+    align-items: center;
+}
+.star.amazon-revirew .review a:hover{
+    text-decoration: underline;
+    color: #45d7eb;
+}
+.star.amazon-revirew .review  mat-icon {
+    width: auto;
+    color: #ffc400;
+    font-size: 14px;
+    margin: 0px;
+    position: relative;
+    top: 5px;
+}
+.star.amazon-revirew .review a {
+    width: auto;
+    height: auto;
+    text-decoration: none;
+    position: relative;
+    top: -2px;
+}
+.star.amazon-revirew span {
+    font-size: 11px;
+    font-family: inter;
+    letter-spacing: 0;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    color:#45d7eb;
+    /* text-transform: capitalize; */
+    padding: 0px 0px 0px 7px;
 }
 .star mat-icon {
     width: auto;
@@ -348,7 +395,7 @@ button.more mat-icon {
     font-size: 13px
 }
 .start {
-    padding: 7px 15px 12px 15px;
+    padding: 14px 15px 12px 15px;
 }
 .twocart-btn button mat-icon {
     font-size: 14px;
@@ -551,6 +598,9 @@ width: 100%;
 section.home.amazonhome1 .slide:before {
     width: 100%;
 }
+.slide1-img iframe {
+    margin: 24px 24px 4px;
+}
 section.home.amazonhome1 .slide-img {
     display: none !important;
 }
@@ -657,7 +707,7 @@ section.home.amazonhome2 .new-featured-amazon.topdeal .twocart-btn {
 // }
 
 
-section.home.amazonhome1 .product-data a {
+section.home.amazonhome1 .product-data .product-image a {
     width: 170px;
 }
 section.home.amazonhome1 .product-data a img {
