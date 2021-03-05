@@ -14,6 +14,16 @@ var BlogSchema = new mongoose.Schema({
             para: { type: String, default: '' },
         }
     ],
+    paragraphTwo: [
+        {
+            para: { type: String, default: '' },
+        }
+    ],
+    paragraphThree: [
+        {
+            para: { type: String, default: '' },
+        }
+    ],
     productLink: { type: String },
     price: {type: String},
     views: {type: String, default: '3440'},
