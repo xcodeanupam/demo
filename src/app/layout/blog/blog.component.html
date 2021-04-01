@@ -21,7 +21,9 @@
                 <div class="heading-product">
                     <h1> {{blog.title}}</h1>
                 </div>
-                <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+                <!-- <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column"> -->
+                        <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+
                     <div class="img-product" fxFlex="40%" fxLayout="row">
                         <a href={{blog.productLink}} target="_blank">
                             <img src={{blog.image}}></a>
@@ -63,24 +65,27 @@
                             {{paragraph.para}}
                         </p>
 
-                        <p *ngFor="let paragraph of blog.paragraphTwo">
-                            {{paragraph.para}}
-                        </p>
-
-                        <p *ngFor="let paragraph of blog.paragraphThree">
-                            {{paragraph.para}}
-                        </p>
-
-                        <button class="buy">
-                            <a target="blank" href="{{blog.productLink}}">
-                                <mat-icon>play_arrow</mat-icon>Buy Now
-                            </a>
-                        </button>
+                     
 
 
                     </div>
                 </div>
+                <div class="heading-product" >
+                <p *ngFor="let paragraph of blog.paragraphTwo">
+                    {{paragraph.para}}
+                </p>
+
+                <p *ngFor="let paragraph of blog.paragraphThree">
+                    {{paragraph.para}}
+                </p>
+
+                <button class="buy">
+                    <a target="blank" href="{{blog.productLink}}">
+                        <mat-icon>play_arrow</mat-icon>Buy Now
+                    </a>
+                </button>
             </div>
+        </div>
         </div>
 
     </div>

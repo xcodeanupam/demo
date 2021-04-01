@@ -55,8 +55,8 @@
 }
 .heading-product p {
     font-family: "Open Sans", sans-serif;
-    font-size: 13px;
-    line-height: 25px;
+    font-size: 13.5px;
+    line-height: 27px;
     letter-spacing: 0.2px;
 }
 .img-product img {
@@ -67,7 +67,8 @@
 }
 .img-product {
     flex-wrap: wrap;
-    place-content: start;
+    place-content: center;
+    align-items: center;
 }
 .heading-product {
     padding-left: 30px;
@@ -131,10 +132,34 @@ section.home.amazonhome2 .img-product a {
     color: #fcd68f;
     width: 19px;
 }
-
-
-
-
+button.buy {
+    background: #ffc63a;
+    border: 0;
+    height: 60px;
+    line-height: 60px;
+    display: flex;
+    border-radius: 55px;
+    place-content: center;
+    align-items: center;
+    margin: 4pc auto 7pc;
+    padding: 0px 3pc;
+    font-size: 24px;
+    cursor: pointer;
+}
+button.buy a{
+    border: 0;
+    color: #fff;
+    display: flex;
+    place-content: center;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1.5pc;
+}
+button.buy mat-icon {
+    font-size: 30px;
+    height: 25px;
+    width: 39px;
+}
 section.home.amazonhome1 .heading-product {
     padding-left: 5px;
 }
@@ -146,4 +171,7 @@ section.home.amazonhome1 .heading-product h1 {
 section.home.amazonhome2 .heading-product h1 {
     line-height: 27px;
     padding: 0px 0pc 2pc;
+}
+:focus{
+    outline: transparent;
 }

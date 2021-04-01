@@ -156,7 +156,7 @@ mat-icon.mat-icon.notranslate.add.material-icons.mat-icon-no-color:after {
     background: #4571eb;
     padding: 12px 2.1pc 13px;
     border-radius: 4px;
-    color: #fff;
+    color: #fff !important;
     font-family: "Open Sans", sans-serif;
     margin: 0px 0 15px;
     font-size: 13px;
@@ -166,6 +166,16 @@ mat-icon.mat-icon.notranslate.add.material-icons.mat-icon-no-color:after {
     margin: 5px;
     font-weight: 500;
 }
+.addto-cart button a{
+    text-decoration: none;
+
+}
+
+.addto-cart button span{
+    color: #fff;
+    text-decoration: none;
+}
+
 .addto-cart button span:hover {
     text-decoration: underline;
 }
