@@ -442,7 +442,7 @@ button.more mat-icon {
 .date h6 {
     display: flex;
     align-items: center;
-    padding: 10px 10px 10px;
+    padding:15px 10px 5px;
     font-size: 12px;
     font-family: "Open Sans", sans-serif;
     letter-spacing: 0;
@@ -453,7 +453,7 @@ button.more mat-icon {
     font-family: "Open Sans", sans-serif;
     font-size: 15px;
     font-weight: 600;
-    line-height: 25px;
+    line-height: 23px;
     padding: 0px 10px;
 }
 .blog-img1{
@@ -495,7 +495,7 @@ width: 100%;
     font-family: "Open Sans", sans-serif;
     display: flex;
     align-items: center;
-    padding: 0px 10px;
+    padding: 0px 4px;
     font-size: 14px;
     color:#3fe2f4;
     font-weight: 600;
@@ -545,7 +545,7 @@ width: 100%;
 }
 
   .new-featured-amazon.arrive.blog {
-    padding-bottom: 5pc;
+    padding-bottom: 3pc;
 }
 .new-featured-amazon.allbanner {
     padding: 5pc 0 1pc;
@@ -569,12 +569,19 @@ width: 100%;
     position: relative;
     top: 1.1pc;
 }
-
-.new-featured-amazon.topdeal .newatricel-off{
+.new-featured-amazon.topdeal .newatricel {
     position: relative;
     top: 1.1pc;
 }
 
+section.home.mobile-home.amazonhome1 .new-featured-amazon.topdeal .newatricel-off{
+    position: relative;
+    top: 0.1pc;
+}
+section.home.mobile-home.amazonhome1 .new-featured-amazon.topdeal .newatricel {
+    position: relative;
+    top: 0.1pc;
+}
 @keyframes mymove {
     from {left: 0px;}
     to {left: 10px;}
@@ -583,7 +590,7 @@ width: 100%;
     width: 100%;
 }
 .blog-featured {
-    margin: 20px;
+    margin:0 20px;
 }
 
 .new-featured-amazon.topdeal  .product-data
@@ -662,8 +669,9 @@ section.home.amazonhome2 .new-featured-amazon.allbanner {
     display: none !important;
 }
 section.home.amazonhome1 .allcate {
-    height: 200px;
-    padding: 0 1pc;
+    height: 145px;
+    padding: 0 10px;
+    margin: 2px;
 }
 section.home.amazonhome1 .left1 {
     padding: 1pc;
@@ -676,8 +684,9 @@ section.home.amazonhome2 .allcate {
 }
 
 section.home.amazonhome1 .cate-amazon h1 {
-    font-size: 15px;
-    line-height: 18px;
+    font-size: 11px;
+    line-height: 13px;
+    font-weight: 600;
 }
 section.home.amazonhome1 .cate-amazon a {
     font-size: 12px;
@@ -717,7 +726,7 @@ section.home.amazonhome1 .product-data a img {
     width: auto;
     height: 45px;
     padding: 0px 16px;
-    background:#ff9f0d;
+    background:#ffc63d;
 
     border-radius: 5px;
     margin-bottom: 15px;
@@ -727,7 +736,10 @@ section.home.amazonhome1 .product-data a img {
 .twocart-btn.mobile button.iconview{
     background: #4571eb;
 }
-
+::ng-deep .mobile-view .new-featured-amazon.arrive.blog .carousel {
+    height: 610px !important;
+    background: #fff;
+}
 ::ng-deep .mobile-view .carousel {
     height: 550px !important;
     background: #fff;
@@ -937,4 +949,15 @@ section.home.mobile-home.amazonhome1 .cate-text h1 {
     line-height: 13px;
     font-weight: 500;
     padding: 10px 7px;
+}
+.review-blog{
+    width: fit-content;
+    border-radius: 30px;
+    border: 0;
+    margin:4pc auto 1pc;
+    padding: 0px 2.5pc;
+    height: 45px;
+}
+.review-blog:hover{
+    color: #fff;
 }

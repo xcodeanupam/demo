@@ -55,7 +55,7 @@ section.home {
 }
 .text ul {
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 5px;    height: 11pc;
 }
 .text ul li {
     font-family: "Open Sans", sans-serif;
@@ -205,7 +205,7 @@ mat-icon.mat-icon.notranslate.add.material-icons.mat-icon-no-color:after {
     display: flex;
     place-content: center;
     align-items: center;
-    height: 255px;
+    height: 225px;
 
 }
 .star mat-icon {
@@ -220,7 +220,7 @@ mat-icon.mat-icon.notranslate.add.material-icons.mat-icon-no-color:after {
     font-family: "Open Sans", sans-serif;
     font-size: 12px;
     letter-spacing: 0.2px;
-    line-height: 20px;
+    line-height: 20px;    height: 4pc;
 }
 .img {
     display: flex;
@@ -284,13 +284,39 @@ section.home.amazonhome1 .price {
     padding: 4px 5px 4px 0px;
     font-size: 11px;
 }
-
+section.home.amazonhome1 .text ul {
+    height: auto;
+}
+section.home.amazonhome1  .reviewd p {
+    height: auto;
+}
+section.home.amazonhome1  .addto-cart button {
+    padding: 12px 1.1pc 13px;
+}
 section.home.amazonhome3 .text h3 {
     height: 45px;
 }
 section.home.amazonhome3  .text {
     padding: 0px 1pc;
 }
+section.home.amazonhome2 .reviewd p {
+    height: auto;
+
+}
+section.home.amazonhome2 .text ul {
+    height: auto;
+}
+
+section.home.amazonhome3 .reviewd p {
+    height: 7pc;
+
+}
+section.home.amazonhome3 .text ul {
+    height: 15pc;
+
+}
+
+
 
 .ft{
     margin: 0 auto;
@@ -309,4 +335,6 @@ section.home.amazonhome3  .text {
     cursor: pointer;
     letter-spacing: 0.4px;
     font-family: "Cabin", sans-serif;
+}.img a img {
+    object-fit: contain;
 }

@@ -30,11 +30,12 @@ import { ApiService } from '../core/user/api.service';
 import { BlogComponent } from './blog/blog.component';
 import { BlogTwoComponent } from './blog-two/blog-two.component';
 import { BlogThreeComponent } from './blog-three/blog-three.component';
+import { AllBlogsComponent } from './all-blogs/all-blogs.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent, RegisterComponent, WriteReviewComponent, CategoryComponent, FullViewComponent, WebLayoutComponent, BlogComponent, BlogTwoComponent, BlogThreeComponent],
+  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent, RegisterComponent, WriteReviewComponent, CategoryComponent, FullViewComponent, WebLayoutComponent, BlogComponent, BlogTwoComponent, BlogThreeComponent, AllBlogsComponent],
   imports: [
     CommonModule,
     layoutRoutingModule,FlexLayoutModule,MatAutocompleteModule,MatFormFieldModule,MatInputModule,

@@ -10,6 +10,8 @@ import { WebLayoutComponent } from './web-layout/web-layout.component';
 import { BlogComponent } from './blog/blog.component';
 import { BlogTwoComponent } from './blog-two/blog-two.component';
 import { BlogThreeComponent } from './blog-three/blog-three.component';
+import { AllBlogsComponent } from './all-blogs/all-blogs.component';
+
 
 const routes: Routes = [
   {
@@ -61,6 +63,13 @@ const routes: Routes = [
     component: FullViewComponent,
     data: { title: 'Amazon' }
   },
+  {
+    path: 'all-blogs',
+    component: AllBlogsComponent,
+    data: { title: 'Amazon' }
+  },
+  
+
     ] 
 }, 
   

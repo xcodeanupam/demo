@@ -1,0 +1,100 @@
+.new.featured-amazon {
+    margin: 2pc auto;
+}
+.blog-featured h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 23px;
+    padding: 0px 10px;
+    letter-spacing: 0.5px;
+}
+.blog-img1{
+background: url('https://footwearnews.com/wp-content/uploads/2018/02/online-shopping.jpg?w=700&h=437&crop=1');
+height: 300px;
+background-position: center;
+background-size: cover;
+width: 100%;
+}
+.blog-img2{
+    background: url('https://cdn.cnetcontent.com/syndication/mediaserverredirect/b1cc83a25da2e57e450fbea92886a9d0/original.jpg');
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+.blog-img3{
+        background: url('https://etimg.etb2bimg.com/photo/66182971.cms');
+        height: 300px;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+}
+.date h6 {
+    display: flex;
+    align-items: center;
+    padding:15px 10px 5px;
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    letter-spacing: 0;
+    width: 50%;
+    color: #393838;
+}
+.date h6 mat-icon {
+    font-size: 12px;
+    height: 10px;
+    width: 16px;
+    color: #ffac00;
+}
+.blog-featured p {
+    font-family: "Open Sans", sans-serif;
+    font-size: 13px;
+    line-height: 22px;
+    padding: 0px 10px;
+    color: #6e6a6a;
+    height: 110px;
+}
+.blog-featured a {
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 0px 10px;
+    font-size: 14px;
+    color:#3fe2f4;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+}
+.blog-featured a mat-icon {
+    position: relative;
+    animation: mymove infinite;
+    animation-duration: 6s;
+}
+.new-featured-amazon.arrive.blog {
+    padding-bottom: 3pc;
+}
+section.home.amazonhome1 .blog-featured .blog-img1 {
+    height: 185px;
+    object-fit: cover;
+}
+section.home.amazonhome2 .blog-featured .blog-img1 {
+    height: 250px;
+    object-fit: cover;
+}
+
+section.home.amazonhome1 .blog-featured p {
+    height: auto;
+}
+section.home.amazonhome2 .blog-featured p {
+    height: auto;
+}
+section.home.amazonhome3 .blog-featured p {
+    height: 140px;
+}
+
+.blog-featured {
+    padding: 1pc 1pc 3pc;
+}
+.blog-data {
+    flex-wrap: wrap;
+}
