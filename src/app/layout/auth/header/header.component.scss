@@ -118,6 +118,10 @@ form.example-form mat-icon.mat-icon {
     height: 45px;
     font-size: 12px;
     line-height: 45px;
+    text-transform: capitalize;
+    letter-spacing: 0.1px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
 }
 ::ng-deep .menu_category button.mat-menu-item:hover {
     background: transparent;
