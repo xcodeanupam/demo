@@ -48,13 +48,13 @@ const routes: Routes = [
     data: { title: 'Amazon' }
   }, 
   {
-    path: 'blog-two/:title',
+    path: 'movie-review/:title',
     component: BlogTwoComponent,
     data: { title: 'Amazon' }
   }, 
 
   {
-    path: 'blog-three/:title',
+    path: 'movie/:title',
     component: BlogThreeComponent,
     data: { title: 'Amazon' }
   }, 
