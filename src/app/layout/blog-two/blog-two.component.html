@@ -3,58 +3,211 @@
         <mat-spinner></mat-spinner>
     </div>
     <div *ngIf="!dataload">
-    <!----top-line-->
-    <div class="category-amazon" fxLayout="row">
-        <div class="top-line">
-            <div class="single-line" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px"
-                fxFlex.xl="1910px">
-                <b class="home" routerLink="/">Home</b>
-                <mat-icon>keyboard_arrow_right</mat-icon> <b><a>Products</a></b>
-                <mat-icon>keyboard_arrow_right</mat-icon> <b><a> {{blog.productName}}</a></b>
+        <!----top-line-->
+        <div class="category-amazon" fxLayout="row">
+            <div class="top-line">
+                <div class="single-line" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px" fxFlex.xl="1910px">
+                    <b class="home" routerLink="/">Home</b>
+                    <mat-icon>keyboard_arrow_right</mat-icon> <b><a>Products</a></b>
+                    <mat-icon>keyboard_arrow_right</mat-icon> <b><a> {{blog.productName}}</a></b>
+                </div>
             </div>
         </div>
-    </div>
-    <!----category-line-->
-    <div class="category" fxLayout="row">
-            <div class="category" fxLayout="column" fxFlex.xs="97%" fxFlex.sm="590px" fxFlex.md="950px"
-                fxFlex.lg="1270px" fxFlex.xl="1910px">
-                <div class="heading-product">
+        <!----category-line-->
+        <div class="category reviewmovieblogs" fxLayout="row">
+            <div class="category" fxLayout="column" fxFlex.xs="97%" fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px" fxFlex.xl="1910px">
+                <!--<div class="heading-product">
                     <h1> {{blog.title}}</h1>
-                </div>
+                </div>-->
                 <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
-            <div class="img-product" fxFlex="40%" fxLayout="row">
-                <a href={{blog.productLink}} target="_blank">
-                    <img  src={{blog.image}}></a>
+                    <div class="img-product" fxFlex="40%" fxLayout="row">
+                        <a href={{blog.productLink}} target="_blank">
+                            <img src={{blog.image}}></a>
 
-                <a href={{blog.productLink}} target="_blank">
+                        <!--<a href={{blog.productLink}} target="_blank">
                     <img  src={{blog.imageTwo}}></a>
 
                 <a href={{blog.productLink}} target="_blank">
-                    <img src={{blog.imageThree}}></a>
-            </div>
-            <div class="heading-product" fxFlex="60%">
-                <!-- <h1> {{blog.title}}</h1> -->
-                <h5>{{blog.productName}}</h5>
-                <p *ngFor="let paragraph of blog.paragraphs">
-                    {{paragraph.para}}
-                </p>
-                <p *ngFor="let paragraph of blog.paragraphTwo">
-                    {{paragraph.para}}
-                </p>
-                <p *ngFor="let paragraph of blog.paragraphThree">
-                    {{paragraph.para}}
-                </p>
+                    <img src={{blog.imageThree}}></a>-->
+                    </div>
+                    <div class="heading-product" fxFlex="60%">
+                        <!-- <h1> {{blog.title}}</h1> -->
+                        <h5 class="namemoview">{{blog.productName}}</h5>
+                        <p class="namemoviewdate">Renuka Vyavahare, TNN, Updated: Sep 10, 2021, 03.22 PM IST
+                        </p>
+                        <div class="review">
+                            <mat-icon>star</mat-icon>
+                            <mat-icon>star</mat-icon>
+                            <mat-icon>star</mat-icon>
+                            <mat-icon>star_half </mat-icon>
+                            <mat-icon>star_border</mat-icon>
 
-                <!-- <button class="buy">
+                            <span>(3.5/5)</span>
+                        </div>
+                        <p *ngFor="let paragraph of blog.paragraphs">
+                            {{paragraph.para}}
+                        </p>
+                        <p *ngFor="let paragraph of blog.paragraphTwo">
+                            {{paragraph.para}}
+                        </p>
+                        <p *ngFor="let paragraph of blog.paragraphThree">
+                            {{paragraph.para}}
+                        </p>
+
+                        <!-- <button class="buy">
                     <a target="blank" href="{{blog.productLink}}">
                         <mat-icon>play_arrow</mat-icon>Buy Now
                     </a>
                 </button> -->
 
 
+                    </div>
+
+
+                </div>
+                <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" class="reviewalluser">
+                    <div class="img-product" fxFlex="60%" fxLayout="row">
+                        <div class="heading-productreview">
+                            <h1>USERS' REVIEWS </h1>
+                            <div class="start">
+                                <div class="img" fxLayout="row">
+                                    <img src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                    <b> Vineet Singhal</b>
+                                </div>
+                                <div class="star">
+                                    <div class="review">
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                    </div>
+                                    <div class="reviewd">
+                                        <p>Shown up before time, pleasantly stuffed. No harm on the way due to extraordinary
+                                            pressing. Easy to amass. High Caliber at a Great Price. Best item for a family.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="start">
+                                <div class="img" fxLayout="row">
+                                    <img src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                    <b> Vineet Singhal</b>
+                                </div>
+                                <div class="star">
+                                    <div class="review">
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                    </div>
+                                    <div class="reviewd">
+                                        <p>Shown up before time, pleasantly stuffed. No harm on the way due to extraordinary
+                                            pressing. Easy to amass. High Caliber at a Great Price. Best item for a family.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="start">
+                                <div class="img" fxLayout="row">
+                                    <img src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                    <b> Vineet Singhal</b>
+                                </div>
+                                <div class="star">
+                                    <div class="review">
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                    </div>
+                                    <div class="reviewd">
+                                        <p>Shown up before time, pleasantly stuffed. No harm on the way due to extraordinary
+                                            pressing. Easy to amass. High Caliber at a Great Price. Best item for a family.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="start">
+                                <div class="img" fxLayout="row">
+                                    <img src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                    <b> Vineet Singhal</b>
+                                </div>
+                                <div class="star">
+                                    <div class="review">
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                    </div>
+                                    <div class="reviewd">
+                                        <p>Shown up before time, pleasantly stuffed. No harm on the way due to extraordinary
+                                            pressing. Easy to amass. High Caliber at a Great Price. Best item for a family.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="start">
+                                <div class="img" fxLayout="row">
+                                    <img src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                    <b> Vineet Singhal</b>
+                                </div>
+                                <div class="star">
+                                    <div class="review">
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                    </div>
+                                    <div class="reviewd">
+                                        <p>Shown up before time, pleasantly stuffed. No harm on the way due to extraordinary
+                                            pressing. Easy to amass. High Caliber at a Great Price. Best item for a family.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="img-product" fxFlex="40%" fxLayout="row">
+                        <div class="overrate">
+                        <div class="overratedata">
+                            <h1>Critic's Rating</h1>
+                             <div class="review">
+                            <mat-icon>star</mat-icon>
+                            <mat-icon>star</mat-icon>
+                            <mat-icon>star</mat-icon>
+                            <mat-icon>star_half </mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <span>(3.5/5)</span>
+                        </div>
+                        </div>
+
+                         <div class="overratedata">
+                            <h1>Avg. Users' Rating</h1>
+                             <div class="review">
+                            <mat-icon>star</mat-icon>
+                            <mat-icon>star</mat-icon>
+                            <mat-icon>star</mat-icon>
+                            <mat-icon>star_half </mat-icon>
+                            <mat-icon>star_border</mat-icon>
+                            <span>(3.5/5)</span>
+                        </div>
+                        </div>
+                        </div>
+                         <div class="vedios">
+                        
+<iframe  src="https://www.youtube.com/embed/-j7mGq3s3eA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+  </div>
+                </div>
             </div>
         </div>
-    </div>
-    </div>
     </div>
 </section>
