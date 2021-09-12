@@ -24,11 +24,10 @@
                         <a href={{blog.productLink}} target="_blank">
                             <img src={{blog.image}}></a>
 
-                        <!--<a href={{blog.productLink}} target="_blank">
-                    <img  src={{blog.imageTwo}}></a>
+                            <a href={{blog.productLink}} target="_blank">
+                                <img src={{blog.imageThree}}></a>
 
-                <a href={{blog.productLink}} target="_blank">
-                    <img src={{blog.imageThree}}></a>-->
+          
                     </div>
                     <div class="heading-product" fxFlex="60%">
                         <!-- <h1> {{blog.title}}</h1> -->
@@ -47,9 +46,14 @@
                         <p *ngFor="let paragraph of blog.paragraphs">
                             {{paragraph.para}}
                         </p>
+                        
                         <p *ngFor="let paragraph of blog.paragraphTwo">
                             {{paragraph.para}}
                         </p>
+
+                        <a href={{blog.productLink}} target="_blank">
+                            <img  src={{blog.imageTwo}}></a>
+
                         <p *ngFor="let paragraph of blog.paragraphThree">
                             {{paragraph.para}}
                         </p>

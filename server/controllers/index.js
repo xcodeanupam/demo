@@ -8,6 +8,7 @@ router.use('/questions', require('./questions'));
 router.use('/results', require('./results'));
 router.use('/categoryproducts', require('./categoryproducts'));
 router.use('/blogs', require('./blog'));
+router.use('/movie', require('./movie'));
 router.use('/search', require('./search'));
 
 
