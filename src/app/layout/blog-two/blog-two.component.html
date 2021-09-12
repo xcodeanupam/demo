@@ -32,14 +32,15 @@
                     <div class="heading-product" fxFlex="60%">
                         <!-- <h1> {{blog.title}}</h1> -->
                         <h5 class="namemoview">{{movie.productName}}</h5>
-                        <p class="namemoviewdate">Renuka Vyavahare, TNN, Updated: Sep 10, 2021, 03.22 PM IST
+                        <p class="namemoviewdate">{{movie.author}}, Updated: {{movie.createDate}}
                         </p>
                         <div class="review">
                             <mat-icon>star</mat-icon>
                             <mat-icon>star</mat-icon>
                             <mat-icon>star</mat-icon>
-                            <mat-icon>star_half </mat-icon>
-                            <mat-icon>star_border</mat-icon>
+                            <mat-icon>star </mat-icon>
+                            <mat-icon>star_half</mat-icon>
+                            <!-- <mat-icon>star_border</mat-icon> -->
 
                             <span>({{movie.rating}}/5)</span>
                         </div>
@@ -73,10 +74,11 @@
                     <div class="img-product" fxFlex="60%" fxLayout="row">
                         <div class="heading-productreview">
                             <h1>USERS' REVIEWS </h1>
-                            <div class="start">
+                        
+                            <div class="start" *ngFor="let comm of movie.comments">
                                 <div class="img" fxLayout="row">
                                     <img src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b> Vineet Singhal</b>
+                                    <b> {{comm.username}}</b>
                                 </div>
                                 <div class="star">
                                     <div class="review">
@@ -85,97 +87,19 @@
                                         <mat-icon>star</mat-icon>
                                         <mat-icon>star</mat-icon>
                                         <mat-icon>star</mat-icon>
+                                        <span>({{comm.rating}}/5)</span>
+
                                     </div>
                                     <div class="reviewd">
-                                        <p>Shown up before time, pleasantly stuffed. No harm on the way due to extraordinary
-                                            pressing. Easy to amass. High Caliber at a Great Price. Best item for a family.
+                                        <p> {{comm.comment}}
                                         </p>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="start">
-                                <div class="img" fxLayout="row">
-                                    <img src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b> Vineet Singhal</b>
-                                </div>
-                                <div class="star">
-                                    <div class="review">
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                    </div>
-                                    <div class="reviewd">
-                                        <p>Shown up before time, pleasantly stuffed. No harm on the way due to extraordinary
-                                            pressing. Easy to amass. High Caliber at a Great Price. Best item for a family.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+  
 
-                            <div class="start">
-                                <div class="img" fxLayout="row">
-                                    <img src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b> Vineet Singhal</b>
-                                </div>
-                                <div class="star">
-                                    <div class="review">
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                    </div>
-                                    <div class="reviewd">
-                                        <p>Shown up before time, pleasantly stuffed. No harm on the way due to extraordinary
-                                            pressing. Easy to amass. High Caliber at a Great Price. Best item for a family.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="start">
-                                <div class="img" fxLayout="row">
-                                    <img src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b> Vineet Singhal</b>
-                                </div>
-                                <div class="star">
-                                    <div class="review">
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                    </div>
-                                    <div class="reviewd">
-                                        <p>Shown up before time, pleasantly stuffed. No harm on the way due to extraordinary
-                                            pressing. Easy to amass. High Caliber at a Great Price. Best item for a family.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="start">
-                                <div class="img" fxLayout="row">
-                                    <img src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
-                                    <b> Vineet Singhal</b>
-                                </div>
-                                <div class="star">
-                                    <div class="review">
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                        <mat-icon>star</mat-icon>
-                                    </div>
-                                    <div class="reviewd">
-                                        <p>Shown up before time, pleasantly stuffed. No harm on the way due to extraordinary
-                                            pressing. Easy to amass. High Caliber at a Great Price. Best item for a family.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
+    
                         </div>
                     </div>
                     
@@ -189,7 +113,7 @@
                             <mat-icon>star</mat-icon>
                             <mat-icon>star_half </mat-icon>
                             <mat-icon>star_border</mat-icon>
-                            <span>(3.5/5)</span>
+                            <span>( {{movie.criticRating}}/5)</span>
                         </div>
                         </div>
 
@@ -201,7 +125,7 @@
                             <mat-icon>star</mat-icon>
                             <mat-icon>star_half </mat-icon>
                             <mat-icon>star_border</mat-icon>
-                            <span>(3.5/5)</span>
+                            <span>( {{movie.averageUserRating}}/5)</span>
                         </div>
                         </div>
                         </div>
