@@ -90,6 +90,22 @@ export class UserService {
       }));
   }
 
+  getMovies(cat: any): Observable<any> {
+
+    var reqHeader = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+
+    let data = {
+      "title": cat
+    }
+
+    return this.httpClient.post(`https://reviews-stackasian.herokuapp.com/api/movie/getMovie`, data, { headers: reqHeader })
+      .pipe(map((data: any) => {
+        return data;
+      }));
+  }
+
 
   getProduct(cat: any): Observable<any> {
 

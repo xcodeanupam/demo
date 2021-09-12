@@ -48,7 +48,8 @@ var MovieSchema = new mongoose.Schema({
     criticRating: { type: String, default: '4' },
     averageUserRating: { type: String, default: '4' },
     views: { type: String, default: '3440' },
-    reviews: { type: String, default: '6340' }
+    reviews: { type: String, default: '6340' },
+    createDate: { type: String, default: '10 september 2021' }
 
 }, { timestamps: true });
 

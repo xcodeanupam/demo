@@ -11,7 +11,7 @@ import { UserService } from 'src/app/core/user/user.service';
 export class BlogTwoComponent implements OnInit {
 
   title: string | null | undefined;
-  blog: any;
+  movie: any;
   dataload = true;
 
   constructor(public userService: UserService,  public router: Router, public route: ActivatedRoute) { }
@@ -20,19 +20,23 @@ export class BlogTwoComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       this.title = params.get('title');
     });
-    console.log('category name', this.title)
-    this.getAblog();
+    console.log('movie name', this.title)
+    this.getaMovie();
+    if(this.movie){
+      this.getaMovie()
+    }
   }
 
-  getAblog() {
-    this.userService.getBlog(this.title).subscribe(
+  getaMovie() {
+    this.userService.getMovies(this.title).subscribe(
       (data: any) => {
-        this.blog = data[0];
+        this.movie = data[0];
         this.dataload = false;
-        console.log('blog data', data)
+        console.log('movie data', data)
       },
       error => {
-        console.log('error', error);
+        this.getaMovie()
+        console.log('movie', error);
       }
     );
   }
