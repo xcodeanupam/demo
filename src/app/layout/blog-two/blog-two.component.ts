@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from 'src/app/core/user/user.service';
+import {DomSanitizer} from '@angular/platform-browser';
 
 
 @Component({
@@ -13,8 +14,17 @@ export class BlogTwoComponent implements OnInit {
   title: string | null | undefined;
   movie: any;
   dataload = true;
+  x: any;
 
-  constructor(public userService: UserService,  public router: Router, public route: ActivatedRoute) { }
+  constructor(public userService: UserService,  public router: Router, public route: ActivatedRoute,   private sanitizer: DomSanitizer
+    ) {
+      if(this.movie){
+        console.log('link', this.movie.youtube)
+        this.x = this.sanitizer.bypassSecurityTrustHtml(this.movie.youtube);
+
+      }
+
+   }
 
   ngOnInit(): void {
     this.route.paramMap.subscribe(params => {
@@ -25,6 +35,7 @@ export class BlogTwoComponent implements OnInit {
     if(this.movie){
       this.getaMovie()
     }
+
   }
 
   getaMovie() {
@@ -33,6 +44,8 @@ export class BlogTwoComponent implements OnInit {
         this.movie = data[0];
         this.dataload = false;
         console.log('movie data', data)
+        this.x = this.sanitizer.bypassSecurityTrustHtml(this.movie.youtube);
+
       },
       error => {
         this.getaMovie()
