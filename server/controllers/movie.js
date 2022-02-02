@@ -24,5 +24,16 @@ router.post('/getMovie', async (req, res) => {
     }
 });
 
+router.post('/getALlMovie', async (req, res) => {
+    try {
+        // console.log('sadasd', req.body.title)
+        const movie = await Movie.find()
+        res.send(movie)
+    } catch (error) {
+        console.log(error)
+        res.status(500).send()
+    }
+});
+
 
 module.exports = router;
