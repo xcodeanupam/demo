@@ -1,0 +1,181 @@
+<div class="new-featured-amazon arrive topdeal">
+    <div class="new featured-amazon" fxLayout="column" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px"
+        fxFlex.lg="1270px" fxFlex.xl="1910px">
+        <div class="new-featured-amazon arrive blog">
+            <div class="blog-data" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+                <div *ngFor="let movie of movies" class="blog-featured" fxLayout="column" fxFlex="33%">
+                    <div class="headingMovie">
+                        <h1 class="Mname"> {{movie.productName}}</h1>
+                        <div class="headingMovieTwo" fxLayout="row" fxLayout.xs="column">
+                            <div class="overrateData" fxLayout="row" fxFlex.xs="100%" fxFlex="40%">
+                                <div fxLayout="column">
+                                    <div fxLayout="columncd">
+                                        <h2 class="Mtime">{{movie.createDate}}</h2>
+                                        <h2 class="Mtype"> Action, Sci-Fi</h2>
+                                        <h2 class="Mdate"> 5 March 2022</h2>
+                                    </div>
+                                    <div fxLayout="columncd">
+        
+                                        <p>Sukumar’s Pushpa: The Rise shows promise when it wraps things up and sets up things
+                                            for
+                                            Pushpa 2.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="overrate" fxFlex.xs="100%" fxFlex="60%">
+                                <div class="overratedata">
+                                    <h1>Critic's Rating</h1>
+                                    <div class="review">
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star_half </mat-icon>
+                                        <mat-icon>star_border</mat-icon>
+                                        <span>( {{movie.criticRating}}/5)</span>
+                                    </div>
+                                </div>
+        
+                                <div class="overratedata">
+                                    <h1>Avg. Users' Rating</h1>
+                                    <div class="review">
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star_half </mat-icon>
+                                        <mat-icon>star_border</mat-icon>
+                                        <span>( {{movie.averageUserRating}}/5)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <p class="smallDiscription" *ngFor="let paragraph of movie.paragraphs">
+                            {{paragraph.para  | slice:0:222}}
+                        </p> -->
+        
+                    </div>
+        
+        
+        
+                    <div class="category reviewmovieblogs" fxLayout="row">
+                        <div class="category" fxLayout="column">
+                            <!--<div class="heading-product">
+                            <h1> {{blog.title}}</h1>
+                        </div>-->
+                            <div fxLayout="row-reverse" fxLayout.xs="column" fxLayout.sm="column">
+                                <div class="img-product" fxFlex="40%" fxLayout="row">
+                                    <a href={{movie.productLink}} target="_blank">
+                                        <img src={{movie.image}}></a>
+                                    <a href={{movie.productLink}} target="_blank">
+                                        <img src={{movie.imageThree}}></a>
+                                    <div class="review imgtwos">
+                                        <!-- <a href={{movie.productLink}} target="_blank">
+                                                <img src={{movie.imageTwo}}></a> -->
+        
+                                    </div>
+                                </div>
+                                <div class="heading-product" fxFlex="60%">
+                                    <!-- <h1> {{blog.title}}</h1> -->
+                                    <h5 class="namemoview">{{movie.productName}}</h5>
+                                    <p class="namemoviewdate">{{movie.author}}, Updated: {{movie.createDate}}
+                                    </p>
+                                    <div class="review">
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star</mat-icon>
+                                        <mat-icon>star </mat-icon>
+                                        <mat-icon>star_half</mat-icon>
+                                        <!-- <mat-icon>star_border</mat-icon> -->
+                                        <span>({{movie.rating}}/5)</span>
+                                    </div>
+                                    <p *ngFor="let paragraph of movie.paragraphs">
+                                        {{paragraph.para}}
+                                    </p>
+                                    <p *ngFor="let paragraph of movie.paragraphTwo">
+                                        {{paragraph.para}}
+                                    </p>
+                                    <!-- <a href={{movie.productLink}} target="_blank">
+                                    <img src={{movie.imageTwo}}></a> -->
+                                    <p *ngFor="let paragraph of movie.paragraphThree">
+                                        {{paragraph.para}}
+                                    </p>
+                                    <!-- <button class="buy">
+                                  <a target="blank" href="{{blog.productLink}}">
+                                <mat-icon>play_arrow</mat-icon>Buy Now
+                                 </a>
+                               </button> -->
+                                </div>
+        
+        
+        
+                            </div>
+                            <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" class="reviewalluser">
+                                <div class="img-product" fxFlex="70%" fxLayout="row">
+                                    <div class="heading-productreview">
+                                        <h1>USERS' REVIEWS </h1>
+                                        <div class="reviewsrate" >
+                                            <div class="reviewsrateUserProfile" fxLayout="row">
+                                                <div class="reviewsrateUser">
+                                                    <mat-icon>person</mat-icon>
+                                                    <h1>Add review</h1>
+                                                </div>
+                                                <div class="nameAdd">
+                                                    <mat-icon>star_border</mat-icon>
+                                                    <mat-icon>star_border</mat-icon>
+                                                    <mat-icon>star_border</mat-icon>
+                                                    <mat-icon>star_border</mat-icon>
+                                                    <mat-icon>star_border</mat-icon>
+                                                </div>
+                                            </div>
+                                                <textarea type="textarea" class="rightre"
+                                                    placeholder="Write your review here..."> </textarea>
+                                                <button> Submit</button>
+                                           
+                                        </div>
+                                        <div class="start" *ngFor="let comm of movie.comments">
+                                            <div class="img" fxLayout="row">
+                                                <img
+                                                    src="https://images-eu.ssl-images-amazon.com/images/S/amazon-avatars-global/default._CR0,0,1024,1024_SX48_.png">
+                                                <b> {{comm.username}}</b>
+                                            </div>
+                                            <div class="star">
+                                                <div class="review">
+                                                    <mat-icon>star</mat-icon>
+                                                    <mat-icon>star</mat-icon>
+                                                    <mat-icon>star</mat-icon>
+                                                    <mat-icon>star</mat-icon>
+                                                    <mat-icon>star</mat-icon>
+                                                    <span>({{comm.rating}}/5)</span>
+                                                </div>
+                                                <div class="reviewd">
+                                                    <p> {{comm.comment}}
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        
+                                <div class="img-product" fxFlex="30%" fxLayout="row">
+                                  
+        
+                                </div>
+                            </div>
+                        </div>
+        
+                    </div>
+
+                    
+                </div>
+
+              
+
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+</div>

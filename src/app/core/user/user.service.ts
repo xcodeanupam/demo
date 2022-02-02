@@ -106,6 +106,36 @@ export class UserService {
       }));
   }
 
+  getAllMoviesData(){
+    var reqHeader = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+
+    let data = {
+      "categoryName": 's'
+    }
+
+    return this.httpClient.post(`https://reviews-stackasian.herokuapp.com/api/movie/getALlMovie`, { headers: reqHeader })
+      .pipe(map((data: any) => {
+        return data;
+      }));
+  }
+
+  getAllBlogsData(){
+    var reqHeader = new HttpHeaders({
+      'Content-Type': 'application/json'
+    });
+
+    let data = {
+      "categoryName": 's'
+    }
+
+    return this.httpClient.post(`https://reviews-stackasian.herokuapp.com/api/blogs/getAllBlog`, { headers: reqHeader })
+      .pipe(map((data: any) => {
+        return data;
+      }));
+  }
+
 
   getProduct(cat: any): Observable<any> {
 

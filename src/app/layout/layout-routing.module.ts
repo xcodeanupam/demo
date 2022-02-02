@@ -11,6 +11,7 @@ import { BlogComponent } from './blog/blog.component';
 import { BlogTwoComponent } from './blog-two/blog-two.component';
 import { BlogThreeComponent } from './blog-three/blog-three.component';
 import { AllBlogsComponent } from './all-blogs/all-blogs.component';
+import { AllMoviesComponent } from './all-movies/all-movies.component';
 
 
 const routes: Routes = [
@@ -68,7 +69,11 @@ const routes: Routes = [
     component: AllBlogsComponent,
     data: { title: 'Amazon' }
   },
-  
+  {
+    path: 'all-movies',
+    component: AllMoviesComponent,
+    data: { title: 'Amazon' }
+  },
 
     ] 
 }, 
