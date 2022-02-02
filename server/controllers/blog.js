@@ -24,5 +24,16 @@ router.post('/getBlog', async (req, res) => {
     }
 });
 
+router.post('/getAllBlog', async (req, res) => {
+    try {
+        console.log('sadasd', req.body.title)
+        const blog = await Blog.find()
+        res.send(blog)
+    } catch (error) {
+        console.log(error)
+        res.status(500).send()
+    }
+});
+
 
 module.exports = router;
