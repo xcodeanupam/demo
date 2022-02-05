@@ -1,31 +1,39 @@
 <div class="new-featured-amazon arrive topdeal">
     <div class="new featured-amazon" fxLayout="column" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px"
         fxFlex.lg="1270px" fxFlex.xl="1910px">
-        <div class="new-featured-amazon arrive blog">
+        <div class="category-amazon" fxLayout="row">
+            <div class="top-line">
+                <div class="single-line">
+                    <b class="home" routerLink="/">Home</b>
+                    <mat-icon>keyboard_arrow_right</mat-icon> <b><a>Blogs</a></b>
+                   </div>
+            </div>
+        </div>
+
+        <div class="new-featured-amazon arrive blog 90">
             <div class="blog-data" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
                 <div *ngFor="let blog of blogs" class="blog-featured" fxLayout="column" fxFlex="33%">
-                    <div class="blog-img1" [style.background]="'url(' + blog.image + ')'"></div>
+                   <div class="blogPart">
+                    <a target="blank" href="{{blog.productLink}}" class="imghref">
+                        <div class="blog-img1" [style.background]="'url(' + blog.image + ')'"></div>
+                    </a> 
                     <div class="date" fxLayout="row">
                         <h6>
                             <mat-icon>person</mat-icon>By {{blog.author}}
                         </h6>
                         <h6>
-                            <mat-icon>date_range</mat-icon>FEB 17,2020
+                            <mat-icon>date_range</mat-icon> ₹ {{blog.price}}
                         </h6>
                     </div>
-                    <div class="heading-product">
-                        <h1> {{blog.title}}</h1>
-                    </div>
+                   
                     <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
-
-                     
-                        <div class="heading-product" fxFlex="60%">
+                        <div class="heading-product" fxFlex="100%">
                             <!-- <h1> {{blog.title}}</h1> -->
-                            <h5>{{blog.productName}}</h5>
-                            <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+                            <!-- <h5>{{blog.productName}}</h5> -->
+                            <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="center center" >
                                 <div class="price">
                                     <!-- <u> ₹{{product.originalPrice}} </u> -->
-                                    ₹ {{blog.price}}
+                                    <!-- ₹ {{blog.price}} -->
                                 </div>
                                 <div class="star" fxLayout="row">
                                     <div class="review">
@@ -38,30 +46,33 @@
                                     <div class="viewer">
                                         <b>( {{blog.reviews}} Reviews)</b>
                                     </div>
+                                    <!-- <div class="viewer productview">
+                                        <b>{{blog.views}} (Product View)</b>
+
+                                    </div> -->
                                 </div>
                             </div>
-                            <div class="reviewviewicon">
-                                <div class="viewer">
-                                    <mat-icon>visibility</mat-icon>
-                                    <b>{{blog.views}} (Product View)</b>
-                                </div>
+                            <div class="heading-product">
+                                <a target="blank" href="{{blog.productLink}}" class="imghref">
+                                       <!-- <h1> {{blog.title }}</h1> -->
+                                       <h1>{{blog.productName | slice:0:35}}...</h1>
+                                  </a>     
                             </div>
+                            <div class="reviewviewpara">
                             <p *ngFor="let paragraph of blog.paragraphs">
-                                {{paragraph.para}}
+                                {{paragraph.para | slice:0:75}}...
                             </p>
-
-
-
-
                         </div>
+                    </div>
                     </div>
                     <div class="heading-product">
                    
                         <button class="buy">
                             <a target="blank" href="{{blog.productLink}}">
-                                <mat-icon>play_arrow</mat-icon>Buy Now
+                                Buy Now <mat-icon>arrow_right_alt</mat-icon>
                             </a>
                         </button>
+                    </div>
                     </div>
                 </div>
             </div>
