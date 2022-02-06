@@ -2,59 +2,71 @@
     margin: 2pc auto;
 }
 .movie-featured {
-padding: 10px;
+padding: 5px;
 }
 .blog-data img {
     width: 100%;
-    border-radius: 5px 5px 0 0;
-
+    border-radius: 5px ;
+    height: 200px;
+    object-fit: fill;
 }
 .headingMovieTwo {
-    background: #141414;
-    color: #fff;
+    color: #323232;
+}
+.headingMovie {
+    background: #ffffff;
     border-radius: 5px;
 }
 .overrate {
-    padding:0px 4px 1pc;
+    padding:0px ​4px 1.5pc;
 }
 .blog-data {
     flex-wrap: wrap;
 }
 h1.Mname {
     font-family: "Open Sans", sans-serif;
-    font-size: 15px;
-    font-weight:600;
+    font-size: 14px;
+    font-weight: 600;
     margin: 0;
     text-transform: lowercase;
     letter-spacing: 0.3px;
-    text-align: center;
-    height: 55px;
     line-height: normal;
+}
+h1.dname {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
 }
 .overrate a {
     text-align: center;
     display: block;
-    font-weight: 400;
-    letter-spacing: 0.5px;
-    padding: 10px 1.1pc;
-    color: #718285;
-    background: #282828;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    padding: 8px 0pc 0;
+    color: #11cfac;
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    margin: 0px auto 5px;
-    border-radius: 5px;
     cursor: pointer;
+    font-size: 12px;
 }
 .overrate a:hover {
     color: #70b3d3 !important;
 }
 .review {
     display: flex;
-    place-content: center;
-    align-items: center;
-    padding: 10px 0;
+    padding: 7px 0;
     font-weight: 300;
+}
+.overrate {
+    padding:0 5px 0.5pc;
+}
+.overrate mat-icon.mat-icon {
+    font-size: 13px;
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 3px;
 }
 .review mat-icon.mat-icon {
     font-size: 18px;

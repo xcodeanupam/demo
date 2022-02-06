@@ -7,7 +7,7 @@
                     <div class="headingMovie">
                         <div class="headingMovieTwo" fxLayout="column" fxLayout.xs="column">
                             <a href={{movie.productLink}} target="_blank">
-                                <img src={{movie.image}}></a>
+                                <img src={{movie.imageTwo}}></a>
 
                             <div class="overrate" fxFlex.xs="100%" fxFlex="100%">
                                 <div class="review">
@@ -15,7 +15,8 @@
                                     <span>( {{movie.averageUserRating}}/5)</span>
                                 </div>
                                 <h1 class="Mname"> {{movie.productName}}</h1>
-                                <a> See Full Detail </a>
+                                <h1 class="dname">{{movie.released_on}}</h1>
+                                <a> See Full Detail <mat-icon>arrow_right_alt</mat-icon></a>
                             </div>
                         </div>
                     </div>
