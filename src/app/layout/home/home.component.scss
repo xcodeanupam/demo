@@ -7,7 +7,7 @@
     margin-bottom: 10px;
 }
 section.home{
-    background:#f8f8f8;
+    background:#fdfdfd;
 }
 .slide:before {
     content: "";
@@ -140,7 +140,7 @@ border-radius: 3px;
 .slide1-img img {
     border-radius: 3px;
     width: 100%;
-    margin: 20px 0 0;
+    margin:0px 0px 20px;
 }
 .slide1-img h3 {
     font-weight: 700;
@@ -179,10 +179,10 @@ button.more mat-icon {
 @keyframes mymoved {
     from {left: 0px;}
     to {left: 6px;}
-  }
+}
 .new-featured-amazon {
     margin: auto;
-    padding: 5pc 0 2pc;
+    padding:2pc 0 2pc;
 }
 .cate-amazon {
     margin: auto;
@@ -190,7 +190,6 @@ button.more mat-icon {
 .Product-featured {
     flex-wrap: wrap;
 }
-
 .newatricel-off{
     width: 100%;
     text-align: center;
@@ -288,12 +287,18 @@ button.more mat-icon {
     padding:0px 0;
     width: 100%;
 }
+.product-data a img {
+    height: 130px;
+    object-fit: contain !important;
+    padding: 0pc;
+    width: 110px;
+}
 .product-data .product-image a {
     width: 200px;
     display: flex;
     place-content: center;
     align-items: center;
-    height: 200px;
+    // height: 200px;
     object-fit: cover;
     margin: 0 auto;
 }
@@ -458,21 +463,21 @@ button.more mat-icon {
 }
 .blog-img1{
 background: url('https://footwearnews.com/wp-content/uploads/2018/02/online-shopping.jpg?w=700&h=437&crop=1');
-height: 300px;
+height: 270px;
 background-position: center;
 background-size: cover;
 width: 100%;
 }
 .blog-img2{
     background: url('https://cdn.cnetcontent.com/syndication/mediaserverredirect/b1cc83a25da2e57e450fbea92886a9d0/original.jpg');
-    height: 300px;
+    height: 270px;
     background-position: center;
     background-size: cover;
     width: 100%;
 }
 .blog-img3{
         background: url('https://etimg.etb2bimg.com/photo/66182971.cms');
-        height: 300px;
+        height: 270px;
         background-position: center;
         background-size: cover;
         width: 100%;
@@ -548,7 +553,8 @@ width: 100%;
     padding-bottom: 3pc;
 }
 .new-featured-amazon.allbanner {
-    padding: 5pc 0 1pc;
+    padding:2pc 0 2pc;
+    background: #fdfdfd;
 }
 .new-featured-amazon.topdeald button {
     background: #ffffff;
@@ -589,10 +595,9 @@ section.home.mobile-home.amazonhome1 .new-featured-amazon.topdeal .newatricel {
 .blog-featured img {
     width: 100%;
 }
-.blog-featured {
-    margin:0 20px;
+.blog-featureddata {
+    padding: 0 20px;
 }
-
 .new-featured-amazon.topdeal  .product-data
 {
     padding: 0;
@@ -606,7 +611,7 @@ section.home.amazonhome1 .slide:before {
     width: 100%;
 }
 .slide1-img iframe {
-    margin: 24px 24px 4px;
+    margin:0px 24px 30px;
 }
 section.home.amazonhome1 .slide-img {
     display: none !important;
@@ -699,7 +704,6 @@ section.home.amazonhome1 .new-featured-amazon.topdeal .Product {
 section.home.amazonhome1 .new-featured-amazon.topdeal .twocart-btn {
      opacity: 1; 
      display: none !important;
-
 }
 section.home.amazonhome2 .new-featured-amazon.topdeal .twocart-btn {
     opacity: 1; 
@@ -712,15 +716,15 @@ section.home.amazonhome2 .new-featured-amazon.topdeal .twocart-btn {
 // section.home.amazonhome1 .new-featured-amazon.topdeal button {
 //     background: #fea03b;
 //     border-radius: 5px;
-
 // }
-
 
 section.home.amazonhome1 .product-data .product-image a {
     width: 170px;
 }
 section.home.amazonhome1 .product-data a img {
     width: 55%;
+    margin: 0 auto;
+    display: block;
 }
 .twocart-btn.mobile button {
     width: auto;
@@ -737,11 +741,11 @@ section.home.amazonhome1 .product-data a img {
     background: #4571eb;
 }
 ::ng-deep .mobile-view .new-featured-amazon.arrive.blog .carousel {
-    height: 610px !important;
+    height:540px !important;
     background: #fff;
 }
 ::ng-deep .mobile-view .carousel {
-    height: 550px !important;
+    height:450px !important;
     background: #fff;
 }
 ::ng-deep .carousel-slide-content{
@@ -806,7 +810,7 @@ section.home.amazonhome3 .allcate {
 
 .category-featured-amazon{
        background: #fff;
-       padding: 5pc 0 7pc;
+       padding:2pc 0 3pc;
 }
 .category-featured {
     flex-wrap: wrap;
@@ -954,7 +958,7 @@ section.home.mobile-home.amazonhome1 .cate-text h1 {
     width: fit-content;
     border-radius: 30px;
     border: 0;
-    margin:4pc auto 1pc;
+    margin:4pc auto 0pc;
     padding: 0px 2.5pc;
     height: 45px;
 }
@@ -1037,6 +1041,107 @@ section.home.mobile-home.amazonhome2 .products_all h1 {
     line-height: 20px;
 
 }
-.category-featured-amazon.allbanners-i {
-    padding-bottom: 2pc;
+
+
+
+
+.new.featured-amazon {
+    margin: 2pc auto;
+}
+.movie-featured {
+padding:7px;
+}
+.blog-data img {
+    width: 100%;
+    height: 200px;
+    border-radius: 5px 5px 0 0;
+    object-fit: fill;
+}
+.moviedeal .heading {
+    padding-bottom: 1pc;
+}
+.moviedeal .start img{
+    width: 20px;
+    height: 20px;
+}
+.moviedeal .start{
+    padding: 20px 15px 0px 0px;
+}
+.headingMovieTwo {
+    background: #ffffff;
+    color: #323232;
+    border-radius: 5px;    box-shadow: 0px 0px 1px 1px #f4f4f4;
+
+}
+.overrate {
+    padding: 0 15px 0.5pc;
+}
+.blog-data {
+    flex-wrap: wrap;
+}
+h1.Mname {
+    font-family: "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    text-transform: lowercase;
+    letter-spacing: 0.3px;
+    text-align: center;
+    line-height: normal;
+}
+.moviedeal button.review-blog {
+    margin: 3pc auto 0pc;
+}
+h1.dname {
+    font-size: 12px;
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    text-align: center;
+}
+.overrate a {
+    text-align: center;
+    display: block;
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    padding: 8px 0pc 0;
+    color: #11cfac;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    cursor: pointer;
+    font-size: 12px;
+}
+.overrate a:hover {
+    color: #70b3d3 !important;
+}
+.review {
+    display: flex;
+    padding: 7px 0;
+    font-weight: 300;
+}
+.overrate {
+    padding:3px ​15px 0.5pc;
+}
+.overrate mat-icon.mat-icon {
+    font-size: 13px;
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 3px;
+}
+.review mat-icon.mat-icon {
+    font-size: 18px;
+    height: auto;
+    width: auto;
+    position: relative;
+    top: 2px;
+    margin:0px 3px 0 0;
+    color: #ffc800;
+}
+h1.Mname::first-letter {
+    text-transform: uppercase;
+}
+.new-featured-amazon.arrive.moviedeal {
+    /* padding: 0; */
+    background: #fdfdfd;
 }

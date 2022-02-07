@@ -5,6 +5,8 @@ import { map, startWith } from 'rxjs/operators';
 import { BreakpointService } from 'src/app/shared/breakpoint.service';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserService } from 'src/app/core/user/user.service';
+
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -12,6 +14,7 @@ import { UserService } from 'src/app/core/user/user.service';
 })
 export class HomeComponent implements OnInit {
   categories: any;
+  movies: any;
 
   slides = [
     { 'image': '../assets/images/banner2.jpg' },
@@ -42,4 +45,18 @@ export class HomeComponent implements OnInit {
       }
     );
   }
+
+  getMoviesAll() {
+    this.userService.getAllMoviesData().subscribe(
+      (data: any) => {
+        this.movies = data;
+        // this.dataload = false;
+        console.log('Movies  data', data)
+      },
+      error => {
+        console.log('error', error);
+      }
+    );
+  }
+
 }

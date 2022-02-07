@@ -4,143 +4,29 @@
         <div class="header" fxLayout="row" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px"
             fxFlex.xl="1910px">
             <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="start center" fxFlex="100%">
-                <div class="logo" fxFlex="23%">
-                    <!-- <a routerLink="/"> <b>Reviews</b><br /><span>Stackasian</span></a> -->
-                    <span routerLink="/"> <img src="/assets/images/logoo.png"></span>
+                <div class="logo" fxFlex="35%">
+                   <img routerLink="/" src="/assets/images/reviewLogo.png">
+                    <div class="menus">
+                        <ul>
+                            <li><span routerLink="/all-blogs">Blog</span></li>
+                            <li><span routerLink="/all-movies">Movies Review</span></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="search" fxFlex="50%" fxFlex.xs="100%" fxFlex.sm="100%" fxLayout="row"
+                <div class="search" fxFlex="40%" fxFlex.xs="100%" fxFlex.sm="100%" fxLayout="row"
                     fxLayoutAlign="start center">
-                    <div class="menu" fxFlex="22%" fxFlex.xs="33%" fxFlex.sm="35%">
+                    <div class="menu" fxFlex="30%" fxFlex.xs="33%" fxFlex.sm="35%">
                         <button class="allcates" mat-button [matMenuTriggerFor]="menu">
                             All Category<mat-icon>keyboard_arrow_down</mat-icon>
                         </button>
                         <mat-menu #menu="matMenu" class="menu_category">
                             <button *ngFor="let category of categories" mat-menu-item
-                               (click)="catgoryPage(category.categorylink)"
-                           >
+                               (click)="catgoryPage(category.categorylink)">
                                 {{category.categoryname}}
                             </button>
-
-                            <!-- <button mat-menu-item [routerLink]="'/category/refined-oil'">
-                                <mat-icon>keyboard_arrow_left</mat-icon>refined oil
-                            </button>
-                            <button mat-menu-item [routerLink]="'/category/computer-monitor'">
-                                <mat-icon>keyboard_arrow_left</mat-icon> lcd/led monitor
-                            </button> -->
-                            <!-- <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Amazon Fashion
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Amazon Pantry
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Appliances
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Apps & Games
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Baby
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Beauty
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Books
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Car & Motorbike
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Clothing & Accessories
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Collectibles
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Computers & Accessories
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Electronics
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Furniture
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Garden & Outdoors
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Gift Cards
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Grocery & Gourmet Foods
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Health & Personal Care
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Home & Kitchen
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Industrial & Scientific
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Jewellery
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Kindle Store
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Luggage & Bags
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Luxury Beauty
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Movies & TV Shows
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Music
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Musical Instruments
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Office Products
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Pet Supplies
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Prime Video
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Shoes & Handbags
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Software
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Sports, Fitness & Outdoors
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Tools & Home Improvement
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Toys & Games
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Video Games
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Watches
-                            </button>
-                            <button mat-menu-item>
-                                <mat-icon>keyboard_arrow_left</mat-icon>Renewed Speakers
-                            </button> -->
                         </mat-menu>
                     </div>
-                    <form class="example-form search-auto" fxFlex="78%" fxFlex.xs="67%" fxFlex.sm="65%">
+                    <form class="example-form search-auto" fxFlex="70%" fxFlex.xs="67%" fxFlex.sm="65%">
                         <input type="text" placeholder="search" aria-label="Number" matInput [formControl]="myControl"
                             [matAutocomplete]="auto">
                         <mat-icon>search</mat-icon>
@@ -154,12 +40,10 @@
                         </mat-autocomplete>
                     </form>
                 </div>
-                <div class="menus" fxFlex="27%">
+                <div class="menus" fxFlex="25%">
                     <ul>
-                        <li><span routerLink="/login">Login</span> / <span routerLink="/register">Register</span></li>
-                        <li routerLink="/review">
-                            <button>Write Review</button>
-                        </li>
+                        <li><span routerLink="/login">Login</span></li>
+                        <li routerLink="/review"><button>Write Review</button></li>
                     </ul>
                 </div>
             </div>

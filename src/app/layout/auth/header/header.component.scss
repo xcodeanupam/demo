@@ -1,10 +1,18 @@
 section.amazonheader {
-    padding:0px 6px 0px 6px;
+    padding:10px 6px 10px 6px;
     background:linear-gradient(45deg, #c4efe4, #c5f0e5);
     background:#000
 }
 .header {
     margin: auto;
+
+}
+.logo img{
+    width: 155px;
+    cursor: pointer;
+}
+.logo .menus {
+    padding: 0 2pc;
 }
 .logo {
     font-family: inter;
@@ -12,6 +20,9 @@ section.amazonheader {
     font-family: "Open Sans", sans-serif;
     font-size: 18px;
     letter-spacing: 0.4px;
+    display: flex;
+    place-content:center;
+    align-items: center;
 }
 .logo b {
     font-size: 16px;
@@ -134,50 +145,53 @@ form.example-form mat-icon.mat-icon {
     height: auto;
     margin: 1px 4px;
 }
+.menus {
+    width: 100%;
+    display: flex;
+}
+.logo .menus ul {
+    place-content: start;
+}
 .menus ul {
     list-style: none;
     display: flex;
     float: right;
-    place-content: center;
-    align-items: center;
+    align-items: center; 
+   place-content: end;
     margin: 0;
+    padding: 0;
+    width: 100%;
 }
 .menus ul li {
-    font-size: 12px;
+    font-size: 14px;
     color: #fff;
     font-family: "Open Sans", sans-serif;
     padding: 0px 1pc;
     cursor: pointer;
-    font-weight: 600;
+    font-weight: 300;
+    letter-spacing: 0;
 }
 .menus ul li span:hover{
-    color:#fe9b3b;
-   text-decoration: underline;
-}
-.logo span {
-    cursor: pointer;
+    color:#fdd574;
 }
 ul li span {
-    padding: 0px 5px;
+    width: 100%;
+    display: block;
 }
 .menus ul li button {
     background:#ffc63a;
     border: 0;
-    padding: 10px 15px;
+    padding: 8px 13px;
     color: #fff;
     font-size: 13px;
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
     cursor: pointer;
     border-radius: 4px;
-
-
 }
 .amazonheader1 .search mat-icon.mat-icon {
       padding: 0 10px;
 }
-
-
 //sidenav
 .mobile-view section.amazonheader{
     padding: 0;
@@ -268,9 +282,7 @@ section.amazonheader.amazonheader3 .menus ul li {
 .mobile-haeder .search input {
     padding: 0px 0pc 0 2pc;
 }
-.logo img{
-    width: 60%;
-}
+
 .amazonheader1 .logo img {
     width: 90%;
 }

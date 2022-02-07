@@ -21,7 +21,6 @@
     font-weight: 500;
     font-size: 12px;
     color: #5e5e5e;
-
 }
 .blog-featured h1 {
     font-family: "Open Sans", sans-serif;
@@ -33,11 +32,11 @@
 }
 .blog-img1{
 background: url('https://footwearnews.com/wp-content/uploads/2018/02/online-shopping.jpg?w=700&h=437&crop=1');
-height: 250px;
-background-position: center !important;
+height: 150px;
+    background-position: center !important;
     background-size: contain !important;
-    width: 100%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 0px auto 15px;
     background-repeat: no-repeat !important;
     border: 0px solid #f7f7f7;
     padding: 0pc;
@@ -45,11 +44,11 @@ background-position: center !important;
 }
 .blog-img2{
     background: url('https://cdn.cnetcontent.com/syndication/mediaserverredirect/b1cc83a25da2e57e450fbea92886a9d0/original.jpg');
-    height: 250px;
+    height: 150px;
     background-position: center !important;
     background-size: contain !important;
-    width: 100%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 0px auto 15px;
     background-repeat: no-repeat !important;
     border: 0px solid #f7f7f7;
     padding: 0pc;
@@ -57,11 +56,11 @@ background-position: center !important;
 }
 .blog-img3{
         background: url('https://etimg.etb2bimg.com/photo/66182971.cms');
-        height: 250px;
+        height: 150px;
         background-position: center !important;
         background-size: contain !important;
-        width: 100%;
-        margin: 0 auto;
+        width: 70%;
+        margin: 0px auto 15px;
         background-repeat: no-repeat !important;
         border: 0px solid #f7f7f7;
         padding: 0pc;
@@ -70,7 +69,7 @@ background-position: center !important;
 .review mat-icon.mat-icon{
     width: auto;
     color: #ffc400;
-    font-size: 14px;
+    font-size: 17px;
     margin: 0px;
     height: auto; 
 }
@@ -79,22 +78,22 @@ background-position: center !important;
     place-content: center;
     align-items: center;
 }
-.viewer {
-    padding: 0 5px;
-}
 .review {
-    padding: 0 5px 0 0px;
+    display: flex;
+    place-content: center;
+    align-items: center;
 }
 .viewer b {
-    font-size: 11px;
+    font-size: 12px;
     font-family: inter;
     letter-spacing: 0;
     font-weight: 600;
     font-family: "Open Sans", sans-serif;
-    color: #45d7eb;
-    padding: 0px 0px 0px 7px;
-    border-left: 2px solid #2dbfe9;
-}button.buy {
+    color: #85bf5a;  
+      padding: 0 5px;
+
+}
+button.buy {
     border: 0;
     background: transparent;
     display: flex;
@@ -122,6 +121,7 @@ background-position: center !important;
     padding: 0px 10px;
     color: #6e6a6a;
     margin: 0 0 5px 0px;
+    height: 40px;
 }
 .imghref{
    padding: 0 !important;
@@ -131,7 +131,7 @@ background-position: center !important;
     font-family: "Open Sans", sans-serif;
     display: flex;
     align-items: center;
-    padding: 20px 10px 20px;
+    padding: 20px 10px 40px;
     font-size: 14px;
     color: #3fe2f4;
     font-weight: 600;
@@ -164,7 +164,6 @@ section.home.amazonhome2 .blog-featured p {
 section.home.amazonhome3 .blog-featured p {
     height: 140px;
 }
-
 .blog-featured {
     padding:1pc 10px 1pc;
 }
@@ -174,6 +173,7 @@ section.home.amazonhome3 .blog-featured p {
 .reviewviewpara p:nth-child(1) {
     display: block;
 }
+
 .reviewviewpara p {
     display: none;
 }
