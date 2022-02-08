@@ -1,10 +1,10 @@
-<div class="desktop-view" *ngIf="!isMobile()">
+<div class="desktop-view" *ngIf="!isMobile()" id="logohead">
     <section class="amazonheader" fxLayout="row" fxLayoutAlign="start center" ngClass.xs="amazonheader1"
         ngClass.sm="amazonheader2" ngClass.md="amazonheader3">
         <div class="header" fxLayout="row" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px"
             fxFlex.xl="1910px">
             <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="start center" fxFlex="100%">
-                <div class="logo" fxFlex="35%">
+                <div   class="logo" fxFlex="37%">
                    <img routerLink="/" src="/assets/images/reviewLogo.png">
                     <div class="menus">
                         <ul>
@@ -40,7 +40,7 @@
                         </mat-autocomplete>
                     </form>
                 </div>
-                <div class="menus" fxFlex="25%">
+                <div class="menus" fxFlex="23%">
                     <ul>
                         <li><span routerLink="/login">Login</span></li>
                         <li routerLink="/review"><button>Write Review</button></li>
@@ -232,3 +232,8 @@
         </div>
     </section>
 </div>
+
+
+<a  href="#logohead" class="topicon" >
+    <mat-icon>keyboard_arrow_up</mat-icon>
+</a>

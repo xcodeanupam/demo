@@ -811,6 +811,11 @@ section.home.amazonhome3 .allcate {
 .category-featured-amazon{
        background: #fff;
        padding:2pc 0 3pc;
+     
+}
+#homeFirsttwo{
+    position: relative;
+    z-index: 9;  
 }
 .category-featured {
     flex-wrap: wrap;
