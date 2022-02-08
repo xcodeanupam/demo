@@ -78,10 +78,10 @@
                 </div>-->
                     <div fxLayout="row-reverse" fxLayout.xs="column" fxLayout.sm="column">
                         <div class="img-product" fxFlex="40%" fxLayout="row">
-                            <a href={{movie.productLink}} target="_blank">
-                                <img src={{movie.image}}></a>
-                            <a href={{movie.productLink}} target="_blank">
-                                <img src={{movie.imageThree}}></a>
+                            <a  target="_blank">
+                                <img *ngIf="movie.image" src={{movie.image}}></a>
+                            <a  target="_blank">
+                                <img *ngIf="movie.imageThree" src={{movie.imageThree}}></a>
                             <div class="review imgtwos">
                                 <!-- <a href={{movie.productLink}} target="_blank">
                               <img src={{movie.imageTwo}}></a> -->
