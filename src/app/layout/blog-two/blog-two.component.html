@@ -11,7 +11,7 @@
                     <div class="single-line">
                         <b class="home" routerLink="/">Home</b>
                         <mat-icon>keyboard_arrow_right</mat-icon> <b><a>Movies</a></b>
-                        <mat-icon>keyboard_arrow_right</mat-icon> <b><a> {{movie.productName}}</a></b>
+                        <mat-icon>keyboard_arrow_right</mat-icon> <b><a> {{movie.title}}</a></b>
                     </div>
                 </div>
             </div>
@@ -25,18 +25,17 @@
 
 
             <div class="headingMovie">
-                <h1 class="Mname"> {{movie.productName}}</h1>
+                <h1 class="Mname"> {{movie.title}}</h1>
                 <div class="headingMovieTwo" fxLayout="row" fxLayout.xs="column">
                     <div class="overrateData" fxLayout="row" fxFlex.xs="100%" fxFlex="40%">
                         <div fxLayout="column">
                             <div fxLayout="columncd">
                                 <h2 class="Mtime">{{movie.createDate}}</h2>
-                                <h2 class="Mtype"> Action, Sci-Fi</h2>
-                                <h2 class="Mdate"> 5 March 2022</h2>
+                                <!-- <h2 class="Mtype"> Action, Sci-Fi</h2> -->
+                                <h2 class="Mdate"> {{movie.released_on}}</h2>
                             </div>
                             <div fxLayout="columncd">
-                                <p>Sukumar’s Pushpa: The Rise shows promise when it wraps things up and sets up things
-                                    for Pushpa 2.</p>
+                                <p>{{movie.productName}}</p>
                             </div>
                         </div>
                     </div>
@@ -89,7 +88,7 @@
                         </div>
                         <div class="heading-product" fxFlex="60%">
                             <!-- <h1> {{blog.title}}</h1> -->
-                            <h5 class="namemoview">{{movie.productName}}</h5>
+                            <h5 class="namemoview">{{movie.title}}</h5>
                             <p class="namemoviewdate">{{movie.author}}, Updated: {{movie.createDate}}
                             </p>
                             <div class="review">

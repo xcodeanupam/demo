@@ -8,6 +8,7 @@ import { UserService } from 'src/app/core/user/user.service';
 })
 export class AllMoviesComponent implements OnInit {
   movies: any;
+  dataload: boolean =  true;
 
   constructor(public userService: UserService,) { }
 
@@ -18,7 +19,7 @@ export class AllMoviesComponent implements OnInit {
     this.userService.getAllMoviesData().subscribe(
       (data: any) => {
         this.movies = data;
-        // this.dataload = false;
+        this.dataload = false;
         console.log('Movies  data', data)
       },
       error => {

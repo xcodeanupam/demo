@@ -8,6 +8,7 @@ import { UserService } from 'src/app/core/user/user.service';
 })
 export class AllBlogsComponent implements OnInit {
   blogs: any;
+  dataload: boolean = true;
 
   constructor(public userService: UserService,) { }
 
@@ -18,7 +19,7 @@ export class AllBlogsComponent implements OnInit {
     this.userService.getAllBlogsData().subscribe(
       (data: any) => {
         this.blogs = data;
-        // this.dataload = false;
+        this.dataload = false;
         console.log('blogs data', data)
       },
       error => {

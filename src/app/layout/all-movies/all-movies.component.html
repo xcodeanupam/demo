@@ -1,12 +1,19 @@
 <div class="new-featured-amazon arrive topdeal">
+  
     <div class="new featured-amazon" fxLayout="column" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px"
         fxFlex.lg="1270px" fxFlex.xl="1910px">
+
+        <div *ngIf="dataload">
+            <img class="loader" src="assets/images/s.gif">
+        </div>
+
+
         <div class="new-featured-amazon arrive blog">
             <div class="blog-data" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
                 <div *ngFor="let movie of movies" class="movie-featured" fxLayout="column" fxFlex="25%">
                     <div class="headingMovie">
                         <div class="headingMovieTwo" fxLayout="column" fxLayout.xs="column">
-                            <a href={{movie.productLink}} target="_blank">
+                            <a href={{movie.titleLink}} target="_blank">
                                 <img src={{movie.imageTwo}}></a>
 
                             <div class="overrate" fxFlex.xs="100%" fxFlex="100%">
@@ -14,9 +21,9 @@
                                     <mat-icon>star_border</mat-icon>
                                     <span>( {{movie.averageUserRating}}/5)</span>
                                 </div>
-                                <h1 class="Mname"> {{movie.productName}}</h1>
+                                <h1 class="Mname"> {{movie.title}}</h1>
                                 <h1 class="dname">{{movie.released_on}}</h1>
-                                <a> See Full Detail <mat-icon>arrow_right_alt</mat-icon></a>
+                                <a [routerLink]="'/movie-review/'+movie.titleLink"> See Full Detail <mat-icon>arrow_right_alt</mat-icon></a>
                             </div>
                         </div>
                     </div>
