@@ -193,3 +193,47 @@ section.home.amazonhome3 .blog-featured p {
 .loaderload{
     min-height: 100vh;
 }
+
+
+.new-featured-amazon.arrive.topdeal.amazonhome5 {
+.single-line b {
+font-size: 14px;
+}
+.date h6 {
+    font-size: 14px;
+}
+.viewer b {
+    font-size: 14px;
+}
+.blog-featured h1 {
+    font-size: 16px;
+}
+.blog-featured p {
+    font-size: 15px;
+    line-height: 23px;
+    height: 50px;
+    letter-spacing: 0.3px;
+}
+}
+
+
+@media only screen and (min-width: 1900px) and (max-width: 9000px){
+.single-line b {
+        font-size: 15px;
+}
+.date h6 {
+            font-size: 15px;
+}
+.viewer b {
+    font-size: 14px;
+}
+.blog-featured h1 {
+    font-size: 17px;
+}
+.blog-featured p {
+    font-size: 16px;
+    line-height: 24px;
+    height: 50px;
+    letter-spacing: 0.3px;
+}
+}

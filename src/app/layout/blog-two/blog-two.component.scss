@@ -13,7 +13,7 @@
 }
 .single-line .home{
     cursor: pointer;
-    padding-left: 1pc;
+    padding-left: 0.5pc;
 
 }
 .single-line {
@@ -95,7 +95,7 @@
 }
 .heading-product p {
     font-family: "Open Sans", sans-serif;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 25px;
     letter-spacing: 0.2px;
 }
@@ -233,9 +233,9 @@ cursor: pointer;
     align-items: center;
 }
 .reviewd p {
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.5px;
-    line-height: 22px;
+    line-height: 24px;
     font-family: "Cabin", sans-serif;
     color: #6e6e6e;
     padding-bottom: 1pc;
@@ -539,4 +539,57 @@ section.home.amazonhome3 {
     font-size: 13px;
     padding-right: 1pc;
 }
+}
+
+
+
+section.home.amazonhome5 {
+    .headingMovieTwo h2 {
+    font-size: 18px;
+}
+.overrateData p {
+    font-size: 14px;
+    line-height: 22px;
+}
+.heading-product p {
+    font-size: 16px;
+    line-height: 29px;
+}
+.reviewd p {
+    font-size: 15px;
+    letter-spacing: 0.5px;
+    line-height: 27px;
+}
+.img b {
+    font-size: 15px;
+}
+.review mat-icon.mat-icon {
+    font-size: 16px;
+}
+}
+
+@media only screen and (min-width: 1900px) and (max-width: 9000px){
+
+    .headingMovieTwo h2 {
+        font-size: 20px;
+    }
+    .overrateData p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .heading-product p {
+        font-size: 18px;
+        line-height: 31px;
+    }
+    .reviewd p {
+        font-size: 17px;
+        letter-spacing: 0.5px;
+        line-height: 29px;
+    }
+    .img b {
+        font-size: 17px;
+    }
+    .review mat-icon.mat-icon {
+        font-size: 18px;
+    }
 }

@@ -2,13 +2,15 @@
     margin: 2pc auto;
 }
 .movie-featured {
-padding: 5px;
+padding:8px;
+margin-bottom: 10px;
+
 }
 .blog-data img {
     width: 100%;
     border-radius: 5px ;
     height: 200px;
-    object-fit: fill;
+    object-fit: cover;
 }
 .headingMovieTwo {
     color: #323232;
@@ -49,6 +51,8 @@ h1.dname {
     width: fit-content;
     cursor: pointer;
     font-size: 12px;
+    text-decoration: none;
+
 }
 .overrate a:hover {
     color: #70b3d3 !important;
@@ -90,3 +94,65 @@ h1.Mname::first-letter {
 .loaderload{
     min-height: 100vh;
 }
+
+.single-line b.home {
+    cursor: pointer;
+}
+.single-line b {
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    color: #5e5e5e;
+}
+.single-line mat-icon {
+    font-size: 15px;
+    height: auto;
+    width: 25px;
+    text-align: center;
+    color: #5e5e5e;
+    position: relative;
+    top: 4px;
+}
+.top-line {
+    padding: 0 15px 10px;
+}
+
+
+.new-featured-amazon.arrive.topdeal.amazonhome5 {
+.review mat-icon.mat-icon {
+        font-size: 22px;    top: 0px;
+
+}
+.review {
+    font-size: 18px;
+}
+h1.Mname {
+    font-size: 16px;
+    }
+h1.dname {
+        font-size: 14px;
+}
+.overrate a {
+    font-size: 14px;
+}
+}
+    
+    
+    @media only screen and (min-width: 1900px) and (max-width: 9000px){
+        .review mat-icon.mat-icon {
+            font-size: 22px;    top: 0px;
+    
+    }
+    .review {
+        font-size: 20px;
+    }
+    h1.Mname {
+        font-size: 21px;
+        }
+    h1.dname {
+            font-size: 18px;
+    }
+    .overrate a {
+        font-size: 17px;
+    }
+    }
