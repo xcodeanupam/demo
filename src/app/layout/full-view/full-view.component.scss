@@ -10,6 +10,16 @@
     padding: 15pc 0 0;
 
 }
+.loader{
+    width: 301px;
+    height: auto;
+    padding:8pc 0 11pc;
+    margin: 0 auto;
+    display: block;
+}
+.loaderload{
+    min-height: 100vh;
+}
 .category{
     min-height: 100vh;
 }
@@ -57,15 +67,16 @@
 }
 .text ul li {
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
-    padding: 4px 0;
+    font-size: 14px;
+    padding: 5px 0;
+    line-height: 25px;
 }
 .price {
     padding: 4px 10px 4px 0px;
     font-family: inter;
     font-weight: 500;
     color: #45d7eb;
-    font-size: 12px;
+    font-size: 14px;
 }
 .price u {
     text-decoration: line-through;
@@ -74,7 +85,7 @@
 .star mat-icon {
     width: auto;
     color: #ffc400;
-    font-size: 11px;
+    font-size: 14px;
     margin: 1px;
     position: relative;
     top: 5px;
@@ -101,7 +112,7 @@
     color: #fff;
     font-family: "Open Sans", sans-serif;
     margin: 14px 13px 15px;
-    font-size: 12px;
+    font-size: 14px;
     display: flex;
     cursor: pointer;
     align-items: center;
@@ -158,13 +169,13 @@
 }
 .reviewd p {
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 0.2px;
     line-height: 20px;
 }
 .img {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     place-content: flex-start;
 }
 .start .img img {
@@ -193,9 +204,9 @@
 }
 .text h4 {
     font-family: "Open Sans", sans-serif;
-    padding: 10px 4px 0;
+    padding: 14px 4px 5px;
     font-weight: 700;
-    font-size: 16px;
+    font-size: 17px;
     margin: 0;
     display: flex;
     align-items: center;
@@ -210,7 +221,7 @@
 }
 .item-ad .heading b {
     font-family: "Open Sans", sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: 600;
 
 }

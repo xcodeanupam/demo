@@ -1002,13 +1002,15 @@ section.home.mobile-home.amazonhome1 .cate-text h1 {
     font-family: "Open Sans", sans-serif;
     font-weight: 600;
 }
-.products_all p {
+.products_all a {
     font-size: 12px;
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     letter-spacing: 0.3px;
     color: #515151;
     padding: 1pc 0 5px;
+    text-decoration: none;
+    display: block;
 
 }
 .products-text.lastpic-d .products_all {

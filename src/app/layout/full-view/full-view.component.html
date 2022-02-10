@@ -1,7 +1,7 @@
 <section class="home" fxLayout="column" ngClass.xs="amazonhome1" ngClass.sm="amazonhome2" ngClass.md="amazonhome3">
   
-    <div class="ft" *ngIf="dataload">
-        <mat-spinner></mat-spinner>
+    <div *ngIf="dataload" class="loaderload">
+        <img class="loader" src="assets/images/loader.gif">
     </div>
     <div *ngIf="!dataload">
     <!----top-line-->

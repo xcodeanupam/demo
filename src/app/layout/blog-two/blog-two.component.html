@@ -1,7 +1,7 @@
-<section class="home" fxLayout="column" ngClass.xs="amazonhome1" ngClass.sm="amazonhome2"
- ngClass.md="amazonhome3" ngClass.lt-xl="amazonhome5">
-    <div class="ft" *ngIf="dataload" >
-        <mat-spinner></mat-spinner>
+<section class="home" fxLayout="column" ngClass.xs="amazonhome1" ngClass.sm="amazonhome2" ngClass.md="amazonhome3"
+    ngClass.lt-xl="amazonhome5">
+    <div class="ft loaderload" *ngIf="dataload">
+        <img class="loader" src="assets/images/loader.gif">
     </div>
     <div *ngIf="!dataload">
         <!----top-line-->
@@ -11,20 +11,21 @@
                 <div class="top-line">
                     <div class="single-line">
                         <b class="home" routerLink="/">Home</b>
-                        <mat-icon>keyboard_arrow_right</mat-icon><b class="home" routerLink="/all-movies"><a>Movies</a></b>
+                        <mat-icon>keyboard_arrow_right</mat-icon><b class="home"
+                            routerLink="/all-movies"><a>Movies</a></b>
                         <mat-icon>keyboard_arrow_right</mat-icon> <b><a> {{movie.title}}</a></b>
                     </div>
                 </div>
             </div>
 
-
-
             <!----category-line-->
-            <div class="vedios" [innerHtml]="x">
-                <!-- <iframe  src={{movie.youtube}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+            <div class="imgvedio">
+                <a target="_blank">
+                    <img *ngIf="movie.image" src={{movie.image}}></a>
+                <div class="vedios" [innerHtml]="x">
+                    <!-- <iframe  src={{movie.youtube}} title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                </div>
             </div>
-
-
             <div class="headingMovie">
                 <h1 class="Mname"> {{movie.title}}</h1>
                 <div class="headingMovieTwo" fxLayout="row" fxLayout.xs="column">
@@ -36,7 +37,7 @@
                                 <h2 class="Mdate"> {{movie.released_on}}</h2>
                             </div>
                             <div fxLayout="columncd">
-                                <p>{{movie.productName}}</p>
+                                <p>{{movie.productName | slice:0:222}}</p>
                             </div>
                         </div>
                     </div>
@@ -70,23 +71,73 @@
                     {{paragraph.para  | slice:0:222}}
                 </p> -->
             </div>
+            <h1 class="castheadig">Movie Cast</h1>
+            <div class="cast" fxLayout="row">
+              
+                <div class="castdata">
+                    <img
+                        src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ajay-devgn-24051-12-09-2017-04-41-13.jpg">
+                    <h1>Ajay Devgn</h1>
+                    <h5>Aator</h5>
+                </div>
+                <div class="castdata">
+                    <img
+                        src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ajay-devgn-24051-12-09-2017-04-41-13.jpg">
+                    <h1>Ajay Devgn</h1>
+                    <h5>Aator</h5>
+                </div>
+                <div class="castdata">
+                    <img
+                        src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ajay-devgn-24051-12-09-2017-04-41-13.jpg">
+                    <h1>Ajay Devgn</h1>
+                    <h5>Aator</h5>
+                </div>
+                <div class="castdata">
+                    <img
+                        src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ajay-devgn-24051-12-09-2017-04-41-13.jpg">
+                    <h1>Ajay Devgn</h1>
+                    <h5>Aator</h5>
+                </div>
+                <div class="castdata">
+                    <img
+                        src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ajay-devgn-24051-12-09-2017-04-41-13.jpg">
+                    <h1>Ajay Devgn</h1>
+                    <h5>Aator</h5>
+                </div>
+                <div class="castdata">
+                    <img
+                        src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ajay-devgn-24051-12-09-2017-04-41-13.jpg">
+                    <h1>Ajay Devgn</h1>
+                    <h5>Aator</h5>
+                </div>
+                <div class="castdata">
+                    <img
+                        src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ajay-devgn-24051-12-09-2017-04-41-13.jpg">
+                    <h1>Ajay Devgn</h1>
+                    <h5>Aator</h5>
+                </div>
+                <div class="castdata">
+                    <img
+                        src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ajay-devgn-24051-12-09-2017-04-41-13.jpg">
+                    <h1>Ajay Devgn</h1>
+                    <h5>Aator</h5>
+                </div>
+                <div class="castdata">
+                    <img
+                        src="https://in.bmscdn.com/iedb/artist/images/website/poster/large/ajay-devgn-24051-12-09-2017-04-41-13.jpg">
+                    <h1>Ajay Devgn</h1>
+                    <h5>Aator</h5>
+                </div>
+              
+            </div>
 
             <div class="category reviewmovieblogs" fxLayout="row">
                 <div class="category" fxLayout="column">
                     <!--<div class="heading-product">
                     <h1> {{blog.title}}</h1>
                 </div>-->
-                    <div fxLayout="row-reverse" fxLayout.xs="column" fxLayout.sm="column">
-                        <div class="img-product" fxFlex="40%" fxLayout="row">
-                            <a  target="_blank">
-                                <img *ngIf="movie.image" src={{movie.image}}></a>
-                            <a  target="_blank">
-                                <img *ngIf="movie.imageThree" src={{movie.imageThree}}></a>
-                            <div class="review imgtwos">
-                                <!-- <a href={{movie.productLink}} target="_blank">
-                              <img src={{movie.imageTwo}}></a> -->
-                            </div>
-                        </div>
+                    <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column">
+
                         <div class="heading-product" fxFlex="60%">
                             <!-- <h1> {{blog.title}}</h1> -->
                             <h5 class="namemoview">{{movie.title}}</h5>
@@ -118,13 +169,23 @@
                          </a>
                        </button> -->
                         </div>
+                        <div class="img-product" fxFlex="40%" fxLayout="row">
+                            <a target="_blank">
+                                <img *ngIf="movie.image" src={{movie.image}}></a>
+                            <a target="_blank">
+                                <img *ngIf="movie.imageThree" src={{movie.imageThree}}></a>
+                            <div class="review imgtwos">
+                                <!-- <a href={{movie.productLink}} target="_blank">
+                              <img src={{movie.imageTwo}}></a> -->
+                            </div>
+                        </div>
                     </div>
 
                     <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" class="reviewalluser">
-                        <div class="img-product" fxFlex="70%" fxLayout="row">
+                        <div class="img-product" fxFlex="65%" fxFlex.xs="100%" fxFlex.sm="100%" fxLayout="row">
                             <div class="heading-productreview">
                                 <h1>USERS' REVIEWS </h1>
-                                <div class="reviewsrate" >
+                                <div class="reviewsrate">
                                     <div class="reviewsrateUserProfile" fxLayout="row">
                                         <div class="reviewsrateUser">
                                             <mat-icon>person</mat-icon>
@@ -138,9 +199,9 @@
                                             <mat-icon>star_border</mat-icon>
                                         </div>
                                     </div>
-                                        <textarea type="textarea" class="rightre"
-                                            placeholder="Write your review here..."> </textarea>
-                                        <button> Submit</button>
+                                    <textarea type="textarea" class="rightre"
+                                        placeholder="Write your review here..."> </textarea>
+                                    <button> Submit</button>
                                 </div>
                                 <div class="start" *ngFor="let comm of movie.comments">
                                     <div class="img" fxLayout="row">
@@ -165,12 +226,47 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="img-product" fxFlex="30%" fxLayout="row">
-                          
+
+                        <div class="sidebarsec" fxFlex="35%" fxLayout="column" fxFlex.xs="100%" fxFlex.sm="100%">
+                            <h1>Upcoming shows movies</h1>
+                            <ul>
+                                <li><a>Valimai: The Power <p>Action/Thriller</p></a>
+                                    <b>24 Feb 2022</b>
+                                </li>
+                                <li><a>Gangubai Kathiawadi <p>Biography/Crime/Drama</p></a>
+                                    <b>25 Feb 2022</b>
+                                </li>
+                                <li><a>The Batman <p>Action/Adventure/Crime/Drama</p></a>
+                                    <b>4 Mar 2022</b>
+                                </li>
+                                <li><a>Bachchan Pandey <p>Action/Drama</p></a>
+                                    <b>18 Mar 2022</b>
+                                </li>
+                                <li><a>RRR <p>Action/Drama/Historical</p></a>
+                                    <b>25 Mar 2022</b>
+                                </li>
+                                <li><a>Fast and Furious 10 <p>Action</p></a>
+                                    <b>Apr 2022</b>
+                                </li>
+                                <li><a>Sonic: The Hedgehog 2<p>Action/Adventure/Animation/Family</p></a>
+                                    <b>8 Apr 2022</b>
+                                </li>
+                                <li><a>K.G.F. Chapter 2 <p>Action/Thriller</p></a>
+                                    <b>14 Apr 2022</b>
+                                </li>
+                                <li><a>Attack <p>Action/Thriller</p></a>
+                                    <b>Apr 2022</b>
+                                </li>
+                                <li><a>Rocketry <p>Biography/Drama</p></a>
+                                    <b>Apr 2022</b>
+                                </li>
+                                <li><a>King Richard<p>Biography/Drama/Sports</p></a>
+                                    <b>Apr 2022</b>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
-
             </div>
         </div>
     </div>
