@@ -2,7 +2,7 @@
     <section class="amazonheader" fxLayout="row" fxLayoutAlign="start center" ngClass.xs="amazonheader1"
         ngClass.sm="amazonheader2" ngClass.md="amazonheader3">
         <div class="header" fxLayout="row" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px" fxFlex.lg="1270px"
-            fxFlex.xl="1910px">
+            fxFlex.xl="1800px">
             <div fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="start center" fxFlex="100%">
                 <div   class="logo" fxFlex="37%">
                    <img routerLink="/" src="/assets/images/reviewLogo.png">
@@ -56,134 +56,21 @@
 <div class="mobile-view" *ngIf="isMobile()">
     <section class="amazonheader" fxLayout="row" fxLayoutAlign="start center" ngClass.xs="amazonheader1"
         ngClass.sm="amazonheader2" ngClass.md="amazonheader3">
-
         <div class="mobile-haeder" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="start center"
             fxFlex="100%">
             <mat-drawer-container class="example-container" autosize>
                 <mat-drawer #drawer class="example-sidenav" mode="over">
                     <div class="cate-sidenav" fxLayout="column">
+                        <div class="menusLogin">
+                            <span routerLink="/login" class="loginli">Login <mat-icon>person_outline</mat-icon>
+                            </span>
+                            <span routerLink="/"> <img src="/assets/images/logoo.png"></span>
+                        </div>
                         <a *ngFor="let category of categories">
                             <button mat-menu-item [routerLink]="category.categorylink">
                                 {{category.categoryname}}
                             </button>
                         </a>
-                        <!-- <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Alexa Skills
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Amazon Devices
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Amazon Fashion
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Amazon Pantry
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Appliances
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Apps & Games
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Baby
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Beauty
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Books
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Car & Motorbike
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Clothing & Accessories
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Collectibles
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Computers & Accessories
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Electronics
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Furniture
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Garden & Outdoors
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Gift Cards
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Grocery & Gourmet Foods
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Health & Personal Care
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Home & Kitchen
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Industrial & Scientific
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Jewellery
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Kindle Store
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Luggage & Bags
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Luxury Beauty
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Movies & TV Shows
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Music
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Musical Instruments
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Office Products
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Pet Supplies
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Prime Video
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Shoes & Handbags
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Software
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Sports, Fitness & Outdoors
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Tools & Home Improvement
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Toys & Games
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Video Games
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Watches
-                        </button>
-                        <button mat-menu-item>
-                            <mat-icon>keyboard_arrow_left</mat-icon>Renewed Speakers
-                        </button> -->
                     </div>
                 </mat-drawer>
                 <div class="example-sidenav-content">
@@ -203,6 +90,9 @@
                             <div class="menus" fxFlex="20%" fxFlex.sm="20%">
                                 <ul>
                                     <li routerLink="/review">
+                                        <img src="/assets/images/blog.png">
+                                    </li>
+                                    <li routerLink="/all-blogs">
                                         <img src="/assets/images/review-icon.png">
                                     </li>
                                 </ul>

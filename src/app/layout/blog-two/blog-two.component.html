@@ -1,16 +1,17 @@
-<section class="home" fxLayout="column" ngClass.xs="amazonhome1" ngClass.sm="amazonhome2" ngClass.md="amazonhome3">
-    <div class="ft" *ngIf="dataload">
+<section class="home" fxLayout="column" ngClass.xs="amazonhome1" ngClass.sm="amazonhome2"
+ ngClass.md="amazonhome3" ngClass.lt-xl="amazonhome5">
+    <div class="ft" *ngIf="dataload" >
         <mat-spinner></mat-spinner>
     </div>
     <div *ngIf="!dataload">
         <!----top-line-->
         <div class="category-amazon_review" fxLayout="column" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="950px"
-            fxFlex.lg="1270px" fxFlex.xl="1910px">
+            fxFlex.lg="1270px" fxFlex.xl="1800px">
             <div class="category-amazon" fxLayout="row">
                 <div class="top-line">
                     <div class="single-line">
                         <b class="home" routerLink="/">Home</b>
-                        <mat-icon>keyboard_arrow_right</mat-icon> <b><a>Movies</a></b>
+                        <mat-icon>keyboard_arrow_right</mat-icon><b class="home" routerLink="/all-movies"><a>Movies</a></b>
                         <mat-icon>keyboard_arrow_right</mat-icon> <b><a> {{movie.title}}</a></b>
                     </div>
                 </div>

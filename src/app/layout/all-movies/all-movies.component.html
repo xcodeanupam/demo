@@ -1,8 +1,15 @@
-<div class="new-featured-amazon arrive topdeal">
+<div class="new-featured-amazon arrive topdeal" ngClass.lt-xl="amazonhome5">
   
     <div class="new featured-amazon" fxLayout="column" fxFlex.xs="588" fxFlex.sm="590px" fxFlex.md="950px"
-        fxFlex.lg="1270px" fxFlex.xl="1910px">
-
+        fxFlex.lg="1270px" fxFlex.xl="1800px">
+        <div class="category-amazon" fxLayout="row">
+            <div class="top-line">
+                <div class="single-line">
+                    <b class="home" routerLink="/">Home</b>
+                    <mat-icon>keyboard_arrow_right</mat-icon> <b><a>Movies Reviews</a></b>
+                </div>
+            </div>
+        </div>
         <div *ngIf="dataload" class="loaderload">
             <img class="loader" src="assets/images/loader.gif">
         </div>
@@ -13,7 +20,7 @@
                 <div *ngFor="let movie of movies" class="movie-featured" fxLayout="column" fxFlex="25%">
                     <div class="headingMovie">
                         <div class="headingMovieTwo" fxLayout="column" fxLayout.xs="column">
-                            <a href={{movie.titleLink}} target="_blank">
+                            <a [routerLink]="'/movie-review/'+movie.titleLink"  target="_blank">
                                 <img src={{movie.imageTwo}}></a>
 
                             <div class="overrate" fxFlex.xs="100%" fxFlex="100%">

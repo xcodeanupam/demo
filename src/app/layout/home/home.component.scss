@@ -7,7 +7,7 @@
     margin-bottom: 10px;
 }
 section.home{
-    background:#fdfdfd;
+    background:#fbfbfb;
 }
 .slide:before {
     content: "";
@@ -25,17 +25,25 @@ section.home{
     padding-left: 1pc;
     text-align: center;
 }
+.heading.categorieshead {
+    padding: 0;
+}
 .heading p {
-    font-family: inter;
-    font-size: 13px;
+    font-family: 'Cabin';
+    font-size: 15px;
     margin: 0;
     font-weight: 500;
+    color: #797979;
+    letter-spacing: 0.5px;
 }
+
 .heading h1 {
     font-family: 'Open Sans', sans-serif;
-    font-size: 23px;
+    font-size: 30px;
     font-weight: 800;
     letter-spacing: 0.5px;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 6px 0 0;
 }
 
 // .heading h1 span{
@@ -351,7 +359,7 @@ color: #000;
     font-size: 14px;
     margin: 0px;
     position: relative;
-    top: 5px;
+    top: 0px;
 }
 .star.amazon-revirew .review a {
     width: auto;
@@ -548,13 +556,12 @@ width: 100%;
     align-items: center;
     display: flex;
 }
-
   .new-featured-amazon.arrive.blog {
-    padding-bottom: 3pc;
+    padding-bottom:0pc;
 }
 .new-featured-amazon.allbanner {
     padding:2pc 0 2pc;
-    background: #fdfdfd;
+    background: #fbfbfb;
 }
 .new-featured-amazon.topdeald button {
     background: #ffffff;
@@ -863,7 +870,7 @@ section.home.amazonhome3 .allcate {
     margin-bottom: 0;
     padding-bottom: 0;
     text-transform: capitalize;
-    letter-spacing: 0.3px;
+    letter-spacing: 0.1px;
     cursor: pointer;
 }
 ::ng-deep .new.category-amazon .carousel {
@@ -963,7 +970,7 @@ section.home.mobile-home.amazonhome1 .cate-text h1 {
     width: fit-content;
     border-radius: 30px;
     border: 0;
-    margin:4pc auto 0pc;
+    margin:3pc auto 0pc;
     padding: 0px 2.5pc;
     height: 45px;
 }
@@ -1046,21 +1053,19 @@ section.home.mobile-home.amazonhome2 .products_all h1 {
     line-height: 20px;
 
 }
-
-
-
-
 .new.featured-amazon {
     margin: 2pc auto;
 }
 .movie-featured {
-padding:7px;
+padding:8px;
+margin-bottom: 10px;
+
 }
 .blog-data img {
     width: 100%;
     height: 200px;
     border-radius: 5px 5px 0 0;
-    object-fit: fill;
+    object-fit: cover;
 }
 .moviedeal .heading {
     padding-bottom: 1pc;
@@ -1095,7 +1100,7 @@ h1.Mname {
     line-height: normal;
 }
 .moviedeal button.review-blog {
-    margin: 3pc auto 0pc;
+    margin:2pc auto 0pc;
 }
 h1.dname {
     font-size: 12px;
@@ -1149,4 +1154,51 @@ h1.Mname::first-letter {
 .new-featured-amazon.arrive.moviedeal {
     /* padding: 0; */
     background: #fdfdfd;
+}
+
+
+section.home.amazonhome5{
+.reviewd p{
+    font-size: 15px;
+    line-height: 21px;
+}
+.Product h4 {
+    font-size: 14.5px;
+}
+.price {
+    padding: 6px 0;
+    font-size: 14px;
+}
+.star.amazon-revirew span {
+    font-size: 12px;
+}
+.blog-featured p {
+    font-size: 15px;
+    line-height: 24px;
+    height: 150px;
+}
+}
+
+
+@media only screen and (min-width: 1900px) and (max-width: 9000px){
+    .reviewd p{
+        font-size: 17.5px;
+        line-height: 27px;
+    }
+    .Product h4 {
+        font-size: 17.5px;
+}
+
+.price {
+    padding: 6px 0;
+    font-size: 16px;
+}
+.star.amazon-revirew span {
+    font-size: 13px;
+}
+.blog-featured p {
+    font-size: 15px;
+    line-height: 24px;
+    height: 150px;
+}
 }
