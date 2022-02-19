@@ -14,6 +14,7 @@ import { AllBlogsComponent } from './all-blogs/all-blogs.component';
 import { AllMoviesComponent } from './all-movies/all-movies.component';
 
 
+
 const routes: Routes = [
   {
     path: '', component: WebLayoutComponent,

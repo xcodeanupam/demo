@@ -1,9 +1,9 @@
 .new.featured-amazon {
-    margin: 2pc auto;
+    margin:0pc auto;
 }
 .movie-featured {
-padding:11px;
-margin-bottom: 10px;
+    padding: 10px 10px 15px;
+    margin-bottom: 10px;
 
 }
 .blog-data img {
@@ -13,14 +13,12 @@ margin-bottom: 10px;
     object-fit: cover;
 }
 .headingMovieTwo {
-    color: #323232;
+    color: #fff;
 }
-.headingMovie {
-    background: #ffffff;
-    border-radius: 5px;
-}
+
 .overrate {
     padding:0px ​4px 1.5pc;
+    
 }
 .blog-data {
     flex-wrap: wrap;
@@ -56,11 +54,20 @@ h1.dname {
 }
 .overrate a:hover {
     color: #70b3d3 !important;
+    text-decoration: underline;
 }
 .review {
     display: flex;
     padding: 7px 0;
     font-weight: 300;
+    align-items: center;
+}
+.headingMovieTwo .overrate h1.Mname a {
+    color: #fff;
+    font-size: 16px !important;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;  
+      padding: 2px 0 0px ;
 }
 .overrate {
     padding:0 5px 0.5pc;
@@ -72,6 +79,7 @@ h1.dname {
     position: relative;
     top: 3px;
 }
+
 .review mat-icon.mat-icon {
     font-size: 18px;
     height: auto;
@@ -85,7 +93,7 @@ h1.Mname::first-letter {
     text-transform: uppercase;
 }
 .loader{
-    width: 301px;
+    width: 501px;
     height: auto;
     padding:8pc 0 11pc;
     margin: 0 auto;
@@ -93,8 +101,12 @@ h1.Mname::first-letter {
 }
 .loaderload{
     min-height: 100vh;
+    background: #292929;
 }
-
+.new-featured-amazon.arrive.topdeal {
+    background: #363636;
+    background: #292929;
+}
 .single-line b.home {
     cursor: pointer;
 }
@@ -102,29 +114,29 @@ h1.Mname::first-letter {
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     font-size: 12px;
-    color: #5e5e5e;
+    color: #d9d9d9;
+    letter-spacing: 0.5px;
+
 }
 .single-line mat-icon {
     font-size: 15px;
     height: auto;
     width: 25px;
     text-align: center;
-    color: #5e5e5e;
+    color: #f8f8f8;
     position: relative;
     top: 4px;
 }
 .top-line {
-    padding: 0 15px 10px;
+    padding:20px 20px 15px;
 }
-
-
 .new-featured-amazon.arrive.topdeal.amazonhome5 {
 .review mat-icon.mat-icon {
         font-size: 22px;    top: 0px;
-
 }
 .review {
-    font-size: 15px;
+    font-size: 14px;
+    color: #bfbfbf;
 }
 h1.Mname {
     font-size: 16px;
@@ -156,3 +168,27 @@ h1.dname {
         font-size: 17px;
     }
     }
+
+::ng-deep .movietab .mat-tab-label {
+        height: auto;
+        padding: 10px 20px;
+        cursor: pointer;
+        opacity: 1.6;
+        font-family: 'Open Sans';
+        background: #fff;
+        border-radius: 75px;
+        margin: 25px 5px 5px;
+        min-width: auto;
+        box-shadow: 0px 0px 3px 2px #4a4848;
+        border: 1px solid #afafaf;
+    }
+::ng-deep .movietab .mat-ink-bar {
+        height: 0px;
+}
+::ng-deep  .movietab .mat-tab-label.mat-focus-indicator:hover {
+    background: #ebcb7c;
+}
+::ng-deep .movietab .mat-tab-label.mat-focus-indicator.mat-tab-label-active {
+        border: 1px solid #ffc63a;
+        background: #ffc63a;
+}

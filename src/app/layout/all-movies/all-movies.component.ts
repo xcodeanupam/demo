@@ -9,7 +9,7 @@ import { UserService } from 'src/app/core/user/user.service';
 export class AllMoviesComponent implements OnInit {
   movies: any;
   dataload: boolean =  true;
-
+  dataloadline: boolean =  false;
   constructor(public userService: UserService,) { }
 
   ngOnInit(): void {
@@ -20,6 +20,7 @@ export class AllMoviesComponent implements OnInit {
       (data: any) => {
         this.movies = data;
         this.dataload = false;
+        this.dataloadline = true;
         console.log('Movies  data', data)
       },
       error => {

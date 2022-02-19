@@ -75,7 +75,7 @@ section.home{
 .allcate {
     background-position: center;
     background-size: cover;
-    height: 250px ;
+    height: 190px ;
     margin: 10px;
     display: flex;
     place-content: center;
@@ -88,7 +88,7 @@ section.home{
 background: url(../../../assets/images/deal01.jpg);
 background-position: center;
 background-size: cover;
-height: 520px;
+height: 400px;
 margin: 10px;
 display: flex;
 place-content: start;
@@ -1069,8 +1069,11 @@ margin-bottom: 10px;
     border-radius: 5px 5px 0 0;
     object-fit: cover;
 }
+.new-featured-amazon.arrive.moviedeal .new.featured-amazon {
+    margin: 10px auto;
+}
 .moviedeal .heading {
-    padding-bottom: 1pc;
+    padding-bottom:0pc;
 }
 .moviedeal .start img{
     width: 20px;
@@ -1102,7 +1105,7 @@ h1.Mname {
     line-height: normal;
 }
 .moviedeal button.review-blog {
-    margin:2pc auto 0pc;
+    margin:1pc auto 0pc;
 }
 h1.dname {
     font-size: 12px;
@@ -1155,7 +1158,7 @@ h1.Mname::first-letter {
 }
 .new-featured-amazon.arrive.moviedeal {
     /* padding: 0; */
-    background: #fdfdfd;
+    background: #fbfbfb;
 }
 
 

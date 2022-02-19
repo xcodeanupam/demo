@@ -33,7 +33,7 @@ import { BlogThreeComponent } from './blog-three/blog-three.component';
 import { AllBlogsComponent } from './all-blogs/all-blogs.component';
 import { AllMoviesComponent } from './all-movies/all-movies.component';
 import { BannerComponent } from './banner/banner.component';
-
+import {MatTabsModule} from '@angular/material/tabs';
 
 
 @NgModule({
@@ -42,7 +42,8 @@ import { BannerComponent } from './banner/banner.component';
     CommonModule,
     layoutRoutingModule,FlexLayoutModule,MatAutocompleteModule,MatFormFieldModule,MatInputModule,
     FormsModule,ReactiveFormsModule,MatIconModule,MatMenuModule,MatButtonModule,MatCarouselModule,
-    MatSidenavModule,MatPaginatorModule, HttpClientModule, MatProgressSpinnerModule,MatTooltipModule
+    MatSidenavModule,MatPaginatorModule, HttpClientModule, MatProgressSpinnerModule,
+    MatTooltipModule, MatTabsModule
   ],
   schemas:[CUSTOM_ELEMENTS_SCHEMA],
   providers:[UserService, ApiService]
