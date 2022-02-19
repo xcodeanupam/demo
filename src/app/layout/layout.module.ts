@@ -32,11 +32,12 @@ import { BlogTwoComponent } from './blog-two/blog-two.component';
 import { BlogThreeComponent } from './blog-three/blog-three.component';
 import { AllBlogsComponent } from './all-blogs/all-blogs.component';
 import { AllMoviesComponent } from './all-movies/all-movies.component';
+import { BannerComponent } from './banner/banner.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent, RegisterComponent, WriteReviewComponent, CategoryComponent, FullViewComponent, WebLayoutComponent, BlogComponent, BlogTwoComponent, BlogThreeComponent, AllBlogsComponent, AllMoviesComponent],
+  declarations: [HomeComponent, HeaderComponent, FooterComponent, LoginComponent, RegisterComponent, WriteReviewComponent, CategoryComponent, FullViewComponent, WebLayoutComponent, BlogComponent, BlogTwoComponent, BlogThreeComponent, AllBlogsComponent, AllMoviesComponent, BannerComponent],
   imports: [
     CommonModule,
     layoutRoutingModule,FlexLayoutModule,MatAutocompleteModule,MatFormFieldModule,MatInputModule,
