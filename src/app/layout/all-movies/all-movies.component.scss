@@ -11,6 +11,7 @@
     border-radius: 5px ;
     height: 200px;
     object-fit: cover;
+    box-shadow: 2px 2px 4px #e91515;
 }
 .headingMovieTwo {
     color: #fff;
@@ -93,7 +94,7 @@ h1.Mname::first-letter {
     text-transform: uppercase;
 }
 .loader{
-    width: 501px;
+    width: 40%;
     height: auto;
     padding:8pc 0 11pc;
     margin: 0 auto;
@@ -148,7 +149,11 @@ h1.dname {
     font-size: 14px;
 }
 }
-    
+@media only screen and (min-width: 200px) and (max-width: 600px){
+    .loader{
+        width:100%;
+    }  
+}
     
     @media only screen and (min-width: 1900px) and (max-width: 9000px){
         .review mat-icon.mat-icon {
@@ -191,4 +196,16 @@ h1.dname {
 ::ng-deep .movietab .mat-tab-label.mat-focus-indicator.mat-tab-label-active {
         border: 1px solid #ffc63a;
         background: #ffc63a;
+}
+::ng-deep .mat-tab-header-pagination-chevron {
+    border-color: rgb(255 255 255 / 87%);
+}
+::ng-deep .mat-tab-header-pagination-disabled .mat-tab-header-pagination-chevron {
+    border-color: rgb(255 255 255 / 38%);
+}
+::ng-deep section.amazonheader.amazonheader1 .new.featured-amazon {
+    overflow-y: scroll;
+}
+::ng-deep section.amazonheader.amazonheader2 .new.featured-amazon {
+    overflow-y: scroll;
 }

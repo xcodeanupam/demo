@@ -294,6 +294,7 @@ cursor: pointer;
 .vedios {
     width: 100%;
     margin: 0px auto 0pc;
+    background: #000;
 }
 ::ng-deep .vedios iframe {
     width: 100%;
@@ -686,14 +687,15 @@ section.home.amazonhome5 {
 
 
 .loader{
-    width: 301px;
+    width: 40%;
     height: auto;
-    padding:8pc 0 11pc;
+    padding:4pc 0 11pc;
     margin: 0 auto;
     display: block;
 }
 .loaderload{
     min-height: 100vh;
+    background-color: #292929;
 }
 
 
@@ -756,3 +758,10 @@ section.home.amazonhome5 {
 	border-radius:1px;
 	background-color: #fafafa;
 }
+
+@media only screen and (min-width: 200px) and (max-width: 600px){
+    .loader{
+        width:100%;
+    }  
+}
+

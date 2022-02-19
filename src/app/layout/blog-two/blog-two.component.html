@@ -1,8 +1,9 @@
+<div *ngIf="dataload"  class=" loaderload" >
+    <img class="loader" src="assets/images/load.gif">
+</div>
 <section class="home" fxLayout="column" ngClass.xs="amazonhome1" ngClass.sm="amazonhome2" ngClass.md="amazonhome3"
     ngClass.lt-xl="amazonhome5">
-    <div class="ft loaderload" *ngIf="dataload">
-        <img class="loader" src="assets/images/loader.gif">
-    </div>
+  
     <div *ngIf="!dataload">
         <!----top-line-->
         <div class="category-amazon_review" fxLayout="column" fxFlex.xs="100%" fxFlex.sm="100%" fxFlex.md="950px"
