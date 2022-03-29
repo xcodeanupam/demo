@@ -52,7 +52,28 @@ var MovieSchema = new mongoose.Schema({
     youtube: { type: String, default:'' },
     release_source: { type: String, default:'' },
     released_on: { type: String, default:'' },
-    createDate: { type: String, default: '10 september 2021' }
+    createDate: { type: String, default: '10 september 2021' },
+    casting: [
+        {
+            name: { type: String, default: '' },
+            image: { type: String, default: '' },
+            info: { type: String, default: '' },
+            other: { type: String, default: '' },
+            role: { type: String, default: '' },
+        }
+    ],
+    movietype: { type: String, default:'' },
+    section: { type: String, default:'bollywood' },
+    seo: [
+        {
+            title: { type: String, default: '' },
+            description: { type: String, default: '' },
+            image: { type: String, default: '' },
+            slug: { type: String, default: '' },
+            keyword: { type: String, default: '' },
+            keywords: { type: String, default: '' }
+        }
+    ],
 
 }, { timestamps: true });
 
