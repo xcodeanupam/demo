@@ -24,6 +24,35 @@ router.post('/getMovie', async (req, res) => {
     }
 });
 
+
+router.post('/addcasting', async (req, res) => {
+    try {
+        // const ldr = req.body.movie_id
+        // // const lead_id = ldr
+        const data = {
+            casting: req.body.casting
+        }
+        const movie = await Movie.findOneAndUpdate({ 'movie_id': req.body.movie_id }, data, { new: true });
+        res.send(movie)
+    } catch (error) {
+        res.status(500).send(error)
+    }
+});
+
+router.post('/addcomments', async (req, res) => {
+    try {
+        // const ldr = req.body.movie_id
+        // // const lead_id = ldr
+        const data = {
+            comments: req.body.comments
+        }
+        const movie = await Movie.findOneAndUpdate({ 'movie_id': req.body.movie_id }, data, { new: true });
+        res.send(movie)
+    } catch (error) {
+        res.status(500).send(error)
+    }
+});
+
 router.post('/getALlMovie', async (req, res) => {
     try {
         // console.log('sadasd', req.body.title)
@@ -34,6 +63,8 @@ router.post('/getALlMovie', async (req, res) => {
         res.status(500).send()
     }
 });
+
+
 
 
 module.exports = router;
