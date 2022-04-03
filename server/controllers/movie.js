@@ -27,7 +27,7 @@ router.post('/getMovie', async (req, res) => {
 router.post('/getALlMovie', async (req, res) => {
     try {
         // console.log('sadasd', req.body.title)
-        const movie = await Movie.find()
+        const movie = await Movie.find().sort({ movie_id: -1 })
         res.send(movie)
     } catch (error) {
         console.log(error)
