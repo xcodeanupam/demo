@@ -24,7 +24,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
 
 //Angular dist output folder
-app.use('/', express.static(path.join(__dirname, '/dist')));
+// app.use('/', express.static(path.join(__dirname, '/dist')));
 
 //routes
 app.use(require('./server/routes'));
